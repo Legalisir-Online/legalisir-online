@@ -1,0 +1,52 @@
+body {
+	background-image: url('../images/ppl.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+	
+.navbar {
+	background-color: #404852;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 50px;
+}
+
+.navbar-logo img {
+	height: 50px;
+}
+
+.navbar-nav {
+	display: flex;
+	list-style: none;
+	margin: 0;
+}
+
+.nav-item {
+	margin: 0 10px;
+}
+
+.nav-link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.landing-page {
+	height: calc(100vh - 70px);
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.landing-page h1 {
+	font-size: 48px;
+	color: #fff;
+	margin-left: 0;
+}
