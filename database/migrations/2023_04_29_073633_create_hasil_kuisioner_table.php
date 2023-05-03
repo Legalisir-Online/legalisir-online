@@ -20,7 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('id_pertanyaan');
             $table->foreign('id_pertanyaan')->references('id')->on('pertanyaan');
             $table->unsignedBigInteger('id_opsi_terpilih');
-            $table->foreign('id_opsi_terpilih')->references('id')->on('opsi')->onDelete('set null');
+            $table->foreign('id_opsi_terpilih')->references('id')->on('opsi');
             $table->text('hasil_essai');
             $table->timestamps();
         });
