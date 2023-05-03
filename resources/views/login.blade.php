@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="logo">
-        <img src="{{ asset('images/logo.png') }}" alt="Logo">
+        <a href="/"><img src="{{ asset('images/logo.png') }}" alt="Logo"></a>
     </div>
     <div class="container">
         <img src="{{ asset('images/ppl.png') }}" alt="ppl">

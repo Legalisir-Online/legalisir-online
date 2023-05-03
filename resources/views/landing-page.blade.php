@@ -8,7 +8,7 @@
 	<!-- Navbar -->
 	<nav class="navbar">
 		<div class="navbar-logo">
-			<img src="{{ asset('images/LOGO.png') }}" alt="Logo">
+			<a href="/"><img src="{{ asset('images/logo.png') }}" alt="Logo"></a>
 		</div>
 		<ul class="navbar-nav">
 			<li class="nav-item">
@@ -18,7 +18,7 @@
 				<a href="#" class="nav-link">About</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">Login</a>
+				<a href="/login" class="nav-link">Login</a>
 			</li>
 		</ul>
 	</nav>
