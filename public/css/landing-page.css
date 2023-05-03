@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+  }
+  
 body {
 	background-image: url('../images/ppl.png');
 	background-size: cover;
@@ -42,11 +47,18 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	text-align: left;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);	
+	padding: 0 50px;
 }
 
 .landing-page h1 {
-	font-size: 48px;
+	font-size: 70px;
 	color: #fff;
 	margin-left: 0;
 }
+
+br {
+	display: block;
+	margin-top: 15px;
+	content: "";
+  }
