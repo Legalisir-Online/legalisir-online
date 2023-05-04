@@ -30,3 +30,7 @@ Route::get('/reset-password', function () {
 Route::get('/register', function () {
     return view('register');
 });
+
+Route::get('/upload-berkas', function () {
+    return view('upload-berkas');
+});
