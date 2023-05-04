@@ -21,11 +21,11 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/confirm-password', function () {
-    return view('confirm-password');
-});
 Route::get('/reset-password', function () {
     return view('reset-password');
+});
+Route::get('/forgot-password', function () {
+    return view('forgot-password');
 });
 Route::get('/register', function () {
     return view('register');
