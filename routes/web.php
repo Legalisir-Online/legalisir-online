@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/konfirm-pw', function () {
+    return view('konfirm-pw');
+});
