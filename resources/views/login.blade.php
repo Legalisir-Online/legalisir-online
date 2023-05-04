@@ -10,15 +10,21 @@
     </div>
     <div class="container">
         <img src="{{ asset('images/ppl.png') }}" alt="ppl">
+        <div class="overlay1">
+            <p>&emsp;Log In</p>
+        </div>
+        <div class="overlay2">
+            <p>&emsp;Register</p>
+        </div>
         <div class="login-box">
             <h2>Login Account</h2>
             <form action="" method="POST">
                 
                 <div class="form-group">
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" placeholder="email" required>
                 </div>
                 <div class="form-group">
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="password" placeholder="password" required>
                 </div>
                 <div class="form-group">
                     <a href="#"><p>lupa password?</p></a>

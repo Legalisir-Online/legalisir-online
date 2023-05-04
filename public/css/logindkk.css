@@ -72,6 +72,24 @@ input[type="password"]{
     font-size: 15px;
 }
 
-  
+.overlay1{
+    position: absolute;
+    width: 135px;
+    height: 50px;
+    left: 275px;
+    top: 200px;
+    background-color: #5C5396;
+    color: #fff;
+    border-radius: 10px;
+}
 
+.overlay2{
+    position: absolute;
+    width: 135px;
+    height: 50px;
+    left: 275px;
+    top: 250px; 
+    color: #fff;
+    border-radius: 10px;
+}
   
