@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Sistem Legalisir Online</title>
     <link rel="stylesheet" href="{{ asset('css/upload-berkas.css') }}">
 </head>
+
 <body>
     <h1>UNGGAH DOKUMEN</h1>
-    <div class="box-container"> 
+    <div class="box-container">
         <div class="box">
             <h2>Unggah Ijazah</h2>
             <div class="form-group">
@@ -16,8 +18,7 @@
             <div class="form-group">
                 <label for="dokumen" class="drop-container">
                     <img src="{{ asset('images/icons/upload.png') }}" alt="upload">
-                    <span class="drop-title"> Drag and Drop here </span>
-                     or  
+                    <span class="drop-title"> Drag and Drop here <br>or</span>
                     <input type="file" id="dokumen" accept="image/*" required>
                 </label>
             </div>
@@ -31,16 +32,16 @@
             <div class="form-group">
                 <label for="dokumen" class="drop-container">
                     <img src="{{ asset('images/icons/upload.png') }}" alt="upload">
-                    <span class="drop-title"> Drag and Drop here </span>
-                     or  
+                    <span class="drop-title"> Drag and Drop here <br>or</span>
                     <input type="file" id="dokumen" accept="image/*" required>
                 </label>
             </div>
         </div>
-    
+
     </div>
-    
-        <button type="submit">Upload</button>
-    
+
+    <button type="submit">Upload</button>
+
 </body>
+
 </html>
