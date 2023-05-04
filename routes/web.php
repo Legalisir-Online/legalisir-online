@@ -21,6 +21,24 @@ Route::get('/login', function () {
     return view('login');
 });
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Route::get('/konfirm-pw', function () {
     return view('konfirm-pw');
 });
+=======
+Route::get('/register', function () {
+    return view('register');
+});
+>>>>>>> Stashed changes
+=======
+Route::get('/register', function () {
+    return view('register');
+});
+>>>>>>> Stashed changes
+=======
+Route::get('/register', function () {
+    return view('register');
+});
+>>>>>>> Stashed changes
