@@ -15,32 +15,25 @@
             <img src="{{ asset('images/ppl.png') }}" alt="ppl">
             <div class="group-overlay">
                 <div class="overlay overlay-active">
-                    <p>Log In</p>
-                </div>
-                <div class="overlay">
-                    <p>Register</p>
+                    <p>Forgot Password</p>
                 </div>
             </div>
         </div>
         <div class="login-box">
-
             <div class="form">
-                <h2>Login Account</h2>
+                <h2>Forgot Password</h2>
                 <form action="" method="POST">
+
+                    <p style="color: white">
+                        Masukkan email Anda untuk melakukan reset password
+                    </p>
 
                     <div class="form-group">
                         <input type="email" name="email" id="email" placeholder="email" required>
                     </div>
+
                     <div class="form-group">
-                        <input type="password" name="password" id="password" placeholder="password" required>
-                    </div>
-                    <div class="form-group">
-                        <a href="#">
-                            <p>lupa password?</p>
-                        </a>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Login</button>
+                        <button type="submit">Kirim</button>
                     </div>
                 </form>
             </div>
