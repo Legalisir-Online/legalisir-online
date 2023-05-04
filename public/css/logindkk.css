@@ -1,3 +1,7 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -72,6 +76,38 @@ input[type="password"]{
     font-size: 15px;
 }
 
-  
+.card{
+    margin-top: 30px;
+    width: 439px;
+    height: 233px;
+    justify-content: center;
+    background: #D9D9D9;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-  
+h4.verified{
+    font-size: 40px;
+    color: #54596A;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.nav-link{
+    margin-bottom: 20px;
+    color: #2B827C;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+i.material-symbols-outlined{
+    padding-top: 100px;
+    font-size:108px;
+    color:white;
+}
