@@ -31,6 +31,10 @@ Route::get('/register', function () {
     return view('register');
 });
 
+Route::get('/upload-berkas', function () {
+    return view('upload-berkas');
+});
+
 Route::get('/akun-terverifikasi', function () {
     return view('aktivasi-akun');
 });
