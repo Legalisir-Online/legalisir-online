@@ -15,32 +15,25 @@
             <img src="{{ asset('images/ppl.png') }}" alt="ppl">
             <div class="group-overlay">
                 <div class="overlay overlay-active">
-                    <p>Log In</p>
-                </div>
-                <div class="overlay">
-                    <p>Register</p>
+                    <p>Reset Password</p>
                 </div>
             </div>
         </div>
         <div class="login-box">
-
             <div class="form">
-                <h2>Login Account</h2>
+                <h2>Reset Password</h2>
                 <form action="" method="POST">
 
                     <div class="form-group">
-                        <input type="email" name="email" id="email" placeholder="email" required>
+                        <input type="password" name="new-password" id="new-password" placeholder="password baru"
+                            required>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" id="password" placeholder="password" required>
+                        <input type="password" name="konfirm-password" id="konfirm-password"
+                            placeholder="konfirmasi password" required>
                     </div>
                     <div class="form-group">
-                        <a href="#">
-                            <p>lupa password?</p>
-                        </a>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Login</button>
+                        <button type="submit">Reset</button>
                     </div>
                 </form>
             </div>
