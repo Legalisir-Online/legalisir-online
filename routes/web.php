@@ -21,8 +21,11 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/konfirm-pw', function () {
-    return view('konfirm-pw');
+Route::get('/confirm-password', function () {
+    return view('confirm-password');
+});
+Route::get('/reset-password', function () {
+    return view('reset-password');
 });
 Route::get('/register', function () {
     return view('register');
