@@ -14,20 +14,22 @@
         <div class="image-wrapper">
             <img src="{{ asset('images/ppl.png') }}" alt="ppl">
             <div class="group-overlay">
-                <div class="overlay overlay-active">
+                <div class="overlay">
                     <p>Log In</p>
                 </div>
-                <div class="overlay">
+                <div class="overlay overlay-active">
                     <p>Register</p>
                 </div>
             </div>
         </div>
         <div class="login-box">
-
             <div class="form">
-                <h2>Login Account</h2>
+                <h2>Register Account</h2>
                 <form action="" method="POST">
 
+                    <div class="form-group">
+                        <input type="text" name="nim" id="nim" placeholder="NIM" required>
+                    </div>
                     <div class="form-group">
                         <input type="email" name="email" id="email" placeholder="email" required>
                     </div>
@@ -35,12 +37,10 @@
                         <input type="password" name="password" id="password" placeholder="password" required>
                     </div>
                     <div class="form-group">
-                        <a href="#">
-                            <p>lupa password?</p>
-                        </a>
+                        <input type="date" name="date" id="date" placeholder="Tanggal Lahir" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit">Login</button>
+                        <button type="submit">Register</button>
                     </div>
                 </form>
             </div>
