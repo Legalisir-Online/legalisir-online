@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+  }
+  
+body {
+    background-color: #D9D9D9;
+	background-image: url('../images/ppl.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+	
+.navbar {
+	background-color: #404852;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 50px;
+}
+
+.navbar-logo img {
+	height: 50px;
+}
+
+.navbar-nav {
+	display: flex;
+	list-style: none;
+	margin: 0;
+}
+
+.nav-item {
+	margin: 0 10px;
+}
+
+.nav-link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.homepage {
+	height: calc(100vh - 70px);
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+	padding: 0 50px;
+}
+
+.homepage h1 {
+	font-size: 60px;
+	color: #251B65;
+	margin-left: 0;
+}
+
+.homepage h2 {
+	font-size: 16px;
+	color: black;
+	margin: 0;
+}
+
+.icon {
+	height: auto;
+	width: auto;
+	position: absolute;
+	left: 10%;
+	right: 40%;
+}
+
+.container {
+	height: auto;
+	width: auto;
+	display: block;
+	position: absolute;
+	left: 40%;
+	right: 10%;
+}
+
+.pengertian {
+    height: 150px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	background-color: #DEF2EC;	
+	padding: 0 50px;
+    border-radius: 15px;
+    border-style: dashed;
+    border-color: #251B65;
+    border-width: 5px;
+}
+
+.button-ajukan {
+	background-color:#3357cf;
+	font-size: 25px ;
+	color: #fff;
+	width: 200px;
+	position: absolute;
+	right: 0;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer {
+    background-color: #404852;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-text {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+}

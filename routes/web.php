@@ -39,6 +39,10 @@ Route::get('/akun-terverifikasi', function () {
     return view('aktivasi-akun');
 });
 
+Route::get('/homepage', function () {
+    return view('homepage');
+});
+
 Route::get('/form-legalisir', function () {
     return view('form-legalisir');
 });
