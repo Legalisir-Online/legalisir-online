@@ -15,10 +15,14 @@
             <img src="{{ asset('images/ppl.png') }}" alt="ppl">
             <div class="group-overlay">
                 <div class="overlay">
+                    <a href="/login">
                     <p>Log In</p>
+                    </a>
                 </div>
                 <div class="overlay overlay-active">
+                    <a href="/register">
                     <p>Register</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -40,7 +44,7 @@
                         <input type="date" name="date" id="date" placeholder="Tanggal Lahir" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit">Register</button>
+                        <button type="submit"><a href="/akun-terverifikasi">Register</a></button>
                     </div>
                 </form>
             </div>

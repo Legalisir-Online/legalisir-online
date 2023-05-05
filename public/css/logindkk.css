@@ -162,3 +162,8 @@ i.material-symbols-outlined{
     font-size:108px;
     color:white;
 }
+
+a{
+    color: white;
+    text-decoration: none;
+}

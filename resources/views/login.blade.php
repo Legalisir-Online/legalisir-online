@@ -15,10 +15,14 @@
             <img src="{{ asset('images/ppl.png') }}" alt="ppl">
             <div class="group-overlay">
                 <div class="overlay overlay-active">
+                    <a href="/login">
                     <p>Log In</p>
+                    </a>
                 </div>
                 <div class="overlay">
+                    <a href="/register">
                     <p>Register</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -35,12 +39,12 @@
                         <input type="password" name="password" id="password" placeholder="password" required>
                     </div>
                     <div class="form-group">
-                        <a href="#">
+                        <a href="/forgot-password">
                             <p>lupa password?</p>
                         </a>
                     </div>
                     <div class="form-group">
-                        <button type="submit">Login</button>
+                        <button type="submit"><a href="/homepage">Login</a></button>
                     </div>
                 </form>
             </div>
