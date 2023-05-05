@@ -9,17 +9,17 @@
 <body>
     <nav class="navbar">
 		<div class="navbar-logo">
-			<a href="/"><img src="{{ asset('images/logo.png') }}" alt="Logo"></a>
+			<a href="/homepage"><img src="{{ asset('images/logo.png') }}" alt="Logo"></a>
 		</div>
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<a href="#" class="nav-link">Flow</a>
+				<a href="#" class="nav-link">Home</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">About</a>
+				<a href="#" class="nav-link">Ajuan</a>
 			</li>
 			<li class="nav-item">
-				<a href="/login" class="nav-link">Login</a>
+				<a href="#" class="nav-link">Profile</a>
 			</li>
 		</ul>
 	</nav>
@@ -30,7 +30,7 @@
 		</div>
         <div class="container">
 		<h1>Selamat Datang di <br> SISTEM LEGALISIR ONLINE FATISDA UNS <br> <br> </h1>
-            <div class="pengertian">
+            <div class="container-content">
                 <h2>Sistem legalisir online merupakan sistem yang dibuat dengan tujuan memberikan kemudahan bagi alumni Fakulltas Teknologi Informasi dan Sains Data UNS untuk melakukan legalisir secara online</h2>
             </div>
 			<br>
