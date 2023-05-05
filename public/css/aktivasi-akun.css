@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E5E5E6;
+}
+
+.logo img {
+  height: 50px;
+  padding: 0 50px ;
+  padding-top: 15px;
+}
+
+.container{
+  position: absolute;
+  width: 80%;
+  height: 80vh;
+  top: 100px; 
+  left: 50%; 
+  transform: translate(-50%); 
+  background: #5C5396;
+  border-radius: 26px;
+}
+
+.container img{
+  position: absolute;
+  width: 37%;
+  height: 80vh;
+  background: linear-gradient(0deg, rgba(218, 218, 218, 0.29), rgba(218, 218, 218, 0.29));
+  border-radius: 26px 0px 0px 26px;
+}
+
+.login-box{
+  text-align: center;
+  align-items: center;
+  float: right;
+  padding-right: 17%;
+  padding-top: 3%;
+}
+
+.login-box h2{
+  font-size: 50px;
+  color: #fff;
+}
+
+.form-group input{
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  background: #D9D9D9;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+input[type="email"], 
+input[type="password"]{
+border: none;
+}
+
+.form-group p{
+  margin-top: auto;
+  color: #fff;
+  text-align: left;
+}
+
+.form-group button{
+  width: 100px;
+  height: 47px;
+  background: #5676E1;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.card{
+  margin-top: 5px;
+  width: 439px;
+  height: 233px;
+  background: #D9D9D9;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4.verified{
+  font-size: 40px;
+  color: #54596A;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.nav-link{
+  margin-bottom: 20px;
+  color: #2B827C;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+i.material-symbols-outlined{
+  padding-top: 60px;
+  font-size:108px;
+  color:white;
+}
