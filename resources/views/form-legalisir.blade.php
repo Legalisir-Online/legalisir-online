@@ -66,7 +66,9 @@
 
 
     <div class="footer">
-        <h3>Fakultas Teknologi Informasi dan Sains Data UNS - 2023</h3>
+    <div class="footer-text">
+            &copy; Fakultas Teknologi Informasi Dan Sains Data UNS - 2023
+        </div>
     </div>
 </body>
 </html>
