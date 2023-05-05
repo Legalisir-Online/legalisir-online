@@ -7,7 +7,6 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
 		<div class="navbar-logo">
 			<a href="/"><img src="{{ asset('images/logo.png') }}" alt="Logo"></a>
@@ -24,7 +23,6 @@
 			</li>
 		</ul>
 	</nav>
-    <!-- Navbar -->
 
     <div class="homepage">
 		<div class="icon">
