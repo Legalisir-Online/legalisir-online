@@ -12,13 +12,13 @@
 		</div>
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<a href="#" class="nav-link">Flow</a>
+				<a href="#" class="nav-link">Home</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">About</a>
+				<a href="#" class="nav-link">Ajuan</a>
 			</li>
 			<li class="nav-item">
-				<a href="/login" class="nav-link">Login</a>
+				<a href="/login" class="nav-link">Profile</a>
 			</li>
 		</ul>
 	</nav>
