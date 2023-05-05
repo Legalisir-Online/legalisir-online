@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="submit">Kirim</button>
+                        <button type="submit"><a href="reset-password">Kirim</a></button>
                     </div>
                 </form>
             </div>

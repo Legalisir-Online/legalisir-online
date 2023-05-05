@@ -33,7 +33,7 @@
                             placeholder="konfirmasi password" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit">Reset</button>
+                        <button type="submit"><a href="login">Reset</a></button>
                     </div>
                 </form>
             </div>
