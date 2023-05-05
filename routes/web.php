@@ -38,3 +38,7 @@ Route::get('/upload-berkas', function () {
 Route::get('/akun-terverifikasi', function () {
     return view('aktivasi-akun');
 });
+
+Route::get('/form-legalisir', function () {
+    return view('form-legalisir');
+});
