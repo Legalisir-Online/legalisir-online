@@ -46,3 +46,7 @@ Route::get('/homepage', function () {
 Route::get('/form-legalisir', function () {
     return view('form-legalisir');
 });
+
+Route::get('/status-ajuan1', function () {
+    return view('status-ajuan1');
+});
