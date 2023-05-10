@@ -51,8 +51,16 @@ Route::get('/status-ajuan1', function () {
     return view('status-ajuan1');
 });
 
+Route::get('/riwayat-ajuan', function () {
+    return view('riwayat-ajuan');
+});
+
 Route::get('/invoice', function () {
     return view('invoice');
+});
+
+Route::get('/status-ajuan2', function () {
+    return view('status-ajuan2');
 });
 Route::get('/riwayat-invoice', function () {
     return view('riwayat-invoice');

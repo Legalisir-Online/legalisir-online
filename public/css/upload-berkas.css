@@ -22,7 +22,6 @@ h1 {
 
     justify-content: center;
 
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -57,8 +56,6 @@ h1 {
 .box-container .box h2 {
     /* margin-top: 50px; */
     margin-bottom: 50px;
-
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -83,7 +80,6 @@ h1 {
 }
 
 .form-group label {
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
