@@ -5,8 +5,10 @@
 }
 
 body {
-    height: 100%;
-    overflow-y: scroll;
+    margin: 0;
+	padding: 0;
+    position: relative;
+    display: grid;
 }  
 
 .navbar {
@@ -40,14 +42,16 @@ body {
 }
 
 .container {
-    position: absolute;
+    position: relative;
     width: 40%;
-    height: 550px;
-    top: 90px;
+    height: 500px;
+    top: 20px;
     left: 50%;
+    margin-bottom: 20px;
     transform: translate(-50%);
     background: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
 } 
 
 .overlay {
@@ -117,6 +121,7 @@ button.bayar-btn span:last-child {
     width: 170px;
     height: 50px;
     margin: 7px 10px;
+    margin: 0 auto;
 }
 
 .download-btn{
@@ -130,13 +135,24 @@ button.bayar-btn span:last-child {
     margin: 7px 10px;
 }
 
+.lunas-btn{
+    background: #5676E1;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    width: 170px;
+    height: 50px;
+    margin: 70px 10px;
+}
+
 .footer {
     background-color: #404852;
 	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
