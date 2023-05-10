@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100%;
+    overflow-y: scroll;
+}  
+
+.navbar {
+	background-color: #404852;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 50px;
+}
+
+.navbar-logo img {
+	height: 50px;
+}
+
+.navbar-nav {
+	display: flex;
+	list-style: none;
+	margin: 0;
+}
+
+.nav-item {
+	margin: 0 10px;
+}
+
+.nav-link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.container {
+    position: absolute;
+    width: 40%;
+    height: 550px;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+
+.overlay {
+    height: 35px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgba(37, 27, 101, 0.84);
+}
+
+.info{
+    padding: 10px 0px;
+}
+
+hr {
+    border-top: 1px solid #5676E1;
+    margin: 5px 20px;
+} 
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td {
+    padding-left: 20px; 
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+  
+.payment {
+    padding: 7px 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 7px;
+}
+
+.bayar-btn{
+    background: #CB0622;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    width: 360px;
+    height: 50px;
+    margin: 7px 10px;
+}
+
+button.bayar-btn span:first-child {
+    color: black;
+}
+  
+button.bayar-btn span:last-child {
+    color: white;
+}
+  
+.batal-btn{
+    background: #F2C94C;
+    border-radius: 10px;
+    border: none;
+    color: #000;
+    font-size: 15px;
+    width: 170px;
+    height: 50px;
+    margin: 7px 10px;
+}
+
+.download-btn{
+    background: #219653;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    width: 170px;
+    height: 50px;
+    margin: 7px 10px;
+}
+
+.footer {
+    background-color: #404852;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+}

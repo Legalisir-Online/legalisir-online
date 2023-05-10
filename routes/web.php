@@ -50,3 +50,7 @@ Route::get('/form-legalisir', function () {
 Route::get('/status-ajuan1', function () {
     return view('status-ajuan1');
 });
+
+Route::get('/invoice', function () {
+    return view('invoice');
+});
