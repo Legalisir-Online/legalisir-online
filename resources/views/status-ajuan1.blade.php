@@ -50,7 +50,9 @@
             <img src="{{ asset('images/icons/cross.png') }}" alt="cross">
             <b><p>Failed</p></b>
          </div>
-         <div class="error"><p>Berkas yang Anda Ajukan Tidak Valid, Silahkan lakukan upload berkas kembali!</p></div>
+         <div class="error">
+            <p>Berkas yang Anda Ajukan Tidak Valid, Silahkan lakukan <span> upload berkas </span> kembali!</p>
+         </div>
       </div>
       <div class="container">
          <div class="col"><p>Berkas sedang dalam pengiriman</p></div>

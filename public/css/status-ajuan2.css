@@ -40,7 +40,7 @@
 .title h5{
     color: #000000;
     text-align: left;
-    margin-top: 60px;
+    margin-top: 35px;
     margin-left: 150px;
     font-size: 15px;
 }
@@ -86,36 +86,15 @@
 }
 
 .col1 p{
+    position: relative;
     text-align: center;
     color: #68B984;
     font-size: 13px;
-    margin-left: 15px;
-    margin-top: 10px;
-}
-
-.col2{
-    width: 100px;
-    height: 37px;
-    background: #f5b4be;
-    border-radius: 15px; 
-    margin-top: 5px;
-    float: left;
-    border:solid 1px #FC2947;
-}
-
-.col2 p{
-    text-align: center;
-    color: #FC2947;
-    font-size: 13px;
-    margin-left: 15px;
-    margin-top: 10px;
-}
-
-.error{
-    color: #FC2947;
-    font-size: 10px;
-    margin-top: 57px;
-    margin-left: 10px;
+    vertical-align: middle;
+    display: flex;
+    top: 30%;
+    right: 13%;
+    float: right;
 }
 
 .col3{
@@ -129,11 +108,72 @@
 }
 
 .col3 p{
+    position: relative;
     text-align: center;
     color: #FFD966;
     font-size: 13px;
-    margin-left: 15px;
-    margin-top: 10px;
+    vertical-align: middle;
+    display: flex;
+    /* margin-left: 1px; */
+    top: 30%;
+    right: 10%;
+    float: right;
+}
+
+/* Customize the label (the container) */
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+.container1{
+    width:500px;
+    height:50px;
+    background: #fff;
+    border-radius: 15px;
+    border:solid 2px #8B7B95;
+    margin-top: 5px;
+    margin-bottom: 25px; 
+}
+
+img {
+    position: relative;
+    top: 6px;
+    left: 10px;
+  }
+.icon {
+	height: auto;
+	width: auto;
+	position: absolute;
+	right: 5%;
+    bottom: 3%;
 }
 
 .footer {
