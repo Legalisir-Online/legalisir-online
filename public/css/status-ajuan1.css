@@ -86,11 +86,16 @@
 }
 
 .col1 p{
+    position: relative;
     text-align: center;
     color: #68B984;
     font-size: 13px;
-    margin-left: 15px;
-    margin-top: 10px;
+    vertical-align: middle;
+    display: flex;
+    /* margin-left: 1px; */
+    top: 30%;
+    right: 20%;
+    float: right;
 }
 
 .col2{
@@ -104,11 +109,16 @@
 }
 
 .col2 p{
+    position: relative;
     text-align: center;
     color: #FC2947;
     font-size: 13px;
-    margin-left: 15px;
-    margin-top: 10px;
+    vertical-align: middle;
+    display: flex;
+    /* margin-left: 1px; */
+    top: 30%;
+    right: 20%;
+    float: right;
 }
 
 .error{
@@ -129,13 +139,23 @@
 }
 
 .col3 p{
+    position: relative;
     text-align: center;
     color: #FFD966;
     font-size: 13px;
-    margin-left: 15px;
-    margin-top: 10px;
+    vertical-align: middle;
+    display: flex;
+    /* margin-left: 1px; */
+    top: 30%;
+    right: 20%;
+    float: right;
 }
 
+img {
+    position: relative;
+    top: 6px;
+    left: 10px;
+  }
 .icon {
 	height: auto;
 	width: auto;

@@ -32,24 +32,39 @@
    <div class="status">
       <div class="container">
          <div class="col"><p>Berkas telah diterima admin prodi</p></div>
-         <div class="col1"><b><p>Passed</p></b></div>
+         <div class="col1">
+            <img src="{{ asset('images/icons/check.png') }}" alt="check">
+            <b><p>Passed</p></b>
+         </div>
       </div>
       <div class="container">
          <div class="col"><p>Berkas sedang direview oleh admin</p></div>
-         <div class="col1"><b><p>Passed</p></b></div>
+         <div class="col1">
+            <img src="{{ asset('images/icons/check.png') }}" alt="check">
+            <b><p>Passed</p></b>
+         </div>
       </div>
       <div class="container">
          <div class="col"><p>Berkas telah dilegalisir</p></div>
-         <div class="col2"><b><p>Failed</p></b></div>
+         <div class="col2">
+            <img src="{{ asset('images/icons/cross.png') }}" alt="cross">
+            <b><p>Failed</p></b>
+         </div>
          <div class="error"><p>Berkas yang Anda Ajukan Tidak Valid, Silahkan lakukan upload berkas kembali!</p></div>
       </div>
       <div class="container">
          <div class="col"><p>Berkas sedang dalam pengiriman</p></div>
-         <div class="col3"><b><p>Pending</p></b></div>
+         <div class="col3">
+            <img src="{{ asset('images/icons/pending.png') }}" alt="pending">
+            <b><p>Pending</p></b>
+         </div>
       </div>
       <div class="container">
          <div class="col"><p>Berkas telah diterima</p></div>
-         <div class="col3"><b><p>Pending</p></b></div>
+         <div class="col3">
+            <img src="{{ asset('images/icons/pending.png') }}" alt="pending">
+            <b><p>Pending</p></b>
+         </div>
       </div>    
    </div>
    <div class="icon">
