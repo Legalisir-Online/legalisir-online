@@ -9,11 +9,11 @@
 <body>
     <nav class="navbar">
 		<div class="navbar-logo">
-			<a href="/homepage"><img src="{{ asset('images/logo.png') }}" alt="Logo"></a>
+			<img src="{{ asset('images/logo.png') }}" alt="Logo">
 		</div>
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<a href="#" class="nav-link">Home</a>
+				<a href="/homepage" class="nav-link">Home</a>
 			</li>
 			<li class="nav-item">
 				<a href="#" class="nav-link">Ajuan</a>
