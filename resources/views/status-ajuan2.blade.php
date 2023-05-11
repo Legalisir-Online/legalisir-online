@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Sistem Legalisir Online</title>
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/status-ajuan1.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/status-ajuan2.css') }}">
 </head>
 
 <body>
@@ -64,19 +64,15 @@
             <img src="{{ asset('images/icons/pending.png') }}" alt="pending">
             <b><p>Pending</p></b>
          </div>
-         <!-- <label class="col4"> Berkas diterima
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-         </label> -->
+      </div>  
+   </div> 
+
+   <div class="col4">
+            <input type="checkbox"/> 
+               <b><p>Berkas diterima</p></b>
+            </input>
       </div>
-      
-      <div class="container1">
-            <input type="checkbox">
-            <span class="checkmark"></span>
-            <b><p>Berkas diterima</p></b>
-        </div>
-         
-   </div>
+
    <div class="icon">
 		<img src="{{ asset('images/ajuan.png') }}" alt="Alumni" width="250px" height="auto">
 	</div>
