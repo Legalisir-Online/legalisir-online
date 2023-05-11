@@ -24,6 +24,11 @@
     </ul>
   </nav>
 
+  <div class="show">
+    <label>Show</label><input type="number" min="10" max="25" name="jumlah" /> 
+    <label class="search">Search</label><input type="text" name="jumlah" />
+  </div>
+
   <table>
     <tr>
       <th>No</th>

@@ -18,6 +18,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 50px;
+  /* width: fit-content; */
 }
 
 .navbar-logo img {
@@ -46,6 +47,22 @@ a {
 	text-decoration: none;
 }
 
+.show {
+  margin-top: 10px;
+}
+
+.show input {
+  margin-left: 10px;
+}
+
+input{
+  border-radius:5px;
+}
+
+.show .search {
+  margin-left: 10px;
+}
+
 table {
   margin-top: 50px;
   margin-bottom: 20px;
@@ -54,6 +71,12 @@ table {
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+  margin: 13px;
+}
+
+th {
+  background-color: #000;
+  color: white;
 }
 
 tr {
@@ -84,9 +107,12 @@ th, td, td .col1 {
   margin-top: 10px;
 }
 
-img {
-  position: relative;
-  top: 50%;
+td img {
+  /* position: relative; */
+  /* top: 50%; */
+  /* align-items: center; */
+  /* vertical-align: sub; */
+
 }
 
 .footer {
