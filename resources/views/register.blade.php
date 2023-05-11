@@ -43,6 +43,9 @@
                     <div class="form-group">
                         <input type="date" name="date" id="date" placeholder="Tanggal Lahir" required>
                     </div>
+                    {!! NoCaptcha::renderJs() !!}
+                    {!! NoCaptcha::display() !!}
+                    <div class="space"></div>
                     <div class="form-group">
                         <button type="submit"><a href="/akun-terverifikasi">Register</a></button>
                     </div>
