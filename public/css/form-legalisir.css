@@ -112,6 +112,19 @@ input[type=radio] {
   background: white;
 }
 
+.container2 {
+    position: absolute;
+    /* display: flex; */
+    width: 50%;
+    height: 80vh;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #D9D9D9;
+    border-radius: 26px;
+    margin-bottom: 100px;
+  }
+
 .footer {
     position: fixed;
     padding: 10px 10px 0px 10px;
@@ -128,4 +141,24 @@ input[type=radio] {
 	font-size: 18px;
 	font-weight: 500;
 }
-  
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    position: relative;
+    padding: 15px;
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 15px;
+    /* flex-basis: 100%; */
+}
+
+.full-width{
+    flex-basis: 100%;
+}

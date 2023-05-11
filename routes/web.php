@@ -70,3 +70,7 @@ Route::get('/riwayat-invoice', function () {
 Route::get('/status-ajuan3', function () {
     return view('status-ajuan3');
 });
+
+Route::get('/preview-pengajuan', function () {
+    return view('preview-pengajuan-legalisir');
+});
