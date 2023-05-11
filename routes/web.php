@@ -62,6 +62,11 @@ Route::get('/invoice', function () {
 Route::get('/status-ajuan2', function () {
     return view('status-ajuan2');
 });
+
 Route::get('/riwayat-invoice', function () {
     return view('riwayat-invoice');
+});
+
+Route::get('/status-ajuan3', function () {
+    return view('status-ajuan3');
 });
