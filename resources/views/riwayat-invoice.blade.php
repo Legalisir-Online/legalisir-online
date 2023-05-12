@@ -79,7 +79,7 @@
             <table>
                 <tr>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    <td>Total</td>
+                    <td><b>Total</b></td>
                     <td></td><td></td><td></td>
                     <td>XX</td>
                 </tr>

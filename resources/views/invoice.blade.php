@@ -79,7 +79,7 @@
             <table>
                 <tr>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    <td>Total</td>
+                    <td><b>Total</b></td>
                     <td></td><td></td><td></td>
                     <td>XX</td>
                 </tr>
@@ -100,11 +100,11 @@
         </div>
         <div class="buttons">
             <button class="bayar-btn">
-                <span>Tagihan harap dibayar dalam 24 jam !</span><br>
+                <span>Tagihan harap dibayar dalam 24 jam !</span>
                 <span>Tanggal kadaluarsa :[Tenggat Waktu]</span>
-            </button><br>
-            <a href="#"><button class="batal-btn">Batalkan Legalisir <img src="{{ asset('images/icons/cancel.png') }}" alt="cancel" width="30px" height="30px" ></button></a>
-            <a href="#"><button class="download-btn">Download Invoice <img src="{{ asset('images/icons/download.png') }}" alt="cancel" width="25px" height="25px" ></button></a>
+            </button>
+            <a href="#"><button class="batal-btn">Batalkan Legalisir <img src="{{ asset('images/icons/cancel.png') }}" alt="cancel" width="30px" height="30px" margin-right="5px";></button></a>
+            <a href="#"><button class="download-btn">Download Invoice &nbsp;<img src="{{ asset('images/icons/download.png') }}" alt="download" width="25px" height="25px" margin-right="5px";></button></a>
         </div>
     </div>
     <footer class="footer">

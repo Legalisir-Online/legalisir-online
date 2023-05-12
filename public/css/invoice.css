@@ -85,56 +85,67 @@ td {
     padding: 7px 20px;
 }
 
-.buttons{
+:root {
+    --bg-color-bayar-btn: #CB0622;
+    --bg-color-batal-btn: #F2C94C;
+    --bg-color-download-btn: #219653;
+    --btn-width: 170px;
+}
+  
+.buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 7px;
 }
-
-.bayar-btn{
-    background: #CB0622;
+  
+button {
     border-radius: 10px;
     border: none;
     color: #fff;
     font-size: 15px;
-    width: 360px;
     height: 50px;
     margin: 7px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+  
+.bayar-btn {
+    background: var(--bg-color-bayar-btn);
+    width: 360px;
+    flex-direction: column;
 }
 
+.bayar-btn span {
+    display: block;
+}
+  
+.bayar-btn span:first-child {
+    margin-bottom: 5px;
+}
+  
+.batal-btn {
+    background: var(--bg-color-batal-btn);
+    width: var(--btn-width);
+    color: #000;
+}
+  
+.download-btn {
+    background: var(--bg-color-download-btn);
+    width: var(--btn-width);
+}
+  
 button.bayar-btn span:first-child {
     color: black;
 }
-  
+    
 button.bayar-btn span:last-child {
     color: white;
 }
   
-.batal-btn{
-    background: #F2C94C;
-    border-radius: 10px;
-    border: none;
-    color: #000;
-    font-size: 15px;
-    width: 170px;
-    height: 50px;
-    margin: 7px 10px;
-    margin: 0 auto;
-}
-
-.download-btn{
-    background: #219653;
-    border-radius: 10px;
-    border: none;
-    color: #fff;
-    font-size: 15px;
-    width: 170px;
-    height: 50px;
-    margin: 7px 10px;
-}
-
 .lunas-btn{
     background: #5676E1;
     border-radius: 10px;
@@ -162,4 +173,8 @@ button.bayar-btn span:last-child {
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: 500;
+}
+
+a{
+    text-decoration: none;
 }
