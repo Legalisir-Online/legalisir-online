@@ -35,7 +35,7 @@
             </div>
 			<br>
 			<div class="button-ajukan">
-				<a href="#">Ajukan Legalisir<a\>
+				<a href="form-legalisir">Ajukan Legalisir<a\>
             </div>
         </div>
 	</div>
