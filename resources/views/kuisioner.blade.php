@@ -28,9 +28,6 @@
     <div class="container-head">
       Isi Kuisioner
     </div>
-    <div>
-      
-    </div>
   </div>
 
 </body>
