@@ -38,6 +38,9 @@
                     <div class="form-group">
                         <input type="password" name="password" id="password" placeholder="password" required>
                     </div>
+                    {!! NoCaptcha::renderJs() !!}
+                    {!! NoCaptcha::display() !!}
+                    <div class="space"></div>
                     <div class="form-group">
                         <a href="/forgot-password">
                             <p>lupa password?</p>

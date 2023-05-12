@@ -71,7 +71,7 @@ body {
 
 .form-group input {
     width: 300px;
-    height: 30px;
+    height: 15px;
     padding: 10px;
     background: #d9d9d9;
     border-radius: 15px;
@@ -166,4 +166,8 @@ i.material-symbols-outlined{
 a{
     color: white;
     text-decoration: none;
+}
+
+.space{
+    margin-bottom: 5px;
 }

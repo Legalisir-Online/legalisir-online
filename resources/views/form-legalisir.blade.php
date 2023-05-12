@@ -28,7 +28,7 @@
 		<h1>Formulir pengajuan legalisir online</h1>
 	</div>
 
-    <div class="container">
+    <div class="container" >
         <form action="action_page.php">
 
             <label for="pberkas">Pilih berkas yang di legalisir :</label> <br>
