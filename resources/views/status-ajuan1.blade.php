@@ -3,6 +3,7 @@
 <head>
 	<title>Sistem Legalisir Online</title>
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/status-ajuan1.css') }}">
+   <link rel="stylesheet" type="text/css" href="{{ asset('css/dropdown.css') }}">
 </head>
 
 <body>
@@ -15,11 +16,21 @@
 			<li class="nav-item">
 				<a href="/homepage" class="nav-link">Home</a>
 			</li>
-			<li class="nav-item">
-				<a href="#" class="nav-link">Ajuan</a>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle">Ajuan</a>
+				<ul class="dropdown-menu">
+					<li><a href="/status-ajuan1">Status Ajuan</a></li>
+					<li><a href="/riwayat-ajuan">Riwayat Ajuan</a></li>
+					<li><a href="/invoice">Invoice</a></li>
+				</ul>
 			</li>
-			<li class="nav-item">
-				<a href="/login" class="nav-link">Profile</a>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle">Profile</a>
+				<ul class="dropdown-menu">
+					<li><a href="/biodata">Biodata</a></li>
+					<li><a href="/kuisioner">Kuisioner</a></li>
+					<li><a href="/login">Logout</a></li>
+				</ul>
 			</li>
 		</ul>
 	</nav>

@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle::after {
+    content: "\25BE";
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .dropdown-menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    padding: 10px;
+    min-width: fit-content;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #404852; /* Ubah warna background saat dihover */
+    color: #fff;
+  }
+
+a{
+    text-decoration: none;
+}
