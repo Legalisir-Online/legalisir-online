@@ -29,6 +29,7 @@ body {
 	display: flex;
 	list-style: none;
 	margin: 0;
+  white-space: nowrap;
 }
 
 .nav-item {
@@ -107,13 +108,13 @@ th, td, td .col1 {
   margin-top: 10px;
 }
 
-td img {
-  /* position: relative; */
-  /* top: 50%; */
-  /* align-items: center; */
-  /* vertical-align: sub; */
+/* td img {
+  position: relative; 
+   top: 50%; 
+   align-items: center; 
+   vertical-align: sub;
 
-}
+} */
 
 .footer {
   background-color: #404852;

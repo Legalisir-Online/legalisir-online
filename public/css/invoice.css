@@ -5,10 +5,13 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
 	padding: 0;
-    position: relative;
-    display: grid;
+    /* position: relative;
+    display: grid; */
 }  
 
 .navbar {
@@ -28,6 +31,7 @@ body {
 	display: flex;
 	list-style: none;
 	margin: 0;
+    white-space: nowrap;
 }
 
 .nav-item {
@@ -42,16 +46,18 @@ body {
 }
 
 .container {
+    flex-grow: 1;
     position: relative;
     width: 40%;
     height: 500px;
     top: 20px;
     left: 50%;
-    margin-bottom: 20px;
     transform: translate(-50%);
     background: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #5676E1;
 } 
 
 .overlay {
@@ -158,12 +164,13 @@ button.bayar-btn span:last-child {
 }
 
 .footer {
+    flex-shrink: 0;
     background-color: #404852;
 	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
