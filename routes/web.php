@@ -91,6 +91,10 @@ Route::get('/index', function () {
     return view('index');
 });
 
+Route::get('/legalisir-selesai', function () {
+    return view('admin/legalisir-selesai');
+});
+
 Route::get('/legalisirpending', function () {
     return view('admin/legalisirpending');
 });
