@@ -1,12 +1,8 @@
 <header class="main-header">
         <!-- Logo -->
-        <!-- <div class="navbar-logo">
-			<img src="{{ asset('images/logo.png') }}" alt="Logo">
-		</div> -->
+        <div class="logo" style="background-color: #343b43;"><img src="images/logo.png" alt="Logo" height="40px" style="margin-top: 4px; margin-bottom: 10px"></div>
         <!-- Header Navbar: style can be found in header.less -->
-			
         <nav class="navbar navbar-static-top" role="navigation">
-        <img src="images/logo.png" alt="Logo" height="40px" style="margin-top: 4px;">
           <!-- Sidebar toggle button-->
           <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
