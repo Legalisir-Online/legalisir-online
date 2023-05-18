@@ -86,3 +86,7 @@ Route::get('/admin', function () {
 Route::get('/admin-tabel', function () {
     return view('admin/admin-tabel');
 });
+
+Route::get('/legalisirpending', function () {
+    return view('admin/legalisirpending');
+});
