@@ -78,3 +78,11 @@ Route::get('/status-ajuan3', function () {
 Route::get('/preview-pengajuan', function () {
     return view('preview-pengajuan-legalisir');
 });
+
+Route::get('/admin', function () {
+    return view('admin/admin');
+});
+
+Route::get('/admin-tabel', function () {
+    return view('admin/admin-tabel');
+});
