@@ -118,3 +118,7 @@ Route::get('/kuesioner-admin', function () {
 Route::get('/berkas-pending', function () {
     return view('admin/berkas-pending');
 });
+
+Route::get('/edit-ajuan', function () {
+    return view('admin/edit-ajuan');
+});
