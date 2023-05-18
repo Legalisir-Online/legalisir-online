@@ -9,11 +9,11 @@
             <div class="row justify-content-center">
                 <div class="col-xs-12">
                     <h1>
-                        Validasi Berkas
+                        Daftar Ajuan Legalisir
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li>Validasi Berkas</li>
+                        <li>Daftar Ajuan Legalisir</li>
                         <li class="active">Selesai</li>
                     </ol>
                 </div>
