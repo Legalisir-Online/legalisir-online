@@ -42,8 +42,8 @@
                                 <td>M0520001</td>
                                 <td><span class="label label-success">Passed</span></td>
                                 <td>
-                                    <span><a><button class="btn btn-primary">Detail</button></a></span>
-                                    <span><a><button class="btn btn-success">Edit</button></a></span>
+                                    <span><a><button class="btn btn-primary"><i class="fa fa-edit"></i> Detail</button></a></span>
+                                    <span><a><button class="btn btn-success"><i class="fa fa-edit"></i> Edit</button></a></span>
                                 </td>
                                 <td><span class="label label-info">lunas</span></td>
                             </tr>
@@ -53,8 +53,8 @@
                                 <td>M0520001</td>
                                 <td><span class="label label-success">Passed</span></td>
                                 <td>
-                                    <span><a><button class="btn btn-primary">Detail</button></a></span>
-                                    <span><a><button class="btn btn-success">Edit</button></a></span>
+                                    <span><a><button class="btn btn-primary"><i class="fa fa-edit"></i> Detail</button></a></span>
+                                    <span><a><button class="btn btn-success"><i class="fa fa-edit"></i> Edit</button></a></span>
                                 </td>
                                 <td><span class="label label-info">lunas</span></td>
                             </tr>
@@ -64,8 +64,8 @@
                                 <td>M0520001</td>
                                 <td><span class="label label-success">Passed</span></td>
                                 <td>
-                                    <span><a><button class="btn btn-primary">Detail</button></a></span>
-                                    <span><a><button class="btn btn-success">Edit</button></a></span>
+                                    <span><a><button class="btn btn-primary"><i class="fa fa-edit"></i> Detail</button></a></span>
+                                    <span><a><button class="btn btn-success"><i class="fa fa-edit"></i> Edit</button></a></span>
                                 </td>
                                 <td><span class="label label-info">lunas</span></td>
                             </tr>
@@ -75,8 +75,8 @@
                                 <td>M0520001</td>
                                 <td><span class="label label-success">Passed</span></td>
                                 <td>
-                                    <span><a><button class="btn btn-primary">Detail</button></a></span>
-                                    <span><a><button class="btn btn-success">Edit</button></a></span>
+                                    <span><a><button class="btn btn-primary"><i class="fa fa-edit"></i> Detail</button></a></span>
+                                    <span><a><button class="btn btn-success"><i class="fa fa-edit"></i> Edit</button></a></span>
                                 </td>
                                 <td><span class="label label-info">lunas</span></td>
                             </tr>
