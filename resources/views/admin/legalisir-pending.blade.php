@@ -13,7 +13,8 @@
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li class="active">Daftar Ajuan Legalisir</li>
+                        <li>Daftar Ajuan Legalisir</li>
+                        <li class="active">Pending</li>
                     </ol>
                 </div>
             </div>

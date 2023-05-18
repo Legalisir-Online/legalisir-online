@@ -105,8 +105,8 @@ Route::get('/berkas-selesai', function () {
     return view('admin/berkas-selesai');
 });
 
-Route::get('/legalisirpending', function () {
-    return view('admin/legalisirpending');
+Route::get('/legalisir-pending', function () {
+    return view('admin/legalisir-pending');
 });
 
 Route::get('/legalisir-gagal', function () {
@@ -121,8 +121,12 @@ Route::get('/kuesioner-admin', function () {
     return view('admin/kuesioner');
 });
 
-Route::get('/validasi-pending', function () {
-    return view('admin/validasi-pending');
+Route::get('/berkas-pending', function () {
+    return view('admin/berkas-pending');
+});
+
+Route::get('/edit-ajuan', function () {
+    return view('admin/edit-ajuan');
 });
 
 Route::get('/tambah-kuesioner', function () {

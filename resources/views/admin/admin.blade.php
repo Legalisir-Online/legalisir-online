@@ -30,7 +30,7 @@
                 <div class="icon">
                   <i class="ion ion-folder"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/berkas-selesai" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-4 col-xs-6">
@@ -43,7 +43,7 @@
                 <div class="icon">
                   <i class="ion ion-folder"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/berkas-pending" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-4 col-xs-6">
@@ -56,7 +56,7 @@
                 <div class="icon">
                   <i class="ion ion-folder"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/berkas-tidak-valid" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
           </div><!-- /.row -->
@@ -75,7 +75,7 @@
                 <div class="icon">
                   <i class="ion ion-document-text"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/legalisir-selesai" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-4 col-xs-6">
@@ -88,7 +88,7 @@
                 <div class="icon">
                   <i class="ion ion-document-text"></i>
                 </div>
-                <a href="/legalisirpending" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/legalisir-pending" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-4 col-xs-6">
@@ -101,7 +101,7 @@
                 <div class="icon">
                   <i class="ion ion-document-text"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/legalisir-gagal" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
           </div><!-- /.row -->

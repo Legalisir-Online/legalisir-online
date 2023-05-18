@@ -62,6 +62,7 @@
                                 <td>
                                     <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
                                     <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                    <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
                             </tr>
                             <tr>
@@ -75,6 +76,7 @@
                                 <td>
                                     <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
                                     <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                    <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
                             </tr>
                             <tr>
@@ -88,6 +90,7 @@
                                 <td>
                                     <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
                                     <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                    <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
                             </tr>
                             <tr>
@@ -101,6 +104,7 @@
                                 <td>
                                     <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
                                     <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                    <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
                             </tr>
                         </table>
