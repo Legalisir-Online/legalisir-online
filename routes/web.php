@@ -95,6 +95,10 @@ Route::get('/legalisirpending', function () {
     return view('admin/legalisirpending');
 });
 
+Route::get('/legalisir-gagal', function () {
+    return view('admin/legalisir-gagal');
+});
+
 Route::get('/kuesioner-admin', function () {
     return view('admin/kuesioner');
 });
