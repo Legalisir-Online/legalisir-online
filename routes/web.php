@@ -107,8 +107,8 @@ Route::get('/legalisir-gagal', function () {
     return view('admin/legalisir-gagal');
 });
 
-Route::get('/validasi-tidak-valid', function () {
-    return view('admin/validasi-tidak-valid');
+Route::get('/berkas-tidak-valid', function () {
+    return view('admin/berkas-tidak-valid');
 });
 
 Route::get('/kuesioner-admin', function () {
