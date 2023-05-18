@@ -24,7 +24,7 @@
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>53 Berkas</h3>
+                  <h3>53</h3>
                   <p>TERVEIFIKASI</p>
                 </div>
                 <div class="icon">
@@ -37,7 +37,7 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3>44 Berkas</h3>
+                  <h3>44</h3>
                   <p>MENUNGGU DIVALIDASI</p>
                 </div>
                 <div class="icon">
@@ -50,7 +50,7 @@
               <!-- small box -->
               <div class="small-box bg-red">
                 <div class="inner">
-                  <h3>65 Berkas</h3>
+                  <h3>65</h3>
                   <p>TIDAK VALID</p>
                 </div>
                 <div class="icon">
@@ -69,7 +69,7 @@
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>53 Ajuan Legalisir</h3>
+                  <h3>53</h3>
                   <p>SELESAI</p>
                 </div>
                 <div class="icon">
@@ -82,7 +82,7 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3>44 Ajuan Legalisir</h3>
+                  <h3>44</h3>
                   <p>TERTUNDA</p>
                 </div>
                 <div class="icon">
@@ -95,7 +95,7 @@
               <!-- small box -->
               <div class="small-box bg-red">
                 <div class="inner">
-                  <h3>65 Ajuan Legalisir</h3>
+                  <h3>65</h3>
                   <p>GAGAL</p>
                 </div>
                 <div class="icon">
@@ -115,7 +115,6 @@
                 <!-- Tabs within a box -->
                 <ul class="nav nav-tabs pull-right">
                   <li class="active"><a href="#revenue-chart" data-toggle="tab">Area</a></li>
-                  <li><a href="#sales-chart" data-toggle="tab">Donut</a></li>
                   <li class="pull-left header"><i class="fa fa-inbox"></i> Grafik Ajuan Legalisir</li>
                 </ul>
                 <div class="tab-content no-padding">
