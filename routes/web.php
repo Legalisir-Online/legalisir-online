@@ -90,3 +90,7 @@ Route::get('/daftar-ajuan-legalisir', function () {
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get('/legalisirpending', function () {
+    return view('admin/legalisirpending');
+});
