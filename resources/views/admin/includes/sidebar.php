@@ -38,7 +38,7 @@
               </a>
             </li>
             <li class="treeview">
-              <a href="#">
+              <a href="/kuesioner-admin">
                 <i class="fa fa-edit"></i> <span>Kuisioner</span>
               </a>
             </li>

@@ -94,3 +94,7 @@ Route::get('/index', function () {
 Route::get('/legalisirpending', function () {
     return view('admin/legalisirpending');
 });
+
+Route::get('/kuesioner-admin', function () {
+    return view('admin/kuesioner');
+});
