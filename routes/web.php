@@ -83,6 +83,10 @@ Route::get('/admin', function () {
     return view('admin/admin');
 });
 
-Route::get('/admin-tabel', function () {
-    return view('admin/admin-tabel');
+Route::get('/daftar-ajuan-legalisir', function () {
+    return view('admin/daftar-ajuan-legalisir');
+});
+
+Route::get('/index', function () {
+    return view('index');
 });
