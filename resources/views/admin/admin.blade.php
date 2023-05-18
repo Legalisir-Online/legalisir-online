@@ -88,7 +88,7 @@
                 <div class="icon">
                   <i class="ion ion-document-text"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/legalisirpending" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-4 col-xs-6">
