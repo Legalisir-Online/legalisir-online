@@ -110,3 +110,7 @@ Route::get('/validasi-tidak-valid', function () {
 Route::get('/kuesioner-admin', function () {
     return view('admin/kuesioner');
 });
+
+Route::get('/validasi-pending', function () {
+    return view('admin/validasi-pending');
+});
