@@ -61,7 +61,7 @@
                                         <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
                                         <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
-                                    <td><span class="label label-info">lunas</span></td>
+                                    <td><span class="label label-info">Lunas</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">1</td>
@@ -72,7 +72,7 @@
                                         <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
                                         <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
-                                    <td><span class="label label-info">lunas</span></td>
+                                    <td><span class="label label-info">Lunas</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">1</td>
@@ -83,7 +83,7 @@
                                         <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
                                         <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
-                                    <td><span class="label label-info">lunas</span></td>
+                                    <td><span class="label label-default">Belum Lunas</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">1</td>
@@ -94,7 +94,7 @@
                                         <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
                                         <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
-                                    <td><span class="label label-info">lunas</span></td>
+                                    <td><span class="label label-default">Belum Lunas</span></td>
                                 </tr>
                             </table>
                         </div><!-- /.box-body -->

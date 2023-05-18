@@ -67,8 +67,9 @@
                   <li class="user-header">
                     <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
-                      Tetra - Admin Prodi Informatika
+                      Tetra 
                     </p>
+                    <small style="color: white;">Admin Prodi Informatika</small>
                   </li>
                   <!-- Menu Footer-->
                   <li class="user-footer">

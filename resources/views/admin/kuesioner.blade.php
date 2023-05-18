@@ -34,6 +34,7 @@
         </div>
     </div>
 
+    <section class="content"">
     <div style="margin-top: 10px" class="container">
         <div class="row justify-content-center">
             <div class="col-xs-12">
@@ -44,8 +45,8 @@
                                 <th style="background-color: black; color: white;">No</th>
                                 <th style="background-color: black; color: white;">Nama</th>
                                 <th style="background-color: black; color: white;">Periode</th>
-                                <th style="background-color: black; color: white;">Jumlah Pertanyaan</th>
-                                <th style="background-color: black; color: white;">Jumlah Responden</th>
+                                <th style="background-color: black; color: white;">Jumlah<br>Pertanyaan</th>
+                                <th style="background-color: black; color: white;">Jumlah<br>Responden</th>
                                 <th style="background-color: black; color: white;">Created At</th>
                                 <th style="background-color: black; color: white;">Status</th>
                                 <th style="background-color: black; color: white;">Keterangan</th>
