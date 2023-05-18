@@ -21,7 +21,7 @@
                         <div class="input-group">
                         <input type="text" name="table_search" class="form-control input-sm pull-right" style="width: 150px;" placeholder="Search"/>
                         <div class="input-group-btn">
-                            <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                            <button class="btn btn-sm btn-primary"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                     </div><!-- /.box-header -->
@@ -41,10 +41,10 @@
                             <td>M0520001</td>
                             <td><span class="label label-success">Passed</span></td>
                             <td>
-                                <span><a><button class="btn btn-default">Detail</button></a></span>
-                                <span><a><button class="btn btn-primary">Edit</button></a></span> 
+                                <span><a><button class="btn btn-primary">Detail</button></a></span>
+                                <span><a><button class="btn btn-success">Edit</button></a></span> 
                             </td>
-                            <td><span class="label label-primary">lunas</span></td>
+                            <td><span class="label label-info">lunas</span></td>
                         </tr>
                         <tr>
                             <td>1</td>
@@ -52,10 +52,10 @@
                             <td>M0520001</td>
                             <td><span class="label label-success">Passed</span></td>
                             <td>
-                                <span><a><button class="btn btn-default">Detail</button></a></span>
-                                <span><a><button class="btn btn-primary">Edit</button></a></span> 
+                                <span><a><button class="btn btn-primary">Detail</button></a></span>
+                                <span><a><button class="btn btn-success">Edit</button></a></span> 
                             </td>
-                            <td><span class="label label-primary">lunas</span></td>
+                            <td><span class="label label-info">lunas</span></td>
                         </tr>
                         <tr>
                             <td>1</td>
@@ -63,10 +63,10 @@
                             <td>M0520001</td>
                             <td><span class="label label-success">Passed</span></td>
                             <td>
-                                <span><a><button class="btn btn-default">Detail</button></a></span>
-                                <span><a><button class="btn btn-primary">Edit</button></a></span> 
+                                <span><a><button class="btn btn-primary">Detail</button></a></span>
+                                <span><a><button class="btn btn-success">Edit</button></a></span> 
                             </td>
-                            <td><span class="label label-primary">lunas</span></td>
+                            <td><span class="label label-info">lunas</span></td>
                         </tr>
                         <tr>
                             <td>1</td>
@@ -74,13 +74,22 @@
                             <td>M0520001</td>
                             <td><span class="label label-success">Passed</span></td>
                             <td>
-                                <span><a><button class="btn btn-default">Detail</button></a></span>
-                                <span><a><button class="btn btn-primary">Edit</button></a></span> 
+                                <span><a><button class="btn btn-primary">Detail</button></a></span>
+                                <span><a><button class="btn btn-success">Edit</button></a></span> 
                             </td>
-                            <td><span class="label label-primary">lunas</span></td>
+                            <td><span class="label label-info">lunas</span></td>
                         </tr>
                     </table>
                     </div><!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                        <ul class="pagination pagination-sm no-margin pull-right">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
                 </div><!-- /.box -->
                 </div>
             </div>
