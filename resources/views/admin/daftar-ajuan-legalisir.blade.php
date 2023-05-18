@@ -5,14 +5,21 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1>
-            Daftar Ajuan Legalisir
-        </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Daftar Ajuan Legalisir</li>
-        </ol>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-12">
+                    <h1>
+                        Daftar Ajuan Legalisir
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Daftar Ajuan Legalisir</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </section>
+
     <div style="margin-top: 10px" class="container">
         <div class="row justify-content-center">
             <div class="col-xs-12">
