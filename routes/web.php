@@ -24,11 +24,17 @@ Route::get('/login', function () {
 Route::get('/reset-password', function () {
     return view('reset-password');
 });
+
 Route::get('/forgot-password', function () {
     return view('forgot-password');
 });
+
 Route::get('/register', function () {
     return view('register');
+});
+
+Route::get('/biodata', function () {
+    return view('biodata');
 });
 
 Route::get('/upload-berkas', function () {
@@ -117,4 +123,8 @@ Route::get('/kuesioner-admin', function () {
 
 Route::get('/validasi-pending', function () {
     return view('admin/validasi-pending');
+});
+
+Route::get('/tambah-kuesioner', function () {
+    return view('admin/tambah-kuesioner');
 });
