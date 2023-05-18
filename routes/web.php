@@ -95,6 +95,10 @@ Route::get('/legalisir-selesai', function () {
     return view('admin/legalisir-selesai');
 });
 
+Route::get('/berkas-selesai', function () {
+    return view('admin/berkas-selesai');
+});
+
 Route::get('/legalisirpending', function () {
     return view('admin/legalisirpending');
 });
