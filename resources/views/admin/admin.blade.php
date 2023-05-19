@@ -6,18 +6,24 @@
 <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-          <h1>
-            Dashboard
-          </h1>
-          <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
-          </ol>
-        </section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-12">
+                    <h1>
+                        Dashboard
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Dashboard</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
         
-        <section class="content">
+        <section class="container">
           <!-- Small boxes (Stat box) -->
-          <section class="content1">
+          <section class="content">
           <h2>Validasi Berkas</h2>
           <div class="row">
             <div class="col-lg-4 col-xs-6">
@@ -62,7 +68,7 @@
           </div><!-- /.row -->
           </section>
 
-          <section class="content2">
+          <section class="content">
           <h2>Ajuan Legalisir</h2>
           <div class="row">
             <div class="col-lg-4 col-xs-6">
@@ -107,6 +113,7 @@
           </div><!-- /.row -->
           </section>
           <!-- Main row -->
+          <div class="content">
           <div class="row">
             <!-- Left col -->
             <section class="col-lg-12 connectedSortable">
@@ -126,6 +133,7 @@
 
             </section><!-- /.Left col -->
           </div><!-- /.row (main row) -->
+          </div>
 
         </section><!-- /.content -->
 

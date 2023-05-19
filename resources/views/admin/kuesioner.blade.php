@@ -34,6 +34,10 @@
         </div>
     </div>
 
+    <div class="container">
+        <span><a href="#"><button class="btn btn-default" style="background-color: black; color:white;"><i class="fa fa-plus"> Tambah</i></button></a></span>
+    </div>
+
     <section class="content"">
     <div style="margin-top: 10px" class="container">
         <div class="row justify-content-center">
@@ -60,8 +64,8 @@
                                 <td>24 - 05- 2023</td>
                                 <td><span class="label label-success">Aktif</span></td>
                                 <td>
-                                    <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                    <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
                             </tr>
@@ -74,8 +78,8 @@
                                 <td>24 - 05- 2023</td>
                                 <td><span class="label label-success">Aktif</span></td>
                                 <td>
-                                    <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                    <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
                             </tr>
@@ -88,8 +92,8 @@
                                 <td>24 - 05- 2023</td>
                                 <td><span class="label label-danger">Tidak Aktif</span></td>
                                 <td>
-                                    <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                    <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
                             </tr>
@@ -102,8 +106,8 @@
                                 <td>24 - 05- 2023</td>
                                 <td><span class="label label-danger">Tidak Aktif</span></td>
                                 <td>
-                                    <span><a><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                    <span><a><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
                             </tr>

@@ -10,14 +10,18 @@
     <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
-              <h1>
-                Daftar Ajuan Legalisir
-              </h1>
-              <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Daftar Ajuan Legalisir</li>
-              </ol>
-            </section>
+            <div class="row justify-content-center">
+                <div class="col-xs-12">
+                    <h1>
+                        Ajuan Legalisir
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Edit Ajuan</li>
+                    </ol>
+                </div>
+            </div>
+    </section>
 
             <div class="container" style=" width: 70%; height: 70vh; margin-top: 35px; background: #D9D9D9; border-radius: 26px;">
               <div class="title" style="color: #000000; margin-top: 35px; margin-left: 50px; font-size: 15px;">
