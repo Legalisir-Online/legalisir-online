@@ -54,21 +54,21 @@
         </div>
 
         <div class="form-control">
-          <label for="email" id="label-email">
-            Email
+          <label for="nim" id="label-nim">
+            NIM
           </label>
 
           <!-- Input Type Email-->
-          <input type="email" id="email" placeholder="Enter your email" />
+          <input type="text" id="nim" placeholder="NIM Tanpa Spasi contoh M0520001" />
         </div>
 
         <div class="form-control">
-          <label for="age" id="label-age">
-            Age
+          <label for="tempat-lahir" id="label-tempatlahir">
+            Tempat Lahir
           </label>
 
           <!-- Input Type Text -->
-          <input type="text" id="age" placeholder="Enter your age" />
+          <input type="text" id="age" placeholder="Tempat Lahir" />
         </div>
 
         <div class="form-control">

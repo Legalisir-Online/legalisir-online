@@ -11,7 +11,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 100%;
 	backdrop-filter: blur(10px);
 }
 
@@ -223,13 +223,17 @@ text-decoration: none;
 }
 
 .footer {
-	position: fixed;
-	padding: 10px 10px 0px 10px;
-	bottom: 0;
-	width: 100%;
+  background-color: #404852;
+	margin-top: 10px;
 	height: 30px;
-	background: #404852;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  /* min-height: 100vh; */
 }
 
 .footer-text {
