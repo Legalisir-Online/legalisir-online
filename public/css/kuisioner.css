@@ -13,6 +13,13 @@
 	background-repeat: no-repeat;
 } */
   
+body {
+	background-image: url('../images/ppl.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 .navbar {
 	background-color: #404852;
 	height: 70px;
@@ -68,7 +75,7 @@
 .container{
     width:90% ;
     height:550px;
-    background: #F5F5F5;
+    background: rgba(245,245,245,0.8);
     border-radius: 15px;
     border:solid 1px #000000;
     margin: auto; 
@@ -93,6 +100,7 @@
 	width: 80%;
 	height: auto;
 	margin: auto;
+	opacity: 1;
 }
 
 .content-pertanyaan{
