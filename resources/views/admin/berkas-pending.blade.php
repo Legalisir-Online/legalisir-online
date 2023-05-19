@@ -55,7 +55,7 @@
                                     <td>M0520001</td>
                                     <td><span class="label label-warning">Pending</span></td>
                                     <td>
-                                        <span><a><button class="btn btn-success"><i class="fa fa-edit">
+                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit">
                                                         Edit</i></button></a></span>
                                     </td>
                                 </tr>
@@ -65,7 +65,7 @@
                                     <td>M0520001</td>
                                     <td><span class="label label-warning">Pending</span></td>
                                     <td>
-                                        <span><a><button class="btn btn-success"><i class="fa fa-edit">
+                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit">
                                                         Edit</i></button></a></span>
                                     </td>
                                 </tr>
@@ -75,7 +75,7 @@
                                     <td>M0520001</td>
                                     <td><span class="label label-warning">Pending</span></td>
                                     <td>
-                                        <span><a><button class="btn btn-success"><i class="fa fa-edit">
+                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit">
                                                         Edit</i></button></a></span>
                                     </td>
                                 </tr>
@@ -85,7 +85,7 @@
                                     <td>M0520001</td>
                                     <td><span class="label label-warning">Pending</span></td>
                                     <td>
-                                        <span><a><button class="btn btn-success"><i class="fa fa-edit">
+                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit">
                                                         Edit</i></button></a></span>
                                     </td>
                                 </tr>

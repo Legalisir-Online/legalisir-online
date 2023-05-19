@@ -14,7 +14,7 @@
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                         <li>Validasi Berkas</li>
-                        <li class="active">Selesai</li>
+                        <li class="active">Terverifikasi</li>
                     </ol>
                 </div>
             </div>
