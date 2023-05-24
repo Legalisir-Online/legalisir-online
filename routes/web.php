@@ -132,3 +132,19 @@ Route::get('/edit-ajuan', function () {
 Route::get('/tambah-kuesioner', function () {
     return view('admin/tambah-kuesioner');
 });
+
+Route::get('/administrator', function () {
+    return view('administrator/administrator');
+});
+
+Route::get('/users', function () {
+    return view('administrator/users');
+});
+
+Route::get('/user-admin', function () {
+    return view('administrator/user-admin');
+});
+
+Route::get('/user-alumni', function () {
+    return view('administrator/user-alumni');
+});
