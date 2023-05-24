@@ -34,11 +34,11 @@ Route::get('/register', function () {
 });
 
 Route::get('/biodata', function () {
-    return view('biodata');
+    return view('alumni/biodata');
 });
 
 Route::get('/upload-berkas', function () {
-    return view('upload-berkas');
+    return view('alumni/upload-berkas');
 });
 
 Route::get('/akun-terverifikasi', function () {
@@ -46,43 +46,43 @@ Route::get('/akun-terverifikasi', function () {
 });
 
 Route::get('/homepage', function () {
-    return view('homepage');
+    return view('alumni/homepage');
 });
 
 Route::get('/form-legalisir', function () {
-    return view('form-legalisir');
+    return view('alumni/form-legalisir');
 });
 
 Route::get('/status-ajuan1', function () {
-    return view('status-ajuan1');
+    return view('alumni/status-ajuan1');
 });
 
 Route::get('/riwayat-ajuan', function () {
-    return view('riwayat-ajuan');
+    return view('alumni/riwayat-ajuan');
 });
 
 Route::get('/invoice', function () {
-    return view('invoice');
+    return view('alumni/invoice');
 });
 
 Route::get('/status-ajuan2', function () {
-    return view('status-ajuan2');
+    return view('alumni/status-ajuan2');
 });
 
 Route::get('/riwayat-invoice', function () {
-    return view('riwayat-invoice');
+    return view('alumni/riwayat-invoice');
 });
 
-Route::get('/kuisioner', function () {
-    return view('kuisioner');
+Route::get('/kuesioner', function () {
+    return view('alumni/kuesioner');
 });
 
 Route::get('/status-ajuan3', function () {
-    return view('status-ajuan3');
+    return view('alumni/status-ajuan3');
 });
 
 Route::get('/preview-pengajuan', function () {
-    return view('preview-pengajuan-legalisir');
+    return view('alumni/preview-pengajuan-legalisir');
 });
 
 Route::get('/admin', function () {
