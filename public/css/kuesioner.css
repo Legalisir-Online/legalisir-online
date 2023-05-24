@@ -14,10 +14,12 @@
 } */
   
 body {
-	background-image: url('../images/ppl.png');
+	background-image: url('../images/Boulevard.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	height: 100vh;
+	backdrop-filter: blur(10px);
 }
 
 .navbar {
@@ -57,7 +59,7 @@ body {
 	position: absolute;
 	right: 5%;
     bottom: 3%;
-} */
+} 
 
 .title h5{
     color: #000000;

@@ -12,7 +12,7 @@
                         Validasi Berkas
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
                         <li>Validasi Berkas</li>
                         <li class="active">Terverifikasi</li>
                     </ol>

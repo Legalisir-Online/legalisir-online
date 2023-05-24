@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
     <title>Sistem Legalisir Online</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/invoice.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/dropdown.css') }}">
@@ -28,7 +36,7 @@
 				<a href="#" class="nav-link dropdown-toggle">Profile</a>
 				<ul class="dropdown-menu">
 					<li><a href="/biodata">Biodata</a></li>
-					<li><a href="/kuisioner">Kuisioner</a></li>
+					<li><a href="/kuesioner">Kuesioner</a></li>
 					<li><a href="/login">Logout</a></li>
 				</ul>
 			</li>
@@ -96,9 +104,26 @@
                 </tr>
             </table> 
         </div> <hr>
+        <div class="payment">
+            <div class="payment-item">
+                <span>Dibayarkan kepada:
+            </div>
+            <div class="payment-item">
+                <span>Nama Rekening:</span>
+                <span>[Nama Rekening]</span>
+            </div>
+            <div class="payment-item">
+                <span>Nomor Rekening:</span>
+                <span>[Nomor Rekening]</span>
+            </div>
+        </div>
         <div class="buttons">
-            <a href="#"><button class="lunas-btn">Lunas</button></a>&nbsp;
-            <img src="{{ asset('images/icons/download2.png') }}" alt="cancel" width="30px" height="30px" >
+            <button class="bayar-btn">
+                <span>Tagihan harap dibayar dalam 24 jam !</span>
+                <span>Tanggal kadaluarsa :[Tenggat Waktu]</span>
+            </button>
+            <a href="#"><button class="batal-btn">Batalkan Legalisir <img src="{{ asset('images/icons/cancel.png') }}" alt="cancel" width="30px" height="30px" margin-right="5px";></button></a>
+            <a href="#"><button class="download-btn">Download Invoice &nbsp;<img src="{{ asset('images/icons/download.png') }}" alt="download" width="25px" height="25px" margin-right="5px";></button></a>
         </div>
     </div>
     <footer class="footer">
