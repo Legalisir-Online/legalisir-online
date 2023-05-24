@@ -12,7 +12,7 @@
                         Daftar Ajuan Legalisir
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
                         <li class="active">Daftar Ajuan Legalisir</li>
                     </ol>
                 </div>

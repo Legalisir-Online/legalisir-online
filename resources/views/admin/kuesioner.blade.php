@@ -35,7 +35,7 @@
     </div>
 
     <div class="container">
-        <span><a href="#"><button class="btn btn-default" style="background-color: black; color:white;"><i class="fa fa-plus"> Tambah</i></button></a></span>
+        <span><a href="#"><button class="btn btn" style="background-color: black; color:white;"><i class="fa fa-plus"> Tambah</i></button></a></span>
     </div>
 
     <section class="content"">
