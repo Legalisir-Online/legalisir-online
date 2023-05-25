@@ -28,14 +28,35 @@
     <div class="container" style="background: #D9D9D9; border-radius: 10px;">
         <div class="row justify-content-center">
             <div class="col-xs-12"> 
-                <div class="panel" style="width: 90%; margin-left: auto; margin-right: auto;">
-                    <div class="panel-heading">
-                        <i class="fa fa-list"></i> Name of Title
-                        <div id="summary-header" class="pull-right"></div>
-                    </div>
-                    <div class="panel-body">
-                        <iframe src="https://uns.ac.id/id/wp-content/uploads/kaldik-uns-2022-a.pdf" width="100%" height="600" allow="autoplay"></iframe>
-                    </div>
+                <div class="row" style="width: 90%; margin:auto;">
+                    <br>
+                    <table>
+                        <tr>
+                            <td style="padding-right: 25px;">Nama</td>
+                            <td>: [Nama Alumni]</td>
+                        </tr>
+                        <tr>
+                            <td>NIM </td>
+                            <td>: [NIM]</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat </td>
+                            <td>: [Alamat Mahasiswa]</td>
+                        </tr>
+                    </table>
+                    <br><p>Preview Berkas</p>
+                    <div class="panel">
+                        <div class="panel-heading" style="background-color: #323639; color:white">
+                            <i class="fa fa-list"></i> Name of Title
+                            <div id="summary-header" class="pull-right"></div>
+                        </div>
+                        <div class="panel-body" style="background-color: #525659;">
+                            <iframe src="{{ asset('images/contohberkas.png') }}" width="100%" height="600" allow="autoplay"></iframe>
+                        </div>
+                    </div><<br>
+                            <a href="#"><button class="btn btn" style="float: right; background-color: #5676E1; color:white">Valid</i></button></a></span>
+                            <a href="#"><button class="btn btn-danger" style="float: right; margin-right:10px">Tidak Valid</i></button></a></span><br>
+                     </div><br>
                 </div>
             </div>
         </div>
