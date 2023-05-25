@@ -23,7 +23,7 @@
   <div class="container">
     <div class="container-head">
       Isi Biodata
-    </div> <br>
+    </div> <br><br>
 
     <div class="content">
       <form id="form">
