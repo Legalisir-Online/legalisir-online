@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  {{-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> --}}
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -14,8 +16,7 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/biodata.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar-footer.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/dropdown.css') }}">
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 </head>
 
 
@@ -124,7 +125,7 @@
 
     <ul class="pagination">
       <li class="disabled"><a href="#">«</a></li>
-      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li class="active"><a href="#">1 <span class="sr-only"></span></a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
