@@ -152,3 +152,7 @@ Route::get('/user-admin', function () {
 Route::get('/user-alumni', function () {
     return view('administrator/user-alumni');
 });
+
+Route::get('/daftar-berkas', function () {
+    return view('admin/daftar-berkas');
+});

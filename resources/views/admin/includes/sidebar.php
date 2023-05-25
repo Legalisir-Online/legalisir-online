@@ -32,9 +32,14 @@
               </a>
             </li>
             <li class="treeview">
+              <a href="/daftar-berkas">
+                <i class="fa fa-folder"></i> <span>Berkas</span>
+              </a>
+            </li>
+            <li class="treeview">
               <a href="/daftar-ajuan-legalisir">
                 <i class="fa fa-files-o"></i>
-                <span>Daftar Ajuan Legalisir</span>
+                <span>Ajuan Legalisir</span>
               </a>
             </li>
             <li class="treeview">
