@@ -14,12 +14,14 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/biodata.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar-footer.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/dropdown.css') }}">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 
 
 
 <body>
-@include('alumni.includes.navbar')
+  @include('alumni.includes.navbar')
   <div class="container">
     <div class="container-head">
       Isi Biodata
@@ -119,6 +121,16 @@
       <li><a href="#" aria-label="Page 5">5</a></li>
       <li><a href="#" aria-label="Next page">» <span class="show-for-sr">Next page</span></a></li>
     </ul> -->
+
+    <ul class="pagination">
+      <li class="disabled"><a href="#">«</a></li>
+      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">»</a></li>
+    </ul>
   </div>
 
   <!-- <footer class="footer">
