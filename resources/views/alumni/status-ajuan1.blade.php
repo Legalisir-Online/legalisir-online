@@ -67,7 +67,7 @@
             </div> <!-- End status -->
          </div> <!-- End box1 -->
 
-         <div class="box2">
+         <div id="box2">
             <div class="icon">
                   <img src="{{ asset('images/ajuan.png') }}" alt="Alumni" width="280px">
             </div> 

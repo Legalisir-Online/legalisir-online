@@ -131,9 +131,15 @@ input[type=checkbox] {
 .icon {
 	height: auto;
 	width: auto;
-	position: relative;
-	right: 5%;
-    bottom: 3%;
+	margin-left: 100%;
+    margin-top: 90%;
 }
 
+.box-wrapper {
+    padding: 10px;
+    /* flex-grow: 1; */
+    display: flex;
+    /* flex-direction: row; */
+    /* border: solid 1px green */
+}
   

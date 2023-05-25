@@ -30,16 +30,6 @@
     margin-bottom: 25px; 
 }
 
-.container-1{
-    width:200px;
-    height:50px;
-    background: #fff;
-    border-radius: 15px;
-    border:solid 1px #8B7B95;
-    margin-top: 5px;
-    margin-bottom: 25px; 
-}
-
 .col{
     width: 390px;
     height: 40;
@@ -137,7 +127,14 @@
 .icon {
 	height: auto;
 	width: auto;
-	position: relative;
-	right: 5%;
-    bottom: 3%;
+	margin-left: 100%;
+    margin-top: 90%;
+}
+
+.box-wrapper {
+    padding: 10px;
+    /* flex-grow: 1; */
+    display: flex;
+    /* flex-direction: row; */
+    /* border: solid 1px green */
 }
