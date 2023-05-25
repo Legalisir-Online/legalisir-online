@@ -7,96 +7,110 @@
 </head>
 
 <body>
-  
-    <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <section class="content-header">
-            <div class="row justify-content-center">
-                <div class="col-xs-12">
-                    <h1>
-                        Ajuan Legalisir
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li class="active">Edit Ajuan</li>
-                    </ol>
-                </div>
-            </div>
+  <div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="row justify-content-center">
+        <div class="col-xs-12">
+          <h1>Ajuan Legalisir</h1>
+          <ol class="breadcrumb">
+            <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Edit Ajuan</li>
+          </ol>
+        </div>
+      </div>
     </section>
 
-            <div class="container" style=" width: 70%; height: 70vh; margin-top: 35px; background: #D9D9D9; border-radius: 26px;">
-              <div class="identity" style="margin-top: 20px; margin-left: 50px">
-                <h4>Nama : Ardhyla Dwi Septyani Putri <br>
-                  Nim : M0520014 <br>
-                  Kelas : A 
-                </h4>
-                </div>
-              <div class="title" style="color: #000000; margin-top: 35px; margin-left: 50px; font-size: 15px;">
-                  <h5>Status pengajuan berkas ID : NBH-29298</h5>
-              </div>
+  <div class="container" style=" width: 70%; height: 80vh; margin-top: 10px; margin-bottom: 10px; background: #D9D9D9; border-radius: 26px;">
+    <div class="info" style="margin-top: 10px; margin-left: 60px; padding: 10px; font-size: 15px">
+        <table style="">
+            <tr>
+                <td style="padding-right:30px;">Nama </td>
+                <td>: Budi Santoso Sejati </td>
+            </tr>
+            <tr>
+                <td>NIM </td>
+                <td>: M0520000090</td>
+            </tr>
+            <tr>
+                <td>Jenis berkas </td>
+                <td>: Ijazah</td>
+            </tr>
+        </table>
+    </div>
+   
+    <div class="title" style="color: #000000; margin-top: 5px; margin-left: 65px; font-size: 15px;">
+        <h5> <b>Status pengajuan berkas ID : NBH-29298</b> </h5>
+    </div>
 
-                <div class="status">
-                    <div class="container" style="width:400px; height:40px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 50px; margin-top: 5px; margin-bottom: 25px; ">
-                      <div class="col" style="width: 250px; height: 30; background: #fff; border-radius: 15px; margin-top: 7px; float: left;">
-                        <p>Menerima berkas</p>
-                      </div>
-                      <form action="action_page.php">
-                          <label for="pberkas">Pilih berkas yang di legalisir :</label> <br>
-                            <select id="pberkas" name="pilihberkas" >
-                                <option value="ijazah">Ijazah</option>
-                                <option value="transkrip nilai">Transkrip nilai</option>
-                                <option value="ijazah & transkrip nilai">Ijazah & Transkrip nilai</option>
-                            </select>
-                      </form>
-                      <!-- <div class="col1" style="width: 90px; height: 27px; background: #DEF2EC; border-radius: 10px; margin-top: 5px; float: right; border:solid 1px #68B984;">
-                          <img src="{{ asset('images/icons/check.png') }}" alt="check" style="margin-left: 5px">
-                          <b><p style=" position: relative; text-align: center; color: #68B984; font-size: 13px; vertical-align: middle; display: flex; /* left: 2%; */;top: 15%; right: 13%; float: right;">
-                                Passed</p></b>
-                      </div> -->
-                    </div>
+    <div class="status">
+        <div class="container" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 65px; margin-top: 5px; margin-bottom: 25px; ">
+          <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; margin-top: 13px; float: left;">
+            <p>Menerima berkas</p>
+          </div>
+          <div class="btn-group" style=" widht: 50px; height: 30px; top: 7px; left: 20px; border-radius: 15px">
+            <select id="color" name="color" class="form-control">
+              <option value="green">Passed</option>
+              <option value="yellow">Pending</option>
+              <option value="red">Failed</option>
+            </select>
+          </div>
+        </div>
 
-                    <div class="container" style="width:400px; height:40px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95; margin-left: 50px; margin-top: 5px; margin-bottom: 25px; ">
-                      <div class="col" style="width: 250px; height: 30; background: #fff;border-radius: 15px;margin-top: 7px;float: left;">
-                        <p>Review berkas</p>
-                      </div>
-                        <div class="col1" style="width: 90px;height: 27px; background: #DEF2EC; border-radius: 10px; margin-top: 5px;float: right; border:solid 1px #68B984;">
-                          <img src="{{ asset('images/icons/check.png') }}" alt="check" style="margin-left: 5px">
-                          <b><p style=" position: relative; text-align: center; color: #68B984; font-size: 13px;vertical-align: middle;display: flex; /* left: 2%; */; top: 15%; right: 13%; float: right;">
-                                Passed</p></b>
-                      </div>
-                    </div>
+        <div class="container" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 65px; margin-top: 5px; margin-bottom: 25px; ">
+          <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; margin-top: 13px; float: left;">
+            <p>Review berkas</p>
+          </div>
+          <div class="btn-group" style=" widht: 50px; height: 30px; top: 7px; left: 20px; border-radius: 15px">
+            <select id="color" name="color" class="form-control">
+              <option value="green">Passed</option>
+              <option value="yellow">Pending</option>
+              <option value="red">Failed</option>
+            </select>
+          </div>
+        </div>
 
-                    <div class="container" style="width:400px;height:40px; background: #fff; border-radius: 15px;border:solid 1px #8B7B95;margin-left: 50px; margin-top: 5px; margin-bottom: 25px; ">
-                      <div class="col" style="width: 250px; height: 30; background: #fff; border-radius: 15px;margin-top: 7px; float: left;">
-                        <p>Legalisir berkas</p></div>
-                      <div class="col3" style="width: 90px;height: 27px;background: #fcfdb6; border-radius: 10px; margin-top: 5px; float: right; border:solid 1px #FFD966;">
-                          <img src="{{ asset('images/icons/pending.png') }}" alt="pending" style="margin-left: 5px">
-                          <b><p style=" position: relative;text-align: center;color: #FFD966;font-size: 13px;vertical-align: middle;display: flex; /* left: 2%; */; top: 15%; right: 5%;float: right;">
-                          Pending</p></b>
-                      </div>
-                    </div>
+        <div class="container" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 65px; margin-top: 5px; margin-bottom: 25px; ">
+          <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; margin-top: 13px; float: left;">
+            <p>Legalisir berkas</p>
+          </div>
+          <div class="btn-group" style=" widht: 50px; height: 30px; top: 7px; left: 20px; border-radius: 15px">
+            <select id="color" name="color" class="form-control">
+              <option value="green">Passed</option>
+              <option value="yellow">Pending</option>
+              <option value="red">Failed</option>
+            </select>
+          </div>
+        </div>
 
-                    <div class="container" style="width:400px;height:40px;background: #fff;border-radius: 15px;border:solid 1px #8B7B95; margin-left: 50px;margin-top: 5px;margin-bottom: 25px; ">
-                      <div class="col" style="width: 250px; height: 30;background: #fff; border-radius: 15px;margin-top: 7px; float: left;">
-                        <p>Kirim berkas</p></div>
-                      <div class="col3" style="width: 90px; height: 27px;background: #fcfdb6;border-radius: 10px; margin-top: 5px;float: right;border:solid 1px #FFD966;">
-                          <img src="{{ asset('images/icons/pending.png') }}" alt="pending" style="margin-left: 5px">
-                          <b><p style=" position: relative; text-align: center;color: #FFD966; font-size: 13px;vertical-align: middle;display: flex; /* left: 2%; */ top: 15%; right: 5%; float: right;">
-                          Pending</p></b>
-                      </div>
-                    </div>
+        <div class="container" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 65px; margin-top: 5px; margin-bottom: 25px; ">
+          <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; margin-top: 13px; float: left;">
+            <p>Kirim berkas</p>
+          </div>
+          <div class="btn-group" style=" widht: 50px; height: 30px; top: 7px; left: 20px; border-radius: 15px">
+            <select id="color" name="color" class="form-control">
+              <option value="green">Passed</option>
+              <option value="yellow">Pending</option>
+              <option value="red">Failed</option>
+            </select>
+          </div>
+        </div>
 
-                    <div class="container" style="width:400px; height:40px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95; margin-left: 50px; margin-top: 5px;margin-bottom: 25px; ">
-                      <div class="col" style="width: 250px; height: 30; background: #fff; border-radius: 15px; margin-top: 7px; float: left;">
-                        <p>Berkas diterima alumni</p></div>
-                      <div class="col3" style="width: 90px;height: 27px; background: #fcfdb6; border-radius: 10px; margin-top: 5px;float: right;border:solid 1px #FFD966;">
-                          <img src="{{ asset('images/icons/pending.png') }}" alt="pending" style="margin-left: 5px">
-                          <b><p style=" position: relative;text-align: center;color: #FFD966;font-size: 13px;vertical-align: middle; display: flex;/* left: 2%; */;top: 15%;right: 5%; float: right;">
-                          Pending</p></b>
-                      </div>
-                    </div>    
-                </div>
-                    </div>
+        <div class="container" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 65px; margin-top: 5px; margin-bottom: 25px; ">
+          <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; margin-top: 13px; float: left;">
+            <p>Berkar diterima alumni</p>
+          </div>
+          <div class="btn-group" style=" widht: 50px; height: 30px; top: 7px; left: 20px; border-radius: 15px">
+            <select id="color" name="color" class="form-control">
+              <option value="green">Passed</option>
+              <option value="yellow">Pending</option>
+              <option value="red">Failed</option>
+            </select>
+          </div>
+        </div>    
+    </div>
+
+  </div>
 
     </div>
 </body>
