@@ -9,12 +9,11 @@
             <div class="row justify-content-center">
                 <div class="col-xs-12">
                     <h1>
-                        Validasi Berkas
+                        Daftar Berkas
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li>Validasi Berkas</li>
-                        <li class="active">Pending</li>
+                        <li class="active">Daftar Berkas</li>
                     </ol>
                 </div>
             </div>
@@ -35,6 +34,7 @@
         </div>
     </div>
 
+
     <section class="content">
         <div style="margin-top: 10px" class="container">
             <div class="row justify-content-center">
@@ -43,50 +43,52 @@
                         <div class="box-body table-responsive no-padding">
                             <table class="table table-hover">
                                 <tr>
-                                    <th style="background-color: black; color: white; width: 10px;">No</th>
-                                    <th style="background-color: black; color: white;">Nama</th>
-                                    <th style="background-color: black; color: white;">NIM</th>
-                                    <th style="background-color: black; color: white;">Status</th>
-                                    <th style="background-color: black; color: white;">Keterangan</th>
+                                    <th style="background-color: black; color: white; width: 10%; padding-left: 25px;">
+                                        No
+                                    </th>
+                                    <th style="background-color: black; color: white; width: 25%;">Nama</th>
+                                    <th style="background-color: black; color: white; width: 15%;">NIM</th>
+                                    <th style="background-color: black; color: white; width: 15%;">Status</th>
+                                    <th style="background-color: black; color: white; width: 20%;">Keterangan</th>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
+                                    <td style="padding-left: 25px;">1</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-warning">Menunggu Divalidasi</span></td>
+                                    <td><span class="label label-warning">Menunggu validasi</span></td>
                                     <td>
-                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
+                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
+                                    <td style="padding-left: 25px;">1</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-warning">Menunggu Divalidasi</span></td>
+                                    <td><span class="label label-success">Valid</span></td>
                                     <td>
-                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
+                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
+                                    <td style="padding-left: 25px;">1</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-warning">Menunggu Divalidasi</span></td>
+                                    <td><span class="label label-success">valid</span></td>
                                     <td>
-                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
+                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>4</td>
+                                    <td style="padding-left: 25px;">1</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-warning">Menunggu Divalidasi</span></td>
+                                    <td><span class="label label-success">valid</span></td>
                                     <td>
-                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
+                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
                                 </tr>
                             </table>
@@ -105,7 +107,7 @@
                     </div><!-- /.box -->
                 </div>
             </div>
+        </div>
     </section>
 </div>
-
 @include('admin.includes.footer')

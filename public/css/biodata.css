@@ -11,7 +11,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 100%;
 	backdrop-filter: blur(10px);
 }
 
@@ -190,4 +190,25 @@ text-decoration: none;
 
 .visible-xs {
 	display: none!important;
+}
+
+.footer {
+  background-color: #404852;
+	margin-top: 10px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  /* min-height: 100vh; */
+}
+
+.footer-text {
+color: #fff;
+text-decoration: none;
+font-size: 18px;
+font-weight: 500;
 }

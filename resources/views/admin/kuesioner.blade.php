@@ -35,8 +35,9 @@
     </div>
 
     <div class="container">
+    <div class="col-xs-12">
         <span><a href="#"><button class="btn btn" style="background-color: black; color:white;"><i class="fa fa-plus"> Tambah</i></button></a></span>
-    </div>
+    </div></div>
 
     <section class="content"">
     <div style="margin-top: 10px" class="container">
@@ -46,7 +47,7 @@
                     <div class="box-body table-responsive no-padding">
                         <table class="table table-hover">
                             <tr>
-                                <th style="background-color: black; color: white;">No</th>
+                                <th style="background-color: black; color: white; width: 10px; padding-left: 25px;">No</th>
                                 <th style="background-color: black; color: white;">Nama</th>
                                 <th style="background-color: black; color: white;">Periode</th>
                                 <th style="background-color: black; color: white;">Jumlah<br>Pertanyaan</th>
