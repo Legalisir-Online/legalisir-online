@@ -59,7 +59,7 @@
                                     <td><span class="label label-success">Passed</span></td>
                                     <td>
                                         <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                        <span><a href="/edit-ajuan"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
                                     <td><span class="label label-info">Lunas</span></td>
                                 </tr>
@@ -70,7 +70,7 @@
                                     <td><span class="label label-success">Passed</span></td>
                                     <td>
                                         <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                        <span><a href="/edit-ajuan"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
                                     <td><span class="label label-info">Lunas</span></td>
                                 </tr>
@@ -81,7 +81,7 @@
                                     <td><span class="label label-success">Passed</span></td>
                                     <td>
                                         <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                        <span><a href="/edit-ajuan"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
                                     <td><span class="label label-default">Belum Lunas</span></td>
                                 </tr>
@@ -92,7 +92,7 @@
                                     <td><span class="label label-success">Passed</span></td>
                                     <td>
                                         <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                        <span><a href="/edit-ajuan"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
                                     <td><span class="label label-default">Belum Lunas</span></td>
                                 </tr>
