@@ -20,7 +20,7 @@
 		</div>
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<a href="#" class="nav-link">Flow</a>
+				<a href="/flow" class="nav-link">Flow</a>
 			</li>
 			<li class="nav-item">
 				<a href="#" class="nav-link">About</a>

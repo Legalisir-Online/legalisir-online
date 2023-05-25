@@ -82,7 +82,7 @@ Route::get('/status-ajuan3', function () {
 });
 
 Route::get('/flow', function () {
-    return view('alumni/flow');
+    return view('flow');
 });
 
 Route::get('/preview-pengajuan', function () {
