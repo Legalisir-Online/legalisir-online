@@ -14,37 +14,6 @@ body {
     display: grid; */
 }  
 
-.navbar {
-	background-color: #404852;
-	height: 70px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 50px;
-}
-
-.navbar-logo img {
-	height: 50px;
-}
-
-.navbar-nav {
-	display: flex;
-	list-style: none;
-	margin: 0;
-    white-space: nowrap;
-}
-
-.nav-item {
-	margin: 0 10px;
-}
-
-.nav-link {
-	color: #fff;
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: 500;
-}
-
 .container {
     flex-grow: 1;
     position: relative;
@@ -161,25 +130,6 @@ button.bayar-btn span:last-child {
     width: 170px;
     height: 50px;
     margin: 70px 10px;
-}
-
-.footer {
-    flex-shrink: 0;
-    background-color: #404852;
-	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer-text {
-	color: #fff;
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: 500;
 }
 
 a{

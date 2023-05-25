@@ -5,43 +5,12 @@
 }
 
 body {
-  background-color: #d9d9d9;
+  background-color: rgba(217, 217, 217, 0.7);
   background-image: url('../images/ppl.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
-}
-
-.navbar {
-  background-color: #404852;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
-}
-
-.navbar-logo img {
-  height: 50px;
-}
-
-.navbar-nav {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.nav-item {
-  margin: 0 10px;
-}
-
-.nav-link {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
 }
 
 .homepage {
@@ -112,19 +81,4 @@ body {
 a {
   color: #fff;
   text-decoration: none;
-}
-
-.footer {
-  background-color: #404852;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-text {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
 }
