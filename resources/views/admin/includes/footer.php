@@ -43,5 +43,21 @@
 
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js" type="text/javascript"></script>
+    <script>
+      function showAnswerOptions() {
+      var questionType = document.getElementById("questionType").value;
+      var answerOptions = document.getElementById("answerOptions");
+      var answerEssay = document.getElementById("answerEssay");
+
+      if (questionType === "pilihan") {
+        answerOptions.style.display = "block";
+        answerEssay.style.display = "none";
+      } else if (questionType === "essai") {
+        answerOptions.style.display = "none";
+        answerEssay.style.display = "block";
+      }
+    }
+    </script>
+    
   </body>
 </html>

@@ -65,7 +65,7 @@
                                 <td>24 - 05- 2023</td>
                                 <td><span class="label label-success">Aktif</span></td>
                                 <td>
-                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-comments"> Respon</i></button></a></span>
                                     <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
@@ -79,7 +79,7 @@
                                 <td>24 - 05- 2023</td>
                                 <td><span class="label label-success">Aktif</span></td>
                                 <td>
-                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-comments"> Respon</i></button></a></span>
                                     <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
@@ -93,7 +93,7 @@
                                 <td>24 - 05- 2023</td>
                                 <td><span class="label label-danger">Tidak Aktif</span></td>
                                 <td>
-                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-comments"> Respon</i></button></a></span>
                                     <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>
@@ -107,7 +107,7 @@
                                 <td>24 - 05- 2023</td>
                                 <td><span class="label label-danger">Tidak Aktif</span></td>
                                 <td>
-                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                    <span><a href="#"><button class="btn btn-primary"><i class="fa fa-comments"> Respon</i></button></a></span>
                                     <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     <span><a href="#"><i class="fa fa-eye" style="font-size: 24px; color:black;"></i></a></span>
                                 </td>

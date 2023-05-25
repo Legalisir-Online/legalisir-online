@@ -15,12 +15,12 @@
             <div class="row justify-content-center">
                 <div class="col-xs-12">
                     <h1>
-                        Tambah Kuesioner
+                        Edit Kuesioner
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
                         <li>Kuesioner</li>
-                        <li class="active">Tambah</li>
+                        <li class="active">Edit</li>
                     </ol>
                 </div>
             </div>
@@ -35,14 +35,14 @@
                         <form class="form-horizontal" style="margin-top: 30px;">
                             <div class="form-group">
                                 <label for="inputKuesioner" class="col-xs-2 control-label">Kuesioner</label>
-                                <div class="col-xs-8">
-                                    <input type="kuesioner" class="form-control" id="inputKuesioner">
+                                <div class="col-xs-8" style="margin-top: 7px">
+                                    Fasilitas Prodi
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="inputPeriode" class="col-xs-2 control-label">Periode</label>
-                                <div class="col-xs-8">
-                                    <input type="periode" class="form-control" id="inputPeriode">
+                                <div class="col-xs-8" style="margin-top: 7px">
+                                    2022-2023
                                 </div>
                             </div>
                             <div class="form-group">
@@ -58,8 +58,8 @@
                                 <label for="inputPeriode" class="col-xs-2 control-label">Pertanyaan</label>
                                 <div class="col-xs-8">
                                     <button type="submit" class="btn"
-                                        style="background-color: #404852; color:whitesmoke">Buat <i class="fa fa-plus"
-                                            aria-hidden="true" style="margin-left: 50px"></i></button>
+                                        style="background-color: #404852; color:whitesmoke; padding-right: 70px">Edit
+                                    </button>
                                 </div>
                             </div>
                             <div class="form-group">

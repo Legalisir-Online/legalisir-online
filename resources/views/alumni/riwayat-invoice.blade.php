@@ -35,7 +35,7 @@
                 </tr>
                 <tr>
                     <td>Alamat </td>
-                    <td>: [Alamat Mahasiswa]</td>
+                    <td>: [Alamat]</td>
                 </tr>
             </table>
         </div> <hr>
