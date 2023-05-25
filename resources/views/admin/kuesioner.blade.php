@@ -36,7 +36,7 @@
 
     <div class="container">
     <div class="col-xs-12">
-        <span><a href="#"><button class="btn btn" style="background-color: black; color:white;"><i class="fa fa-plus"> Tambah</i></button></a></span>
+        <span><a href="/tambah-kuesioner"><button class="btn btn" style="background-color: black; color:white;"><i class="fa fa-plus"> Tambah</i></button></a></span>
     </div></div>
 
     <section class="content"">

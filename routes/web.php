@@ -160,3 +160,7 @@ Route::get('/user-alumni', function () {
 Route::get('/daftar-berkas', function () {
     return view('admin/daftar-berkas');
 });
+
+Route::get('/tambah-pertanyaan', function () {
+    return view('admin/tambah-pertanyaan');
+});
