@@ -43,8 +43,9 @@
     </div>
 
     <div class="container">
+    <div class="col-xs-12">
         <span><a href="#"><button id="addUserButton" class="btn btn" style="background-color: black; color:white;"><i class="fa fa-plus"> Tambah</i></button></a></span>
-    </div>
+    </div></div>
 
     <!-- modal tambah user -->
     <div id="addUserModal" class="modal">
