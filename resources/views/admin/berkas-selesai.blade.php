@@ -14,7 +14,7 @@
                     <ol class="breadcrumb">
                         <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
                         <li>Validasi Berkas</li>
-                        <li class="active">Terverifikasi</li>
+                        <li class="active">Valid</li>
                     </ol>
                 </div>
             </div>
@@ -53,31 +53,31 @@
                                     <td style="padding-left: 25px;">1</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-success">Passed</span></td>
+                                    <td><span class="label label-success">Valid</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">2</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-success">Passed</span></td>
+                                    <td><span class="label label-success">Valid</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">3</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-success">Passed</span></td>
+                                    <td><span class="label label-success">Valid</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">4</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-success">Passed</span></td>
+                                    <td><span class="label label-success">Valid</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">5</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-success">Passed</span></td>
+                                    <td><span class="label label-success">Valid</span></td>
                                 </tr>
                             </table>
                         </div><!-- /.box-body -->

@@ -31,7 +31,7 @@
               <div class="small-box bg-green">
                 <div class="inner">
                   <h3>53</h3>
-                  <p>TERVEIFIKASI</p>
+                  <p>VALID</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-folder"></i>

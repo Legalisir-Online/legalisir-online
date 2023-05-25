@@ -53,31 +53,31 @@
                                     <td style="padding-left: 25px;">1</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-danger">Failed</span></td>
+                                    <td><span class="label label-danger">Tidak Valid</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">2</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-danger">Failed</span></td>
+                                    <td><span class="label label-danger">Tidak Valid</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">3</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-danger">Failed</span></td>
+                                    <td><span class="label label-danger">Tidak Valid</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">4</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-danger">Failed</span></td>
+                                    <td><span class="label label-danger">Tidak Valid</span></td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">5</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-danger">Failed</span></td>
+                                    <td><span class="label label-danger">Tidak Valid</span></td>
                                 </tr>
                             </table>
                         </div><!-- /.box-body -->
