@@ -74,6 +74,7 @@
         <input type="text" class="content-essay" placeholder="Jawaban">
       </div>
     </div>
+</div>
 </body>
 
 @include('alumni.includes.footer')

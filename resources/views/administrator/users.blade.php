@@ -72,7 +72,6 @@
                 <div class="form-group">
                     <label for="role">Role</label>
                     <select class="form-control" id="role" required>
-                    <option value="admin">Superadmin</option>
                     <option value="user">Admin</option>
                     <option value="admin">Alumni</option>
                     </select>
@@ -113,7 +112,6 @@
                 <div class="form-group">
                     <label for="role">Role</label>
                     <select class="form-control" id="role" required>
-                    <option value="admin">Superadmin</option>
                     <option value="user">Admin</option>
                     <option value="admin">Alumni</option>
                     </select>
