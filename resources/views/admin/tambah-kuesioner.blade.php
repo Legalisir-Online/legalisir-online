@@ -2,6 +2,12 @@
 @include('admin.includes.topbar')
 @include('admin.includes.sidebar')
 
+<style>
+    .left-align {
+        text-align: left;
+    }
+</style>
+
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -43,16 +49,13 @@
                                 <label for="inputStatus" class="col-xs-2 control-label">Status</label>
                                 <div class="col-xs-2">
                                     <select class="form-control ">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>Aktif</option>
+                                        <option>Tidak Aktif</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputPeriode" class="col-xs-2 control-label">Periode</label>
+                                <label for="inputPeriode" class="col-xs-2 control-label">Pertanyaan</label>
                                 <div class="col-xs-8">
                                     <button type="submit" class="btn"
                                         style="background-color: #404852; color:whitesmoke">Buat <i class="fa fa-plus"
