@@ -7,6 +7,7 @@
 </head>
 
 <body>
+  
     <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
@@ -24,6 +25,12 @@
     </section>
 
             <div class="container" style=" width: 70%; height: 70vh; margin-top: 35px; background: #D9D9D9; border-radius: 26px;">
+              <div class="identity" style="margin-top: 20px; margin-left: 50px">
+                <h4>Nama : Ardhyla Dwi Septyani Putri <br>
+                  Nim : M0520014 <br>
+                  Kelas : A 
+                </h4>
+                </div>
               <div class="title" style="color: #000000; margin-top: 35px; margin-left: 50px; font-size: 15px;">
                   <h5>Status pengajuan berkas ID : NBH-29298</h5>
               </div>
