@@ -81,6 +81,10 @@ Route::get('/status-ajuan3', function () {
     return view('alumni/status-ajuan3');
 });
 
+Route::get('/flow', function () {
+    return view('alumni/flow');
+});
+
 Route::get('/preview-pengajuan', function () {
     return view('alumni/preview-pengajuan-legalisir');
 });
