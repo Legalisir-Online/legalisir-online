@@ -14,50 +14,21 @@
 } */
   
 body {
-	background-image: url('../images/ppl.png');
+	background-image: url('../images/Boulevard.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	height: 100vh;
+	backdrop-filter: blur(10px);
 }
 
-.navbar {
-	background-color: #404852;
-	height: 70px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 50px;
-}
-
-.navbar-logo img {
-	height: 50px;
-}
-
-.navbar-nav {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	white-space: nowrap;
-}
-
-.nav-item {
-	margin: 0 10px;
-}
-
-.nav-link {
-	color: #fff;
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: 500;
-}
-
-.icon {
+/* .icon {
 	height: auto;
 	width: auto;
-	position: absolute;
+	position: relative;
 	right: 5%;
     bottom: 3%;
-} */
+}  */
 
 .title h5{
     color: #000000;
@@ -73,7 +44,8 @@ body {
 }
 
 .container{
-    width:90% ;
+	position: relative;
+    width:90%;
     height:550px;
     background: rgba(245,245,245,0.8);
     border-radius: 15px;
@@ -100,7 +72,6 @@ body {
 	width: 80%;
 	height: auto;
 	margin: auto;
-	opacity: 1;
 }
 
 .content-pertanyaan{
@@ -129,23 +100,6 @@ body {
 	margin: auto;
 }
 
-.footer {
-    position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    background: #404852;
-    text-align: center;
-}
-
-.footer-text {
-	color: #fff;
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: 500;
-}
-
 label {
 	display: block;
   }
@@ -155,7 +109,7 @@ label {
 	display: block;
   }
   
-  ul li {
+  .content-essay ul li {
 	float: left;
 	display: block;
 	width: 20%;
