@@ -133,6 +133,10 @@ Route::get('/tambah-kuesioner', function () {
     return view('admin/tambah-kuesioner');
 });
 
+Route::get('/validasi-berkas', function () {
+    return view('admin/validasi-berkas');
+});
+
 Route::get('/administrator', function () {
     return view('administrator/administrator');
 });
