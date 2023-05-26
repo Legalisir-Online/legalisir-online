@@ -58,6 +58,16 @@
                                     <td><span class="label label-warning">Menunggu Divalidasi</span></td>
                                     <td>
                                         <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
+                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 25px;">1</td>
+                                    <td>John Doe</td>
+                                    <td>M0520001</td>
+                                    <td><span class="label label-success">Valid</span></td>
+                                    <td>
+                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
                                         <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
                                 </tr>
@@ -75,17 +85,7 @@
                                     <td style="padding-left: 25px;">1</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
-                                    <td><span class="label label-success">valid</span></td>
-                                    <td>
-                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">1</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-success">valid</span></td>
+                                    <td><span class="label label-success">Valid</span></td>
                                     <td>
                                         <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
                                         <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>

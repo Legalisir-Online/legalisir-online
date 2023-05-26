@@ -15,7 +15,7 @@
             <div class="row justify-content-center">
                 <div class="col-xs-12">
                     <h1>
-                        Tambah Kuesioner
+                        Kuesioner
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -57,9 +57,10 @@
                             <div class="form-group">
                                 <label for="inputPeriode" class="col-xs-2 control-label">Pertanyaan</label>
                                 <div class="col-xs-8">
+                                    <a href="/tambah-pertanyaan">
                                     <button type="submit" class="btn"
                                         style="background-color: #404852; color:whitesmoke">Buat <i class="fa fa-plus"
-                                            aria-hidden="true" style="margin-left: 50px"></i></button>
+                                            aria-hidden="true" style="margin-left: 30px"></i></button></a>
                                 </div>
                             </div>
                             <div class="form-group">

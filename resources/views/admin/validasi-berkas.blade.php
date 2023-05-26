@@ -57,8 +57,8 @@
                             <iframe src="{{ asset('images/contohberkas.png') }}" width="100%" height="600" allow="autoplay"></iframe>
                         </div>
                     </div><br>
-                            <a href="#"><button class="btn btn" style="float: right; background-color: #5676E1; color:white">Valid</i></button></a></span>
-                            <a href="#"><button class="btn btn-danger" style="float: right; margin-right:10px">Tidak Valid</i></button></a></span><br>
+                            <a href="#"><button class="btn btn" style="float: right; background-color: #5676E1; color:white">Valid</button></a>
+                            <a href="#"><button class="btn btn-danger" style="float: right; margin-right:10px">Tidak Valid</button></a>><br>
                      </div><br>
                 </div>
                 </div> 

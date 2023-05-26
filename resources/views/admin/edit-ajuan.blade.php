@@ -53,8 +53,8 @@
               </div>
 
               <div class="status">
-                  <div class="container" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 65px; margin-top: 5px; margin-bottom: 10px;">
-                    <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; margin-top: 13px; float: left;">
+                  <div class="box" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95; margin-bottom: 10px;">
+                    <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; padding-left: 20px; margin-top: 13px; float: left;">
                       <p>Menerima berkas</p>
                     </div>
                     <div class="btn-group" style="height: 30px; top: 7px; left: 20px; border-radius: 15px">
@@ -66,8 +66,8 @@
                     </div>
                   </div>
 
-                  <div class="container" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 65px; margin-top: 5px; margin-bottom: 10px;">
-                    <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; margin-top: 13px; float: left;">
+                  <div class="box" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95; margin-bottom: 10px;">
+                    <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px;  padding-left: 20px; margin-top: 13px; float: left;">
                       <p>Review berkas</p>
                     </div>
                     <div class="btn-group" style="height: 30px; top: 7px; left: 20px; border-radius: 15px">
@@ -79,8 +79,8 @@
                     </div>
                   </div>
 
-                  <div class="container" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 65px; margin-top: 5px; margin-bottom: 10px; ">
-                    <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; margin-top: 13px; float: left;">
+                  <div class="box" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95; margin-bottom: 10px; ">
+                    <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px;  padding-left: 20px; margin-top: 13px; float: left;">
                       <p>Legalisir berkas</p>
                     </div>
                     <div class="btn-group" style="height: 30px; top: 7px; left: 20px; border-radius: 15px">
@@ -92,8 +92,8 @@
                     </div>
                   </div>
 
-                  <div class="container" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 65px; margin-top: 5px; margin-bottom: 10px;">
-                    <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; margin-top: 13px; float: left;">
+                  <div class="box" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95; margin-bottom: 10px;">
+                    <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px;  padding-left: 20px; margin-top: 13px; float: left;">
                       <p>Kirim berkas</p>
                     </div>
                     <div class="btn-group" style="height: 30px; top: 7px; left: 20px; border-radius: 15px">
@@ -105,8 +105,8 @@
                     </div>
                   </div>
 
-                  <div class="container" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95;margin-left: 65px; margin-top: 5px; margin-bottom: 10px;">
-                    <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px; margin-top: 13px; float: left;">
+                  <div class="box" style="width:600px; height:50px; background: #fff; border-radius: 15px; border:solid 1px #8B7B95; margin-bottom: 10px;">
+                    <div class="col" style="width: 450px; height: 30px; background: #fff; border-radius: 15px;  padding-left: 20px; margin-top: 13px; float: left;">
                       <p>Berkar diterima alumni</p>
                     </div>
                     <div class="btn-group" style="height: 30px; top: 7px; left: 20px; border-radius: 15px">
