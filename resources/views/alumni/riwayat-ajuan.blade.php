@@ -43,7 +43,8 @@
             <p>Passed</p>
           </b>
         </div>
-        <img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View">
+        
+        <a href="/riwayat-invoice"><img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View"></a>
       </td>
     </tr>
     <tr>
@@ -57,7 +58,8 @@
             <p>Passed</p>
           </b>
         </div>
-        <img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View">
+        
+        <a href="/riwayat-invoice"><img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View"></a>
       </td>
     </tr>
     <tr>
@@ -71,7 +73,8 @@
             <p>Passed</p>
           </b>
         </div>
-        <img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View">
+        
+        <a href="/riwayat-invoice"><img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View"></a>
       </td>
     </tr>
     <tr>
@@ -85,7 +88,8 @@
             <p>Passed</p>
           </b>
         </div>
-        <img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View">
+        
+        <a href="/riwayat-invoice"><img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View"></a>
       </td>
     </tr>
     <tr>
@@ -99,7 +103,8 @@
             <p>Passed</p>
           </b>
         </div>
-        <img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View">
+        
+        <a href="/riwayat-invoice"><img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View"></a>
       </td>
     </tr>
     <tr>
@@ -113,7 +118,8 @@
             <p>Passed</p>
           </b>
         </div>
-        <img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View">
+        
+        <a href="/riwayat-invoice"><img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View"></a>
       </td>
     </tr>
     <tr>
@@ -127,7 +133,8 @@
             <p>Passed</p>
           </b>
         </div>
-        <img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View">
+        
+        <a href="/riwayat-invoice"><img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View"></a>
       </td>
     </tr>
   </table>
