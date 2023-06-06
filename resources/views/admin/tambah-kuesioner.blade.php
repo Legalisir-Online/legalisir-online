@@ -57,10 +57,9 @@
                             <div class="form-group">
                                 <label for="inputPeriode" class="col-xs-2 control-label">Pertanyaan</label>
                                 <div class="col-xs-8">
-                                    <a href="/tambah-pertanyaan">
-                                    <button type="submit" class="btn"
-                                        style="background-color: #404852; color:whitesmoke">Buat <i class="fa fa-plus"
-                                            aria-hidden="true" style="margin-left: 30px"></i></button></a>
+                                    <a href="/pertanyaan" class="btn" style="background-color: #404852; color:whitesmoke">
+                                        Buat <i class="fa fa-plus" aria-hidden="true" style="margin-left: 30px"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="form-group">

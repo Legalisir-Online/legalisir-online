@@ -57,9 +57,9 @@
                             <div class="form-group">
                                 <label for="inputPeriode" class="col-xs-2 control-label">Pertanyaan</label>
                                 <div class="col-xs-8">
-                                    <button type="submit" class="btn"
-                                        style="background-color: #404852; color:whitesmoke; padding-right: 70px">Edit
-                                    </button>
+                                    <a href="/pertanyaan" class="btn" style="background-color: #404852; color:whitesmoke; padding-right: 60px">
+                                        Edit</i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="form-group">
