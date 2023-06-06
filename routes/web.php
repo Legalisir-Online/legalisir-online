@@ -165,6 +165,14 @@ Route::get('/daftar-berkas', function () {
     return view('admin/daftar-berkas');
 });
 
-Route::get('/tambah-pertanyaan', function () {
-    return view('admin/tambah-pertanyaan');
+Route::get('/pertanyaan', function () {
+    return view('admin/pertanyaan');
+});
+
+Route::get('/pertanyaan-baru', function () {
+    return view('admin/pertanyaan-baru');
+});
+
+Route::get('respon', function () {
+    return view('admin/respon');
 });
