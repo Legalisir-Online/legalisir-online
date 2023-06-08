@@ -13,18 +13,19 @@
   <meta name="theme-color" content="#ffffff">
   <meta charset="UTF-8">
   <title>Sistem Legalisir Online</title>
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/biodata.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/profile.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar-footer.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/dropdown.css') }}">
 
 </head>
 
 
+
 <body>
   @include('alumni.includes.navbar')
   <div class="container">
     <div class="container-head">
-      Isi Biodata
+      Biodata Alumni
     </div> <br><br>
 
     <div class="content">
@@ -38,7 +39,7 @@
             </label>
 
             <!-- Input Type Text -->
-            <input type="text" id="name" placeholder="Nama lengkap" />
+            <input type="text" id="name" value="Budi Prakoso" readonly />
           </div>
 
           <div class="form-control">
@@ -47,7 +48,7 @@
             </label>
 
             <!-- Input Type Email-->
-            <input type="text" id="nim" placeholder="NIM Tanpa Spasi contoh M0520001" />
+            <input type="text" id="nim" value="M0520001" readonly />
           </div>
 
           <div class="form-control">
@@ -56,7 +57,7 @@
             </label>
 
             <!-- Input Type Text -->
-            <input type="text" id="age" placeholder="Tempat Lahir" />
+            <input type="text" id="age" value="Surakarta" readonly />
           </div>
 
           <div class="form-control">
@@ -64,23 +65,39 @@
               Tanggal Lahir
             </label>
 
-            <input type="date" id="Test_DatetimeLocal">
+            <input type="text" value="01/01/2001" readonly />
           </div>
 
           <div class="form-control">
-            <label for="role" id="label-role">
+            <label for="agama" id="label-agama">
               Agama
             </label>
 
-            <!-- Dropdown options -->
-            <select name="agama" id="agama">
-              <option value="islam">Islam</option>
-              <option value="kristen">Kristen</option>
-              <option value="katholik">Katholik</option>
-              <option value="konghucu">Konghucu</option>
-              <option value="budha">Budha</option>
-              <option value="hindu">Hindu</option>
-            </select>
+            <input type="text" value="Islam" readonly />
+          </div>
+
+          <div class="form-control">
+            <label for="nik" id="label-nik">
+              NIK
+            </label>
+
+            <input type="text" value="3310235038290002" readonly />
+          </div>
+
+          <div class="form-control">
+            <label for="jenis-kelamin" id="label-jenis-kelamin">
+              Jenis Kelamin
+            </label>
+
+            <input type="text" value="Laki-laki" readonly />
+          </div>
+
+          <div class="form-control">
+            <label for="jenis-alamat" id="label-alamat">
+              Alamat
+            </label>
+
+            <input type="text" value="Jl. Ir Sutami No.36, Kentingan, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126" readonly />
           </div>
         </div>
 
@@ -88,16 +105,15 @@
     </div>
 
 
-    <ul class="pagination">
+    <!-- <ul class="pagination">
       <li class="disabled"><a href="#">«</a></li>
       <li class="active"><a href="#">1 <span class="sr-only"></span></a></li>
-      <!-- <li><button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button></li> -->
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
       <li><a href="#">»</a></li>
-    </ul>
+    </ul> -->
   </div>
 
 </body>
