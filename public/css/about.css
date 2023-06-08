@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
 	background: blue;
 }
@@ -11,6 +19,21 @@ body{
 
 .contact-section {
     padding-top: 80px;
+}
+
+.content  .col-lg-8 {
+    /* flex: 0 0 auto; */
+    width: 150%;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.text-white{
+    padding-bottom: 20px;
+}
+
+.text-white-50{
+    text-align: justify;
 }
 
 .container {
@@ -135,12 +158,17 @@ address {
     margin-bottom: 1rem;
     font-style: normal;
     line-height: inherit;
-  }
+}
 
-  .content {
-    padding: 10px;
+.content {
+    padding: 5px;
     /* flex-grow: 1; */
     display: flex;
+    margin-left: 2%;
     /* flex-direction: row; */
     /* border: solid 1px green */
+}
+
+.icon{
+    padding-top: 10%;
 }

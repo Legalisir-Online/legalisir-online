@@ -23,11 +23,16 @@
     <section class="about-section text-center" id="about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-8" style="color:white">
                     <h2 class="text-white mb-4">Sistem Legalisir Online Fatisda UNS</h2>
-                    <p class="text-white-50">
-                    Sistem legalisir online merupakan sistem yang dibuat dengan tujuan memberikan kemudahan bagi alumni 
-                    Fakulltas Teknologi Informasi dan Sains Data UNS untuk melakukan legalisir secara online
+                    <p class="text-white-50" >
+                    Sistem legalisir online merupakan sebuah platform digital yang dirancang untuk mempermudah dan 
+                    mempercepat proses legalisasi dokumen di lingkungan Fakultas Teknologi Informasi dan Sains Data UNS. 
+                    Sistem ini memberikan kemudahan bagi alumni FATISDA UNS dalam mengurus legalisasi dokumen seperti transkrip 
+                    nilai dan ijazah yang diperlukan untuk keperluan administrasi, pekerjaan, atau pendidikan lanjutan.
+                    Dengan adanya sistem legalisir online, proses legalisasi dokumen menjadi lebih efisien dan praktis. 
+                    Mahasiswa atau alumni FATISDA UNS dapat mengajukan permohonan legalisasi dokumen mereka melalui platform 
+                    online yang tersedia, tanpa perlu datang secara langsung ke kantor administrasi fakultas. 
                     </p>
                 </div> <!-- End Col-->
             </div> <!-- End Row-->
@@ -35,8 +40,8 @@
     </section> <!-- End Section-->
 
     <div id="box2">
-        <div class="icon">
-                <img src="{{ asset('images/legal.jpg') }}" alt="legal" width="280px">
+        <div class="icon" style= "top:20px">
+                <img src="{{ asset('images/lisir.png') }}" alt="legal" width="500px">
         </div> 
     </div> <!-- End-box2-->
 </div> <!-- End Content-->
