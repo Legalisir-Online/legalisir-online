@@ -180,3 +180,7 @@ Route::get('/pertanyaan-baru', function () {
 Route::get('respon', function () {
     return view('admin/respon');
 });
+
+Route::get('about', function () {
+    return view('alumni/about');
+});
