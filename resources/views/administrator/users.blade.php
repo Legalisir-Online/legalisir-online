@@ -43,46 +43,50 @@
     </div>
 
     <div class="container">
-    <div class="col-xs-12">
-        <span><a href="#"><button id="addUserButton" class="btn btn" style="background-color: black; color:white;"><i class="fa fa-plus"> Tambah</i></button></a></span>
-    </div></div>
+        <div class="col-xs-12">
+            <span><a href="#"><button id="addUserButton" class="btn btn"
+                        style="background-color: black; color:white;"><i class="fa fa-plus">
+                            Tambah</i></button></a></span>
+        </div>
+    </div>
 
     <!-- modal tambah user -->
     <div id="addUserModal" class="modal">
         <div class="modal-dialog">
             <div class="modal-content" style="border-radius: 10px;"">
-            <div class="modal-header d-flex justify-content-between">
-                <h3 class="modal-title text-center">Tambah User</h3>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <form id="addUserForm">
-                <div class="form-group">
-                    <label for="name">Nama</label>
-                    <input type="text" class="form-control" id="name" required>
+                <div class="modal-header d-flex justify-content-between">
+                    <h3 class="modal-title text-center">Tambah User</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" required>
+                <div class="modal-body">
+                    <form id="addUserForm">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Role</label>
+                            <select class="form-control" id="role" required>
+                                <option value="user">Admin</option>
+                                <option value="admin">Alumni</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12 text-right">
+                                <button type="submit" class="btn btn"
+                                    style="background-color: #5676E1; color:white; border-radius: 10px;"">Simpan</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" required>
-                </div>
-                <div class="form-group">
-                    <label for="role">Role</label>
-                    <select class="form-control" id="role" required>
-                    <option value="user">Admin</option>
-                    <option value="admin">Alumni</option>
-                    </select>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm-12 text-right">
-                        <button type="submit" class="btn btn" style="background-color: #5676E1; color:white; border-radius: 10px;"">Simpan</button>
-                    </div>
-                    </div>                
-                </form>
-            </div>
             </div>
         </div>
     </div>
@@ -91,62 +95,65 @@
     <div id="editUserModal" class="modal">
         <div class="modal-dialog">
             <div class="modal-content" style="border-radius: 10px;"">
-            <div class="modal-header d-flex justify-content-between">
-                <h3 class="modal-title text-center">Edit User</h3>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <form id="addUserForm">
-                <div class="form-group">
-                    <label for="name">Nama</label>
-                    <input type="text" class="form-control" id="name" required>
+                <div class="modal-header d-flex justify-content-between">
+                    <h3 class="modal-title text-center">Edit User</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" required>
+                <div class="modal-body">
+                    <form id="addUserForm">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Role</label>
+                            <select class="form-control" id="role" required>
+                                <option value="user">Admin</option>
+                                <option value="admin">Alumni</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12 text-right">
+                                <button type="submit" class="btn btn"
+                                    style="background-color: #5676E1; color:white; border-radius: 10px;"">Simpan</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" required>
-                </div>
-                <div class="form-group">
-                    <label for="role">Role</label>
-                    <select class="form-control" id="role" required>
-                    <option value="user">Admin</option>
-                    <option value="admin">Alumni</option>
-                    </select>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm-12 text-right">
-                        <button type="submit" class="btn btn" style="background-color: #5676E1; color:white; border-radius: 10px;"">Simpan</button>
-                    </div>
-                    </div>                
-                </form>
-            </div>
             </div>
         </div>
     </div>
 
     <!-- modal hapus user -->
-    <div class="modal fade" id="hapusUserModal" tabindex="-1" role="dialog" aria-labelledby="hapusModalLabel" aria-hidden="true">
+    <div class="modal fade" id="hapusUserModal" tabindex="-1" role="dialog" aria-labelledby="hapusModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="hapusModalLabel">Konfirmasi Hapus</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+                    <h5 class="modal-title" id="hapusModalLabel">Konfirmasi Hapus</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Apakah Anda yakin ingin menghapus item ini?</p>
+                    <p>Apakah Anda yakin ingin menghapus user ini?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                    <button type="button" class="btn btn-danger" id="hapusItemButton">Hapus</button>
+                    <button type="button" class="btn btn-danger" id="konfirmasiHapusButton">Hapus</button>
                 </div>
             </div>
         </div>
     </div>
+
 
     <section class="content">
         <div style="margin-top: 10px" class="container">
@@ -170,8 +177,14 @@
                                     <td>admin1@uns.ac.id</td>
                                     <td>admin</td>
                                     <td>
-                                        <span><a href="#"><button id="editUserButton" class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                        <span><a href="#"><button id="hapusUserButton" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></button></a></span>
+                                        <span><a href="#"><button id="editUserButton"
+                                                    class="btn btn-success"><i class="fa fa-edit">
+                                                        Edit</i></button></a></span>
+                                        <span><a href="#" data-toggle="modal"
+                                                data-target="#hapusUserModal"><button id="hapusUserButton"
+                                                    class="btn btn-danger"><i class="fa fa-trash">
+                                                        Hapus</i></button></a></span>
+
                                     </td>
                                 </tr>
                                 <tr>
@@ -180,8 +193,13 @@
                                     <td>student@uns.ac.id</td>
                                     <td>alumni</td>
                                     <td>
-                                        <span><a href="#"><button id="editUserButton" class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                        <span><a href="#"><button id="hapusUserButton" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></button></a></span>
+                                        <span><a href="#"><button id="editUserButton"
+                                                    class="btn btn-success"><i class="fa fa-edit">
+                                                        Edit</i></button></a></span>
+                                        <span><a href="#" data-toggle="modal"
+                                                data-target="#hapusUserModal"><button id="hapusUserButton"
+                                                    class="btn btn-danger"><i class="fa fa-trash">
+                                                        Hapus</i></button></a></span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -190,8 +208,13 @@
                                     <td>admin1@uns.ac.id</td>
                                     <td>admin</td>
                                     <td>
-                                        <span><a href="#"><button id="editUserButton" class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                        <span><a href="#"><button id="hapusUserButton" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></button></a></span>
+                                        <span><a href="#"><button id="editUserButton"
+                                                    class="btn btn-success"><i class="fa fa-edit">
+                                                        Edit</i></button></a></span>
+                                        <span><a href="#" data-toggle="modal"
+                                                data-target="#hapusUserModal"><button id="hapusUserButton"
+                                                    class="btn btn-danger"><i class="fa fa-trash">
+                                                        Hapus</i></button></a></span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -200,8 +223,13 @@
                                     <td>student@uns.ac.id</td>
                                     <td>alumni</td>
                                     <td>
-                                        <span><a href="#"><button id="editUserButton" class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                        <span><a href="#"><button id="hapusUserButton" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></button></a></span>
+                                        <span><a href="#"><button id="editUserButton"
+                                                    class="btn btn-success"><i class="fa fa-edit">
+                                                        Edit</i></button></a></span>
+                                        <span><a href="#" data-toggle="modal"
+                                                data-target="#hapusUserModal"><button id="hapusUserButton"
+                                                    class="btn btn-danger"><i class="fa fa-trash">
+                                                        Hapus</i></button></a></span>
                                     </td>
                                 </tr>
                             </table>
