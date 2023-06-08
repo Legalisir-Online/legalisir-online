@@ -91,13 +91,89 @@
             </div>
         </div>
 
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container">
                 <p class="footer-text">
                     &copy; Fakultas Teknologi Informasi Dan Sains Data - 2023
                 </p>
             </div>
-        </footer>
+        </footer> -->
 </body>
 
 </html>
+
+<script>
+      function showAnswerOptions() {
+      var questionType = document.getElementById("questionType").value;
+      var answerOptions = document.getElementById("answerOptions");
+      var answerEssay = document.getElementById("answerEssay");
+
+      if (questionType === "pilihan") {
+        answerOptions.style.display = "block";
+        answerEssay.style.display = "none";
+      } else if (questionType === "essai") {
+        answerOptions.style.display = "none";
+        answerEssay.style.display = "block";
+      }
+    }
+    </script>
+<!-- <script>
+  var questionCount = 1; // Menghitung jumlah kotak pertanyaan yang ditambahkan
+
+  function addQuestionBox() {
+    questionCount++; // Menambah jumlah kotak pertanyaan yang ditambahkan
+
+    var questionContainer = document.getElementById("questionContainer");
+
+    // Membuat elemen kotak pertanyaan baru
+    var newQuestionBox = document.createElement("div");
+    newQuestionBox.id = "questionBox" + questionCount;
+    newQuestionBox.className = "box";
+    newQuestionBox.style.border = "0.5px solid";
+    newQuestionBox.style.borderRadius = "10px";
+
+    // Menyalin isi dari kotak pertama ke kotak baru
+    var questionBoxTemplate = document.getElementById("questionBox");
+    newQuestionBox.innerHTML = questionBoxTemplate.innerHTML;
+
+    // Menambahkan kotak pertanyaan baru ke dalam kontainer
+    questionContainer.appendChild(newQuestionBox);
+
+    // Mengupdate ID elemen-elemen dalam kotak baru
+    updateElementIds(newQuestionBox, questionCount);
+  }
+
+  function updateElementIds(questionBox, questionIndex) {
+    var elements = questionBox.getElementsByTagName("*");
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var id = element.id;
+      if (id !== "") {
+        var newId = id + questionIndex;
+        element.id = newId;
+        // Mengupdate atribut 'for' pada label
+        if (element.tagName === "LABEL") {
+          var htmlFor = element.getAttribute("for");
+          if (htmlFor !== null && htmlFor !== "") {
+            var newFor = htmlFor + questionIndex;
+            element.setAttribute("for", newFor);
+          }
+        }
+      }
+    }
+  }
+
+  function showAnswerOptions() {
+    var questionType = document.getElementById("questionType").value;
+    var answerOptions = document.getElementById("answerOptions" + questionCount);
+    var answerEssay = document.getElementById("answerEssay" + questionCount);
+
+    if (questionType === "pilihan") {
+      answerOptions.style.display = "block";
+      answerEssay.style.display = "none";
+    } else if (questionType === "essai") {
+      answerOptions.style.display = "none";
+      answerEssay.style.display = "block";
+    }
+  }
+</script> -->
