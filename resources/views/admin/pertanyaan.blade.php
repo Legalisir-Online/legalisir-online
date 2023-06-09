@@ -188,13 +188,13 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <p class="footer-text">
                 &copy; Fakultas Teknologi Informasi Dan Sains Data - 2023
             </p>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
