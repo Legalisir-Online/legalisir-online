@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('../images/Boulevard.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.title h5 {
+  color: #000000;
+  text-align: left;
+  margin-top: 35px;
+  margin-left: 150px;
+  font-size: 15px;
+}
+
+.status {
+  top: 160px;
+  margin-left: 150px;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: auto;
+  background: rgba(245, 245, 245, 0.8);
+  border-radius: 15px;
+  border: solid 1px #000000;
+  margin: auto;
+  margin-top: 35px;
+  justify-content: center;
+}
+
+.container-head {
+  background-color: #404852;
+  width: 150px;
+  height: 35px;
+  font-size: large;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+}
+
+.content {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+/* Styling form-control Class */
+.form-control {
+  text-align: left;
+  margin-bottom: 12px;
+  /* border: 1px solid #777; */
+}
+
+/* Styling form-control Label */
+.form-control label {
+  display: relative;
+  margin-bottom: 20px;
+}
+
+/* Styling form-control input,
+select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+  border: 1px solid #777;
+  border-radius: 2px;
+  font-family: inherit;
+  padding: 10px;
+  display: block;
+  width: 95%;
+}
+
+.form-control select {
+  width: 98.5%;
+}
+
+.form-control > input[type='text'],
+.form-control > input[type='email'],
+.form-control > input[type='date'],
+.form-control > select[id='agama'] {
+  /* border: 2px solid red; */
+  color: #bebebe;
+  border-radius: 10px;
+  background-color: #5c5c5c;
+  padding: 15px;
+}
+
+::placeholder,
+input[type='date']::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.6; /* Firefox */
+}
+
+.date-icon {
+  position: relative;
+  top: 10px;
+  right: 10px;
+  /* pointer-events: none; */
+  cursor: pointer;
+  color: #aaa;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.visible-xs {
+  display: none !important;
+}
+
+.footer {
+  background-color: #404852;
+  margin-top: 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  /* min-height: 100vh; */
+}
+
+.footer-text {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}

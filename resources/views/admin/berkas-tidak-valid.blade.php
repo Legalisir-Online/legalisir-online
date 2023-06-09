@@ -48,36 +48,42 @@
                                     <th style="background-color: black; color: white;">Nama</th>
                                     <th style="background-color: black; color: white;">NIM</th>
                                     <th style="background-color: black; color: white;">Status</th>
+                                    <th style="background-color: black; color: white;">Keterangan</th>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">1</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
                                     <td><span class="label label-danger">Tidak Valid</span></td>
+                                    <td>Gambar buram tidak jelas</td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">2</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
                                     <td><span class="label label-danger">Tidak Valid</span></td>
+                                    <td>Gambar buram tidak jelas</td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">3</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
                                     <td><span class="label label-danger">Tidak Valid</span></td>
+                                    <td>Gambar buram tidak jelas</td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">4</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
                                     <td><span class="label label-danger">Tidak Valid</span></td>
+                                    <td>Gambar buram tidak jelas</td>
                                 </tr>
                                 <tr>
                                     <td style="padding-left: 25px;">5</td>
                                     <td>John Doe</td>
                                     <td>M0520001</td>
                                     <td><span class="label label-danger">Tidak Valid</span></td>
+                                    <td>Gambar buram tidak jelas</td>
                                 </tr>
                             </table>
                         </div><!-- /.box-body -->
