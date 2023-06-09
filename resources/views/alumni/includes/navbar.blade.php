@@ -19,6 +19,15 @@
 				<ul class="dropdown-menu">
 					<li><a href="/biodata">Biodata</a></li>
 					<li><a href="/kuesioner">Kuesioner</a></li>
+					<li>
+					<form method="POST" action="{{ route('logout') }}" x-data>
+                                @csrf
+
+                                <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
+                                    {{ __('Log Out') }}
+                                </x-dropdown-link>
+                            </form>
+					</li>
 					<li><a href="/login">Logout</a></li>
 				</ul>
 			</li>

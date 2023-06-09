@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('landing-page');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
 
 Route::get('/reset-password', function () {
     return view('reset-password');
@@ -29,9 +29,9 @@ Route::get('/forgot-password', function () {
     return view('forgot-password');
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
+// Route::get('/register', function () {
+//     return view('register');
+// });
 
 Route::get('/biodata', function () {
     return view('alumni/biodata');
@@ -175,4 +175,13 @@ Route::get('/pertanyaan-baru', function () {
 
 Route::get('respon', function () {
     return view('admin/respon');
+});
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 });
