@@ -37,6 +37,10 @@ Route::get('/biodata', function () {
     return view('alumni/biodata');
 });
 
+Route::get('/profile', function () {
+    return view('alumni/profile');
+});
+
 Route::get('/upload-berkas', function () {
     return view('alumni/upload-berkas');
 });
@@ -175,6 +179,10 @@ Route::get('/pertanyaan-baru', function () {
 
 Route::get('respon', function () {
     return view('admin/respon');
+});
+
+Route::get('about', function () {
+    return view('alumni/about');
 });
 Route::middleware([
     'auth:sanctum',

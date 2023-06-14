@@ -50,10 +50,10 @@
     <!-- modal tambah user -->
     <div id="addUserModal" class="modal">
         <div class="modal-dialog">
-            <div class="modal-content" style="border-radius: 10px;"">
+            <div class="modal-content" style="border-radius: 10px;">
             <div class="modal-header d-flex justify-content-between">
-                <h3 class="modal-title text-center">Tambah User</h3>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title text-center">Tambah User</h3>
             </div>
             <div class="modal-body">
                 <form id="addUserForm">
@@ -90,10 +90,10 @@
     <!-- modal edit user -->
     <div id="editUserModal" class="modal">
         <div class="modal-dialog">
-            <div class="modal-content" style="border-radius: 10px;"">
-            <div class="modal-header d-flex justify-content-between">
-                <h3 class="modal-title text-center">Edit User</h3>
+            <div class="modal-content" style="border-radius: 10px;">
+            <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title text-center">Edit User</h3>
             </div>
             <div class="modal-body">
                 <form id="addUserForm">
@@ -132,8 +132,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="hapusModalLabel">Konfirmasi Hapus</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="hapusModalLabel">Konfirmasi Hapus</h5>
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>

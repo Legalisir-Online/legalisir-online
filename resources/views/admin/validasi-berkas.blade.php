@@ -58,8 +58,25 @@
                         </div>
                     </div><br>
                             <a href="#"><button class="btn btn" style="float: right; background-color: #5676E1; color:white">Valid</button></a>
-                            <a href="#"><button class="btn btn-danger" style="float: right; margin-right:10px">Tidak Valid</button></a>><br>
-                     </div><br>
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-lg" style="float: right; margin-right:10px">Tidak Valid</button><br>
+                            <div class="modal fade" id="modal-lg" style="display: none" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">Berkas tidak valid</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                    <input type="text" class="form-control" id="pesan" placeholder="Tuliskan pesan">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Kirim Pesan</button>
+                                    </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal fade -->
+                    </div><br>
                 </div>
                 </div> 
             </div>
