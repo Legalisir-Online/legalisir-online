@@ -37,14 +37,14 @@
         <div class="login-box">
 
             <div class="form">
-                <h2>{{ __('Login Account') }}</h2>
+                <h2>Login Account</h2>
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
 
                     <div class="form-group">
                         <input type="email" id="email" placeholder="email"
-                            class="form-control @error('email') is-invalid @enderror" name="email"
-                            value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"
+                            required autocomplete="email" autofocus>
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="form-group">
                         <input id="password" type="password" placeholder="password"
-                            class="form-control @error('password') is-invalid @enderror" name="password" required
+                            class="@error('password') is-invalid @enderror" name="password" required
                             autocomplete="current-password">
 
                         @error('password')
@@ -68,15 +68,12 @@
                     <div class="form-group">
                         @if (Route::has('password.request'))
                             <a class="btn btn-link" href="{{ route('password.request') }}">
-                                <p>{{ __('Forgot Your Password?') }}</p>
+                                <p>lupa password?</p>
                             </a>
                         @endif
-                        {{-- <a href="/forgot-password">
-                            <p>lupa password?</p>
-                        </a> --}}
                     </div>
                     <div class="form-group">
-                        <button type="submit"><a href="/homepage">{{ __('Login') }}</a></button>
+                        <button type="submit">Login</button>
                     </div>
                 </form>
             </div>

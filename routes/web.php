@@ -166,22 +166,20 @@ Route::get('respon', function () {
     return view('admin/respon');
 });
 
-Route::get('about', function () {
+Route::get('/about', function () {
     return view('alumni/about');
 });
 
-Route::get('profile-admin', function () {
-    return view('admin/profile-admin');
-});
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('profile-admin', function () {
+Route::get('/profile-admin', function () {
     return view('admin/profile-admin');
 });
 
 Route::get('/profile-administrator', function () {
     return view('administrator/profile-administrator');
 });
+
+Route::get('/p', function () {
+    return view('home');
+});
+
+Auth::routes();
