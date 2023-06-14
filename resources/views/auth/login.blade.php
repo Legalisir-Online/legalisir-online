@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -10,8 +10,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Sistem Legalisir Online</title>
     <link rel="stylesheet" href="{{ asset('css/logindkk.css') }}">
 </head>
@@ -26,12 +24,12 @@
             <div class="group-overlay">
                 <div class="overlay overlay-active">
                     <a href="/login">
-                    <p>Log In</p>
+                        <p>Log In</p>
                     </a>
                 </div>
                 <div class="overlay">
                     <a href="/register">
-                    <p>Register</p>
+                        <p>Register</p>
                     </a>
                 </div>
             </div>
@@ -39,11 +37,14 @@
         <div class="login-box">
 
             <div class="form">
-                <h2>Login Account</h2>
-                <form action="{{ route('login') }}" method="POST">
-                @csrf
+                <h2>{{ __('Login Account') }}</h2>
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
+
                     <div class="form-group">
-                        <input id="email" placeholder="Email" type="email" class="@error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <input type="email" id="email" placeholder="email"
+                            class="form-control @error('email') is-invalid @enderror" name="email"
+                            value="{{ old('email') }}" required autocomplete="email" autofocus>
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -51,7 +52,10 @@
                         @enderror
                     </div>
                     <div class="form-group">
-                        <input id="password" placeholder="Password" type="password" class="@error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                        <input id="password" type="password" placeholder="password"
+                            class="form-control @error('password') is-invalid @enderror" name="password" required
+                            autocomplete="current-password">
+
                         @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -63,13 +67,16 @@
                     <div class="space"></div>
                     <div class="form-group">
                         @if (Route::has('password.request'))
-                            <a href="{{ route('password.request') }}">
-                                lupa password?
+                            <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <p>{{ __('Forgot Your Password?') }}</p>
                             </a>
                         @endif
+                        {{-- <a href="/forgot-password">
+                            <p>lupa password?</p>
+                        </a> --}}
                     </div>
                     <div class="form-group">
-                        <button type="submit">Login</button>
+                        <button type="submit"><a href="/homepage">{{ __('Login') }}</a></button>
                     </div>
                 </form>
             </div>
