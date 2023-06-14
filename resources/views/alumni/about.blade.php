@@ -20,12 +20,19 @@
 
 <!-- Content-->
 <div class="content">
+
+<div id="box2">
+        <div class="icon" style= "top:20px">
+                <img src="{{ asset('images/lisir.png') }}" alt="legal" width="500px">
+        </div> 
+    </div> <!-- End-box2-->
+
     <section class="about-section text-center" id="about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8" style="color:white">
-                    <h2 class="text-white mb-4">Sistem Legalisir Online Fatisda UNS</h2>
-                    <p class="text-white-50" >
+                <div class="col-lg-8" style="color:black">
+                    <h2 class="text-white mb-4">Sistem Legalisir Online FATISDA UNS</h2>
+                    <p class="text-white-30" >
                     Sistem legalisir online merupakan sebuah platform digital yang dirancang untuk mempermudah dan 
                     mempercepat proses legalisasi dokumen di lingkungan Fakultas Teknologi Informasi dan Sains Data UNS. 
                     Sistem ini memberikan kemudahan bagi alumni FATISDA UNS dalam mengurus legalisasi dokumen seperti transkrip 
@@ -39,11 +46,7 @@
         </div> <!-- End Container-->
     </section> <!-- End Section-->
 
-    <div id="box2">
-        <div class="icon" style= "top:20px">
-                <img src="{{ asset('images/lisir.png') }}" alt="legal" width="500px">
-        </div> 
-    </div> <!-- End-box2-->
+    
 </div> <!-- End Content-->
 
 
@@ -56,6 +59,7 @@
                             <div class="card py-4 h-100">
                                 <div class="card-body text-center">
                                     <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                    <img src="{{ asset('images/icons/loc.png') }}" alt="loc" style="position: relative; width:22px; height:22px;">
                                     <h4 class="text-uppercase m-0">Address</h4>
                                     <hr class="my-4 mx-auto" />
                                     <div class="small text-black-50">Gedung B Lt.4 Fatisda UNS</div>
@@ -66,9 +70,10 @@
                             <div class="card py-4 h-100">
                                 <div class="card-body text-center">
                                     <i class="fas fa-envelope text-primary mb-2"></i>
+                                    <img src="{{ asset('images/icons/email.png') }}" alt="email" style="position: relative; width:24px; height:24px;">
                                     <h4 class="text-uppercase m-0">Email</h4>
                                     <hr class="my-4 mx-auto" />
-                                    <div class="small text-black-50"><a href="#!">fatisda@uns.com</a></div>
+                                    <div class="small text-black-50"><a href="#!">adminfatisda@uns.com</a></div>
                                 </div>
                             </div>
                         </div>
@@ -76,9 +81,10 @@
                             <div class="card py-4 h-100">
                                 <div class="card-body text-center">
                                     <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                    <img src="{{ asset('images/icons/phone.png') }}" alt="phone" style="position: relative; width:24px; height:24px;">
                                     <h4 class="text-uppercase m-0">Phone</h4>
                                     <hr class="my-4 mx-auto" />
-                                    <div class="small text-black-50">0865-8764-1234</div>
+                                    <div class="small text-black-50">+62 865-8764-1234</div>
                                 </div>
                             </div>
                         </div>
