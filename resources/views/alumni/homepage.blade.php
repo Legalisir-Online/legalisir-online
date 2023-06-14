@@ -19,21 +19,25 @@
 
 <body>
 @include('alumni.includes.navbar')
-    <div class="homepage">
-		<div class="icon">
-		<img src="{{ asset('images/alumni.png') }}" alt="Alumni" width="250px" height="auto">
-		</div>
-        <div class="container">
-		<h1>Selamat Datang di <br> SISTEM LEGALISIR ONLINE FATISDA UNS <br> <br> </h1>
-            <div class="container-content">
-                <h2>Sistem legalisir online merupakan sistem yang dibuat dengan tujuan memberikan kemudahan bagi alumni Fakulltas Teknologi Informasi dan Sains Data UNS untuk melakukan legalisir secara online</h2>
-            </div>
-			<br>
-			<div class="button-ajukan">
-				<a href="form-legalisir">Ajukan Legalisir<a\>
-            </div>
+
+  <section class="features">
+    <div class="feature1">
+      <img src="{{ asset('images/alumni.png') }}" alt="Alumni">
+    </div>
+    <div class="feature2">
+        <h1>Selamat Datang</h1>
+        <h1>SISTEM LEGALISIR ONLINE FATISDA UNIVERSITAS SEBELAS MARET</h1><br><br>
+        
+        <div class="feature2-content">
+            <p>Sistem legalisir online merupakan sistem yang dibuat dengan tujuan memberikan kemudahan bagi alumni Fakulltas Teknologi Informasi dan Sains Data UNS untuk melakukan legalisir secara online.</p>
         </div>
-	</div>
+
+        <br><br>
+        <div class="button">
+            <a href="#">Ajukan Legalisir</a>
+        </div>
+    </div>
+  </section>
 </body>
 </html>
 
