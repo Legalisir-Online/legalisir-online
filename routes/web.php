@@ -191,3 +191,11 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('profile-admin', function () {
+    return view('admin/profile-admin');
+});
+
+Route::get('/profile-administrator', function () {
+    return view('administrator/profile-administrator');
+});
