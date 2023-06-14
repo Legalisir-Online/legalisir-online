@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,181 +14,166 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('landing-page');
-// });
+Route::get('/', function () {
+    return view('landing-page');
+});
 
-// Route::get('/login', function () {
-//     return view('login');
-// });
+Route::get('/biodata', function () {
+    return view('alumni/biodata');
+});
 
-// Route::get('/reset-password', function () {
-//     return view('reset-password');
-// });
+Route::get('/profile', function () {
+    return view('alumni/profile');
+});
 
-// Route::get('/forgot-password', function () {
-//     return view('forgot-password');
-// });
+Route::get('/upload-berkas', function () {
+    return view('alumni/upload-berkas');
+});
 
-// Route::get('/register', function () {
-//     return view('register');
-// });
+Route::get('/akun-terverifikasi', function () {
+    return view('aktivasi-akun');
+});
 
-// Route::get('/biodata', function () {
-//     return view('alumni/biodata');
-// });
+Route::get('/homepage', function () {
+    return view('alumni/homepage');
+});
 
-// Route::get('/profile', function () {
-//     return view('alumni/profile');
-// });
+Route::get('/form-legalisir', function () {
+    return view('alumni/form-legalisir');
+});
 
-// Route::get('/upload-berkas', function () {
-//     return view('alumni/upload-berkas');
-// });
+Route::get('/status-ajuan1', function () {
+    return view('alumni/status-ajuan1');
+});
 
-// Route::get('/akun-terverifikasi', function () {
-//     return view('aktivasi-akun');
-// });
+Route::get('/riwayat-ajuan', function () {
+    return view('alumni/riwayat-ajuan');
+});
 
-// Route::get('/homepage', function () {
-//     return view('alumni/homepage');
-// });
+Route::get('/invoice', function () {
+    return view('alumni/invoice');
+});
 
-// Route::get('/form-legalisir', function () {
-//     return view('alumni/form-legalisir');
-// });
+Route::get('/status-ajuan2', function () {
+    return view('alumni/status-ajuan2');
+});
 
-// Route::get('/status-ajuan1', function () {
-//     return view('alumni/status-ajuan1');
-// });
+Route::get('/riwayat-invoice', function () {
+    return view('alumni/riwayat-invoice');
+});
 
-// Route::get('/riwayat-ajuan', function () {
-//     return view('alumni/riwayat-ajuan');
-// });
+Route::get('/kuesioner', function () {
+    return view('alumni/kuesioner');
+});
 
-// Route::get('/invoice', function () {
-//     return view('alumni/invoice');
-// });
+Route::get('/status-ajuan3', function () {
+    return view('alumni/status-ajuan3');
+});
 
-// Route::get('/status-ajuan2', function () {
-//     return view('alumni/status-ajuan2');
-// });
+Route::get('/flow', function () {
+    return view('flow');
+});
 
-// Route::get('/riwayat-invoice', function () {
-//     return view('alumni/riwayat-invoice');
-// });
+Route::get('/preview-pengajuan', function () {
+    return view('alumni/preview-pengajuan-legalisir');
+});
 
-// Route::get('/kuesioner', function () {
-//     return view('alumni/kuesioner');
-// });
+Route::get('/admin', function () {
+    return view('admin/admin');
+});
 
-// Route::get('/status-ajuan3', function () {
-//     return view('alumni/status-ajuan3');
-// });
+Route::get('/daftar-ajuan-legalisir', function () {
+    return view('admin/daftar-ajuan-legalisir');
+});
 
-// Route::get('/flow', function () {
-//     return view('flow');
-// });
+Route::get('/index', function () {
+    return view('index');
+});
 
-// Route::get('/preview-pengajuan', function () {
-//     return view('alumni/preview-pengajuan-legalisir');
-// });
+Route::get('/legalisir-selesai', function () {
+    return view('admin/legalisir-selesai');
+});
 
-// Route::get('/admin', function () {
-//     return view('admin/admin');
-// });
+Route::get('/berkas-selesai', function () {
+    return view('admin/berkas-selesai');
+});
 
-// Route::get('/daftar-ajuan-legalisir', function () {
-//     return view('admin/daftar-ajuan-legalisir');
-// });
+Route::get('/legalisir-pending', function () {
+    return view('admin/legalisir-pending');
+});
 
-// Route::get('/index', function () {
-//     return view('index');
-// });
+Route::get('/legalisir-gagal', function () {
+    return view('admin/legalisir-gagal');
+});
 
-// Route::get('/legalisir-selesai', function () {
-//     return view('admin/legalisir-selesai');
-// });
+Route::get('/berkas-tidak-valid', function () {
+    return view('admin/berkas-tidak-valid');
+});
 
-// Route::get('/berkas-selesai', function () {
-//     return view('admin/berkas-selesai');
-// });
+Route::get('/kuesioner-admin', function () {
+    return view('admin/kuesioner');
+});
 
-// Route::get('/legalisir-pending', function () {
-//     return view('admin/legalisir-pending');
-// });
+Route::get('/berkas-pending', function () {
+    return view('admin/berkas-pending');
+});
 
-// Route::get('/legalisir-gagal', function () {
-//     return view('admin/legalisir-gagal');
-// });
+Route::get('/edit-ajuan', function () {
+    return view('admin/edit-ajuan');
+});
 
-// Route::get('/berkas-tidak-valid', function () {
-//     return view('admin/berkas-tidak-valid');
-// });
+Route::get('/tambah-kuesioner', function () {
+    return view('admin/tambah-kuesioner');
+});
 
-// Route::get('/kuesioner-admin', function () {
-//     return view('admin/kuesioner');
-// });
+Route::get('/edit-kuesioner', function () {
+    return view('admin/edit-kuesioner');
+});
 
-// Route::get('/berkas-pending', function () {
-//     return view('admin/berkas-pending');
-// });
+Route::get('/validasi-berkas', function () {
+    return view('admin/validasi-berkas');
+});
 
-// Route::get('/edit-ajuan', function () {
-//     return view('admin/edit-ajuan');
-// });
+Route::get('/administrator', function () {
+    return view('administrator/administrator');
+});
 
-// Route::get('/tambah-kuesioner', function () {
-//     return view('admin/tambah-kuesioner');
-// });
+Route::get('/users', function () {
+    return view('administrator/users');
+});
 
-// Route::get('/edit-kuesioner', function () {
-//     return view('admin/edit-kuesioner');
-// });
+Route::get('/user-admin', function () {
+    return view('administrator/user-admin');
+});
 
-// Route::get('/validasi-berkas', function () {
-//     return view('admin/validasi-berkas');
-// });
+Route::get('/user-alumni', function () {
+    return view('administrator/user-alumni');
+});
 
-// Route::get('/administrator', function () {
-//     return view('administrator/administrator');
-// });
+Route::get('/daftar-berkas', function () {
+    return view('admin/daftar-berkas');
+});
 
-// Route::get('/users', function () {
-//     return view('administrator/users');
-// });
+Route::get('/pertanyaan', function () {
+    return view('admin/pertanyaan');
+});
 
-// Route::get('/user-admin', function () {
-//     return view('administrator/user-admin');
-// });
+Route::get('/pertanyaan-baru', function () {
+    return view('admin/pertanyaan-baru');
+});
 
-// Route::get('/user-alumni', function () {
-//     return view('administrator/user-alumni');
-// });
+Route::get('respon', function () {
+    return view('admin/respon');
+});
 
-// Route::get('/daftar-berkas', function () {
-//     return view('admin/daftar-berkas');
-// });
+Route::get('about', function () {
+    return view('alumni/about');
+});
 
-// Route::get('/pertanyaan', function () {
-//     return view('admin/pertanyaan');
-// });
+Route::get('profile-admin', function () {
+    return view('admin/profile-admin');
+});
 
-// Route::get('/pertanyaan-baru', function () {
-//     return view('admin/pertanyaan-baru');
-// });
-
-// Route::get('respon', function () {
-//     return view('admin/respon');
-// });
-
-// Route::get('about', function () {
-//     return view('alumni/about');
-// });
-
-// Route::get('profile-admin', function () {
-//     return view('admin/profile-admin');
-// });
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
