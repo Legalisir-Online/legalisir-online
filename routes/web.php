@@ -184,3 +184,7 @@ Route::get('respon', function () {
 Route::get('about', function () {
     return view('alumni/about');
 });
+
+Route::get('profile-admin', function () {
+    return view('admin/profile-admin');
+});
