@@ -188,6 +188,11 @@ Route::get('about', function () {
 Route::get('profile-admin', function () {
     return view('admin/profile-admin');
 });
+Auth::routes();
+
+// Route::get('profile-admin', function () {
+//     return view('admin/profile-admin');
+// });
 
 Route::get('/profile-administrator', function () {
     return view('administrator/profile-administrator');
