@@ -178,8 +178,4 @@ Route::get('/profile-administrator', function () {
     return view('administrator/profile-administrator');
 });
 
-Route::get('/p', function () {
-    return view('home');
-});
-
 Auth::routes();
