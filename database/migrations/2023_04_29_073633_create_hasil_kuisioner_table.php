@@ -11,16 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('hasil_kuisioner', function (Blueprint $table) {
+        Schema::create('hasil_kuisioners', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_alumni');
-            $table->foreign('id_alumni')->references('id')->on('alumni');
+            $table->foreign('id_alumni')->references('id')->on('alumnis');
             $table->unsignedBigInteger('id_kuisioner');
-            $table->foreign('id_kuisioner')->references('id')->on('kuisioner');
+            $table->foreign('id_kuisioner')->references('id')->on('kuisioners');
             $table->unsignedBigInteger('id_pertanyaan');
-            $table->foreign('id_pertanyaan')->references('id')->on('pertanyaan');
+            $table->foreign('id_pertanyaan')->references('id')->on('pertanyaans');
             $table->unsignedBigInteger('id_opsi_terpilih');
-            $table->foreign('id_opsi_terpilih')->references('id')->on('opsi');
+            $table->foreign('id_opsi_terpilih')->references('id')->on('opsis');
             $table->text('hasil_essai');
             $table->timestamps();
         });
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('hasil_kuisioner');
+        Schema::dropIfExists('hasil_kuisioners');
     }
 };

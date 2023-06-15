@@ -11,11 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('kuisioners', function (Blueprint $table) {
-            $table->id();
-            $table->string('periode', 20);
-            $table->boolean('status');
-            $table->timestamps();
+        Schema::table('dokumens', function (Blueprint $table) {
+            $table->string('progress', 40)->nullable();
+            $table->string('status', 15)->nullable();
         });
     }
 
@@ -24,6 +22,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kuisioners');
+        Schema::table('dokumens', function (Blueprint $table) {
+            //
+        });
     }
 };
