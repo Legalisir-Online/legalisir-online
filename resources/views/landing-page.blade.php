@@ -25,7 +25,7 @@
                 <a href="/flow" class="nav-link">Flow</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
+                <a href="/about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
                 <a href="/login" class="nav-link">Login</a>

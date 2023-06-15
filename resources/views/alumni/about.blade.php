@@ -16,7 +16,22 @@
 </head>
 
 <body>
-@include('alumni.includes.navbar')
+<nav class="navbar">
+        <div class="navbar-logo">
+            <a href="/"><img src="{{ asset('images/logo.png') }}" alt="Logo"></a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/flow" class="nav-link">Flow</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="/login" class="nav-link">Login</a>
+            </li>
+        </ul>
+    </nav>
 
 <!-- Content-->
 <div class="content">
