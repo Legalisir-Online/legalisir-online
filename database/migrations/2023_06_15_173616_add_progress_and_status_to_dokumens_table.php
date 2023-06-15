@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('dokumens', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('alumni_id');
-            $table->foreign('alumni_id')->references('id')->on('alumnis');
-            $table->string('path', 20);
-            $table->timestamps();
+        Schema::table('dokumens', function (Blueprint $table) {
+            $table->string('progress', 40)->nullable();
+            $table->string('status', 15)->nullable();
         });
     }
 
@@ -25,6 +22,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('dokumens');
+        Schema::table('dokumens', function (Blueprint $table) {
+            //
+        });
     }
 };

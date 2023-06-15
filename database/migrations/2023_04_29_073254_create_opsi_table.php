@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('opsi', function (Blueprint $table) {
+        Schema::create('opsis', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_pertanyaan');
-            $table->foreign('id_pertanyaan')->references('id')->on('pertanyaan');
+            $table->foreign('id_pertanyaan')->references('id')->on('pertanyaans');
             $table->string('opsi', 200);
             $table->timestamps();
         });
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('opsi');
+        Schema::dropIfExists('opsis');
     }
 };
