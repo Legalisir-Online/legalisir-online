@@ -14,9 +14,24 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/kuesioner.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar-footer.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/dropdown.css') }}">
+    <style>
+        .submit-button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #5676E1;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #5676e1cb;
+        }
+    </style>
 </head>
-
-
 
 <body>
     @include('alumni.includes.navbar')
@@ -41,8 +56,7 @@
                                                     name="opinions" id="radio-1" /> </li>
                                         @endif
                                     @endforeach
-                                    <ul>
-                                        <!-- <input type="text" class="content-essay" placeholder="Jawaban"> -->
+                                </ul>
                             </div>
                         @else
                             <div>
@@ -55,11 +69,11 @@
             @endforeach
 
             <br>
-            <input type="submit" value="Ajukan Legalisir">
+            <input type="submit" value="Simpan" class="submit-button">
         </form>
     </div>
-</body>
 
-@include('alumni.includes.footer')
+    @include('alumni.includes.footer')
+</body>
 
 </html>
