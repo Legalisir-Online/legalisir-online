@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PreviewPengajuanController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -63,6 +64,8 @@ Route::get('/riwayat-invoice', function () {
 })->middleware('role:alumni');
 
 Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan'] );
+Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'] );
+
 
 Route::get('/status-ajuan3', function () {
     return view('alumni/status-ajuan3');
@@ -72,9 +75,9 @@ Route::get('/flow', function () {
     return view('flow');
 });
 
-Route::get('/preview-pengajuan', function () {
-    return view('alumni/preview-pengajuan-legalisir');
-})->middleware('role:alumni');
+// Route::get('/preview-pengajuan', function () {
+//     return view('alumni/preview-pengajuan-legalisir');
+// })->middleware('role:alumni');
 
 // Route::get('/admin', function () {
 //     // Aksi yang dilakukan hanya oleh pengguna dengan peran "admin"

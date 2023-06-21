@@ -34,18 +34,18 @@
 
       <br><br>
       <div class="button">
-      <button type="submit" class="btn btn" style="background-color: #5676E1; color:white; border-radius: 10px;"">Ajukan Legalisir</button>
+      <button type="submit" id="ajukanButton" class="btn btn" style="background-color: #5676E1; color:white; border-radius: 10px;">Ajukan Legalisir</button>
       </div>
     </div>
   </section>
 
   <!-- Modal Upload Berkas -->
-  <div id="uploadBerkas" class="modal">
+  <!-- <div id="uploadBerkas" class="modal">
     <div class="modal-dialog">
       <div class="modal-content" style="border-radius: 10px; padding: 10px;">
         <div class="modal-header d-flex justify-content-between">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 style="">
+          <h4>
             <strong>Mohon maaf, Anda belum mengupload berkas legalisir.
             Silakukan upload berkas terlebih dahulu</strong>
           </h4>
@@ -53,15 +53,21 @@
 
         <div class="form-group row">
           <div class="col-sm-12">
-            <button type="submit" class="btn btn" style="background-color: #5676E1; color:white; border-radius: 10px;"">Upload Berkas</button>
+            <button type="submit" class="btn btn" style="background-color: #5676E1; color:white; border-radius: 10px;">Upload Berkas</button>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 </body>
+<!-- <script>
+  document.getElementById("ajukanButton").addEventListener("click", function() {
+    var modal = document.getElementById("uploadBerkas");
+    modal.style.display = "block";
+  });
 
+</script> -->
 </html>
 
 @include('alumni.includes.footer')

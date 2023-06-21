@@ -4,9 +4,3 @@
     </div>
 </footer>
 
-<script>
-    // Mengaktifkan modal saat klik upload berkas
-    document.getElementById('uploadBerkasButton').addEventListener('click', function() {
-        document.getElementById('uploadBerkas').style.display = 'block';
-    });
-</script>
