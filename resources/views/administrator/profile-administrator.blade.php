@@ -30,11 +30,11 @@
                             <table class="table table-hover">
                                 <tr>
                                     <td>Nama</td>
-                                    <td>Tetra Tetra Tetra</td>
+                                    <td>Administrator</td>
                                 </tr>
                                 <tr>
                                     <td>Email</td>
-                                    <td>Tetraadmin@gmail.com</td>
+                                    <td>administrator@gmail.com</td>
                                 </tr>
                             </table>
                         </div><!-- /.box-body -->
