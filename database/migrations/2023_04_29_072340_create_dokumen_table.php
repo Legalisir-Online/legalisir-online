@@ -15,7 +15,10 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('alumni_id');
             $table->foreign('alumni_id')->references('id')->on('alumnis');
-            $table->string('path', 20);
+            $table->string('path', 300);
+            $table->string('nama', 100);
+            $table->boolean('status')->nullable();
+            $table->string('keterangan', 100)->nullable();
             $table->timestamps();
         });
     }

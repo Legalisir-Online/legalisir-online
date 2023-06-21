@@ -15,8 +15,15 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('id_alumni');
             $table->foreign('id_alumni')->references('id')->on('alumnis');
-            $table->integer('jumlah_tagihan');
-            $table->string('status_transaksis', 20);
+            $table->unsignedBigInteger('id_dokumen');
+            $table->foreign('id_dokumen')->references('id')->on('dokumens');
+            $table->integer('jumlah_berkas');
+            $table->integer('harga_satuan');
+            $table->integer('harga_ongkir');
+            $table->boolean('cetak_berkas');
+            $table->boolean('pengambilan_berkas');
+            $table->string('progress', 100)->default('telah dilegalisir');
+            $table->boolean('status')->nullable();
             $table->timestamps();
         });
     }

@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('pertanyaans', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_kuesioner');
+            $table->foreign('id_kuesioner')->references('id')->on('kuesioners');
             $table->integer('jenis');
             $table->string('pertanyaan', 200);
             $table->boolean('status');
