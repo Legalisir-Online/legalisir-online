@@ -28,13 +28,34 @@ input{
   border-radius:5px;
 }
 
+.show {
+  margin-left: 10px; 
+}
+
 .show .search {
-  margin-left: 10px;
+  margin-left: 500px;
 }
 
 table {
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+table tr td.riwayat {
+  width: auto;
+  padding-right: 100px;
+}
+
+table tr td.tanggal {
+  width: auto;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+table tr td.col1 {
+  text-align: center;
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
 table, th, td {
@@ -50,6 +71,11 @@ th {
 
 tr {
   margin-left: auto;
+}
+
+.status {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 th, td, td .col1 {
@@ -69,13 +95,26 @@ th, td, td .col1 {
 }
 
 .col1 p{
+  position: relative;
   text-align: center;
   color: #68B984;
   font-size: 13px;
-  margin-left: 15px;
-  margin-top: 10px;
+  vertical-align: middle;
+  display: flex;
+  top: 30%;
+  right: 13%;
+  float: right;
 }
 
+.eye-icon {
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.status {
+  /* margin-left: 50px; */
+  margin-right: 50px;
+}
 /* td img {
   position: relative; 
    top: 50%; 

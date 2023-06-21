@@ -2,30 +2,79 @@
 @include('admin.includes.topbar')
 @include('admin.includes.sidebar')
 
-<!-- Isi konten halaman admin -->
+<style>
+    .left-align {
+        text-align: left;
+    }
+</style>
+
 <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <!-- <section class="content-header">
-          <h1>
-            Dashboard
-          </h1>
-          <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Kuesioner</li>
-            <li class="active">Tambah</li>
-          </ol>
-        </section> -->
-        
-        <section class="content-header">
-          <h1>
-            Kuesioner
-            <small>Preview</small>
-          </h1>
-          <ol class="breadcrumb">
-            <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="/kuesioner-admin">Kuesioner</a></li>
-            <li class="active">Tambah</li>
-          </ol>
-        </section>
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-12">
+                    <h1>
+                        Kuesioner
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li>Kuesioner</li>
+                        <li class="active">Tambah</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-12">
+                    <div class="box" style="background: #D9D9D9; border-radius: 10px; margin-bottom: 30px">
+                        <form class="form-horizontal" style="margin-top: 30px;">
+                            <div class="form-group">
+                                <label for="inputKuesioner" class="col-xs-2 control-label">Kuesioner</label>
+                                <div class="col-xs-8">
+                                    <input type="kuesioner" class="form-control" id="inputKuesioner">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPeriode" class="col-xs-2 control-label">Periode</label>
+                                <div class="col-xs-8">
+                                    <input type="periode" class="form-control" id="inputPeriode">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputStatus" class="col-xs-2 control-label">Status</label>
+                                <div class="col-xs-2">
+                                    <select class="form-control ">
+                                        <option>Aktif</option>
+                                        <option>Tidak Aktif</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPeriode" class="col-xs-2 control-label">Pertanyaan</label>
+                                <div class="col-xs-8">
+                                    <a href="/pertanyaan" class="btn" style="background-color: #404852; color:whitesmoke">
+                                        Buat <i class="fa fa-plus" aria-hidden="true" style="margin-left: 30px"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-primary pull-right"
+                                        style="margin-right: 90px; padding-right: 45px; padding-left: 45px;">Simpan</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div style="margin: 10px"><br></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 @include('admin.includes.footer')

@@ -3,6 +3,7 @@
 namespace App\Models;
 // namespace App;
 
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -124,4 +125,5 @@ class Alumni extends Model
     //     //  $this->db->where('nim', $nim);
     //     $this->db->delete('user_sub_menu', ['id' => $id]);
     // }
+    use HasFactory;
 }

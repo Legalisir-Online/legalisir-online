@@ -27,15 +27,15 @@
             <table>
                 <tr>
                     <td>Nama </td>
-                    <td>: [Nama Mahasiswa]</td>
+                    <td>: [Nama Alumni]</td>
                 </tr>
                 <tr>
                     <td>NIM </td>
-                    <td>: [Nomor Induk Mahasiswa]</td>
+                    <td>: [NIM]</td>
                 </tr>
                 <tr>
                     <td>Alamat </td>
-                    <td>: [Alamat Mahasiswa]</td>
+                    <td>: [Alamat]</td>
                 </tr>
             </table>
         </div> <hr>

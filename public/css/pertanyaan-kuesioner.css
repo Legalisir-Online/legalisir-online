@@ -1,0 +1,203 @@
+.content-pertanyaan {
+    background-color: #d9d9d9;
+    width: 70%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    border: solid 1px #b6bac8;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+}
+.right-options {
+    margin-left: 20px;
+}
+#answerOptions {
+    display: block;
+    margin-left: 10px;
+}
+label {
+    font-weight: normal;
+}
+.switchX {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switchX input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.sliderX {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 26px;
+    transition: 0.4s;
+}
+
+.sliderX:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.switchX input:checked + .sliderX {
+    background-color: #2196f3;
+}
+
+.switchX input:focus + .sliderX {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+.switchX input:checked + .sliderX:before {
+    transform: translateX(20px);
+}
+
+/* Ubah penampilan toggle switchX ketika di-hover */
+.switchX .sliderX:hover {
+    background-color: #ccc;
+}
+
+.switchX .sliderX:hover:before {
+    background-color: #2196f3;
+}
+
+.content-wrapper {
+    min-height: 100vh;
+    /* Menjamin konten minimum setidaknya seluruh tinggi viewport */
+    position: relative;
+    /* Diperlukan agar bisa mengatur posisi footer */
+}
+
+.footer {
+    position: fixed;
+    /* Membuat footer tetap di posisi tetap */
+    bottom: 0;
+    /* Meletakkan footer di bagian bawah */
+    left: 0;
+    /* Menyesuaikan posisi footer di sisi kiri */
+    width: 100%;
+    /* Mengatur lebar footer agar mengisi seluruh lebar layar */
+    background-color: #404852;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+/* .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      margin: auto;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 25px;
+      width: 25px;
+      left: 4px;
+      bottom: 2px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider{
+      background-color: #2196F3;
+    }
+
+    input:focus + .slider{
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    } */
+/* .container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+} */

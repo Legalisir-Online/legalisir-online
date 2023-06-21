@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  {{-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> --}}
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -14,8 +16,7 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/biodata.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar-footer.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/dropdown.css') }}">
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 </head>
 
 
@@ -112,6 +113,62 @@
       </form>
     </div>
 
+    <div class="content" id="page2" style="display: none;">
+      <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+          <label for="name" id="label-name">
+            NIK
+          </label>
+
+          <!-- Input Type Text -->
+          <input type="text" id="name" placeholder="NIK" />
+        </div>
+
+        <div class="form-control">
+          <label for="nim" id="label-nim">
+            Nomor WA
+          </label>
+
+          <!-- Input Type Email-->
+          <input type="text" id="nim" placeholder="contoh 62xxxxxxx" />
+        </div>
+
+        <div class="form-control">
+          <label for="tempat-lahir" id="label-tempatlahir">
+            Jenis Kelamin
+          </label>
+
+          <!-- Dropdown options -->
+          <select name="jenis kelamin" id="jenis kelamin">
+            <option value="Lakilaki">Laki-laki</option>
+            <option value="Perempuan">Peremppuan</option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label for="age" id="label-age">
+            Alamat
+          </label>
+
+          <!-- Input Type Email-->
+          <input type="text" id="alamat" placeholder="Alamat" />
+        </div>
+
+        <div class="form-control">
+          <label for="role" id="label-role">
+            RT / RW
+          </label>
+
+          <!-- Input Type Email-->
+          <input type="text" id="rtrw" placeholder="RT / RW" />
+        </div>
+      </form>
+    </div>
+
+    
+
     <!-- <ul class="pagination pagination-circular" role="navigation" aria-label="Pagination">
       <li class="disabled">« <span class="show-for-sr">Previous page</span></li>
       <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
@@ -124,8 +181,8 @@
 
     <ul class="pagination">
       <li class="disabled"><a href="#">«</a></li>
-      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-      <li><a href="#">2</a></li>
+      <li class="active"><a href="#">1 <span class="sr-only"></span></a></li>
+      <li><a href="#" id="button2" class="pagination-button" onclick="handlePageClick(2)">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
@@ -143,3 +200,29 @@
 @include('alumni.includes.footer')
 
 </html>
+
+<!-- ... Bagian sebelumnya ... -->
+
+<script>
+  function handlePageClick(pageNumber) {
+    // Menghapus kelas 'active' dari semua tombol paginasi
+    var paginationButtons = document.getElementsByClassName("pagination-button");
+    for (var i = 0; i < paginationButtons.length; i++) {
+      paginationButtons[i].classList.remove("active");
+    }
+
+    // Menghapus kelas 'active' dari semua halaman konten
+    var contentPages = document.getElementsByClassName("content");
+    for (var j = 0; j < contentPages.length; j++) {
+      contentPages[j].style.display = "none";
+    }
+
+    // Menandai tombol dan halaman yang sesuai dengan kelas 'active'
+    var selectedButton = document.getElementById("button" + pageNumber);
+    var selectedPage = document.getElementById("page" + pageNumber);
+    selectedButton.classList.add("active");
+    selectedPage.style.display = "block";
+  }
+</script>
+
+<!-- ... Bagian setelahnya ... -->

@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('admin_prodi', function (Blueprint $table) {
+        Schema::create('admin_prodis', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_user');
             $table->foreign('id_user')->references('id')->on('users');
             $table->string('nip', 20);
             $table->string('nama', 50);
             $table->string('kode_prodi', 2);
-            $table->foreign('kode_prodi')->references('kode')->on('prodi');
+            $table->foreign('kode_prodi')->references('kode')->on('prodis');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('admin_prodi');
+        Schema::dropIfExists('admin_prodis');
     }
 };
