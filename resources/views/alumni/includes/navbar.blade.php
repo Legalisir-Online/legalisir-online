@@ -19,7 +19,14 @@
             <ul class="dropdown-menu">
                 <li><a href="/biodata">Biodata</a></li>
                 <li><a href="/kuesioner">Kuesioner</a></li>
-                <li><a href="/login">Logout</a></li>
+                <li><a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                        @csrf
+                    </form>
+                </li>
             </ul>
         </li>
     </ul>

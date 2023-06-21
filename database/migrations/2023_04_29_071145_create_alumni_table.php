@@ -16,7 +16,6 @@ return new class extends Migration
             $table->unsignedBigInteger('id_user');
             $table->foreign('id_user')->references('id')->on('users');
             $table->string('nama', 200);
-            $table->string('nim', 15);
             $table->string('nik', 25);
             $table->string('tempat_lahir', 50);
             $table->date('tgl_lahir');
