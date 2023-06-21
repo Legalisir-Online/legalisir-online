@@ -126,4 +126,5 @@ class Alumni extends Model
     //     $this->db->delete('user_sub_menu', ['id' => $id]);
     // }
     use HasFactory;
+
 }

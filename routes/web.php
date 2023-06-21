@@ -21,6 +21,7 @@ Route::get('/', function () {
     return view('landing-page');
 });
 
+Route::post('/biodata',  [BiodataController::class, 'store'] );
 Route::get('/biodata', function () {
     return view('alumni/biodata');
 });
