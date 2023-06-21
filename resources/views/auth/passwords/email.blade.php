@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -22,39 +22,41 @@
         <div class="image-wrapper">
             <img src="{{ asset('images/ppl.png') }}" alt="ppl">
             <div class="group-overlay">
-                <div class="overlay">
-                    <a href="/login">
-                    <p>Log In</p>
-                    </a>
-                </div>
                 <div class="overlay overlay-active">
-                    <a href="/register">
-                    <p>Register</p>
-                    </a>
+                    <p>Forgot Password</p>
                 </div>
             </div>
         </div>
         <div class="login-box">
             <div class="form">
-                <h2>Register Account</h2>
-                <form action="" method="POST">
+                <h2>Forgot Password</h2>
+                @if (session('status'))
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
+                @endif
+
+                <form method="POST" action="{{ route('password.email') }}">
+                    @csrf
+
+                    <p style="color: white">
+                        Masukkan email Anda untuk melakukan reset password
+                    </p>
+                    <div class="form-group">
+                        <input id="email" type="email" class="@error('email') is-invalid @enderror" name="email"
+                            value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                        @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
 
                     <div class="form-group">
-                        <input type="text" name="nim" id="nim" placeholder="NIM" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" id="email" placeholder="email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" name="password" id="password" placeholder="password" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="date" name="date" id="date" placeholder="Tanggal Lahir" required>
-                    </div>
-                    {!! NoCaptcha::renderJs() !!}
-                    {!! NoCaptcha::display() !!}
-                    <div class="form-group">
-                        <button type="submit"><a href="/akun-terverifikasi">Register</a></button>
+                        <button type="submit">
+                            {{ __('Kirim') }}
+                        </button>
                     </div>
                 </form>
             </div>

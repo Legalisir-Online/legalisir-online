@@ -2,227 +2,276 @@
 <html lang="en">
 
 <head>
-  {{-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> --}}
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <meta charset="UTF-8">
-  <title>Sistem Legalisir Online</title>
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/biodata.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar-footer.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/dropdown.css') }}">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <title>Sistem Legalisir Online</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/biodata.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar-footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/dropdown.css') }}">
+    <style>
+        .pagination {
+            display: block;
+            text-align: center;
+        }
 
+        .pagination .btn {
+            display: inline-block;
+            margin: 5px 150px 5px 135px;
+            padding: 8px 16px;
+            border: none;
+            background-color: #5676E1;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .pagination .btn:hover {
+            background-color: #5676e1cb;
+        }
+
+        .pagination #prevBtn {
+            float: left;
+        }
+
+        .pagination #nextBtn {
+            float: right;
+        }
+
+
+        .submit-button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 
-
-
 <body>
-  @include('alumni.includes.navbar')
-  <div class="container">
-    <div class="container-head">
-      Isi Biodata
-    </div> <br><br>
+    @include('alumni.includes.navbar')
+    <div class="container">
+        <div class="container-head">
+            Isi Biodata
+        </div> <br><br>
 
-    <div class="content">
-      <form id="form">
+        <div class="content" id="page1">
+            <form id="form1">
+                <!-- Details -->
+                <div class="form-control">
+                    <label for="name" id="label-name">
+                        Nama
+                    </label>
+                    <!-- Input Type Text -->
+                    <input type="text" id="name" placeholder="Nama lengkap" />
+                </div>
 
-        <!-- Details -->
-        <div class="form-control">
-          <label for="name" id="label-name">
-            Nama
-          </label>
+                <div class="form-control">
+                    <label for="nim" id="label-nim">
+                        NIM
+                    </label>
+                    <!-- Input Type Email-->
+                    <input type="text" id="nim" placeholder="NIM Tanpa Spasi contoh M0520001" />
+                </div>
 
-          <!-- Input Type Text -->
-          <input type="text" id="name" placeholder="Nama lengkap" />
+                <div class="form-control">
+                    <label for="nik" id="label-nik">
+                        NIK
+                    </label>
+                    <!-- Input Type Email-->
+                    <input type="text" id="nik" placeholder="Nomor NIK" />
+                </div>
+
+                <div class="form-control">
+                    <label for="WA" id="label-WA">
+                        Nomor Whatsapp
+                    </label>
+                    <!-- Input Type Email-->
+                    <input type="text" id="WA" placeholder="Nomor WA misal 082************" />
+                </div>
+
+                <div class="form-control">
+                    <label for="tempat-lahir" id="label-tempatlahir">
+                        Tempat Lahir
+                    </label>
+                    <!-- Input Type Text -->
+                    <input type="text" id="tempat-lahir" placeholder="Tempat Lahir" />
+                </div>
+
+                <div class="form-control">
+                    <label for="age" id="label-age">
+                        Tanggal Lahir
+                    </label>
+                    <input type="date" id="age" name="Test_DatetimeLocal">
+                </div>
+            </form>
         </div>
 
-        <div class="form-control">
-          <label for="nim" id="label-nim">
-            NIM
-          </label>
+        <div class="content" id="page2" style="display: none;">
+            <form id="form2">
+                <!-- Details -->
+                <div class="form-control">
+                    <label for="role" id="label-role">
+                        Agama
+                    </label>
+                    <!-- Dropdown options -->
+                    <select name="agama" id="agama">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="katholik">Katholik</option>
+                        <option value="konghucu">Konghucu</option>
+                        <option value="budha">Budha</option>
+                        <option value="hindu">Hindu</option>
+                    </select>
+                </div>
 
-          <!-- Input Type Email-->
-          <input type="text" id="nim" placeholder="NIM Tanpa Spasi contoh M0520001" />
+                <div class="form-control">
+                    <label for="role" id="label-role">
+                        Jenis Kelamin
+                    </label>
+                    <!-- Dropdown options -->
+                    <select name="jenis-kelamin" id="jenis-kelamin">
+                        <option value="L">Laki-laki</option>
+                        <option value="P">Perempuan</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="kode-prodi" id="label-kodeprodi">
+                        Kode Prodi
+                    </label>
+                    <!-- Input Type Text -->
+                    <input type="text" id="kode-prodi" placeholder="Kode Prodi" />
+                </div>
+
+                <div class="form-control">
+                    <label for="rt-rw" id="label-rtrw">
+                        RT/RW
+                    </label>
+                    <!-- Input Type Text -->
+                    <input type="text" id="rt-rw" placeholder="RT/RW" />
+                </div>
+
+                <div class="form-control">
+                    <label for="kelurahan" id="label-kelurahan">
+                        Kelurahan
+                    </label>
+                    <!-- Input Type Text -->
+                    <input type="text" id="kelurahan" placeholder="Kelurahan" />
+                </div>
+            </form>
         </div>
 
-        <div class="form-control">
-          <label for="tempat-lahir" id="label-tempatlahir">
-            Tempat Lahir
-          </label>
+        <div class="content" id="page3" style="display: none;">
+            <form id="form3">
+                <!-- Details -->
+                <div class="form-control">
+                    <label for="kecamatan" id="label-kecamatan">
+                        Kecamatan
+                    </label>
+                    <!-- Input Type Text -->
+                    <input type="text" id="kecamatan" placeholder="Kecamatan" />
+                </div>
 
-          <!-- Input Type Text -->
-          <input type="text" id="age" placeholder="Tempat Lahir" />
+                <div class="form-control">
+                    <label for="kota" id="label-kota">
+                        Kota
+                    </label>
+                    <!-- Input Type Text -->
+                    <input type="text" id="kota" placeholder="Kota" />
+                </div>
+
+                <div class="form-control">
+                    <label for="provinsi" id="label-provinsi">
+                        Provinsi
+                    </label>
+                    <!-- Input Type Text -->
+                    <input type="text" id="provinsi" placeholder="Provinsi" />
+                </div>
+
+                <div class="form-control">
+                    <label for="kode-pos" id="label-kodepos">
+                        Kode Pos
+                    </label>
+                    <!-- Input Type Text -->
+                    <input type="text" id="kode-pos" placeholder="Kode Pos" />
+                </div>
+
+                <div class="form-control">
+                    <label for="alamat" id="label-alamat">
+                        Alamat
+                    </label>
+                    <!-- Input Type Textarea -->
+                    <input type="text" id="alamat" placeholder="Alamat" />
+                </div>
+                <br>
+                <input type="submit" value="Simpan" class="submit-button">
+            </form>
         </div>
 
-        <div class="form-control">
-          <label for="age" id="label-age">
-            Tanggal Lahir
-          </label>
-
-          <input type="date" id="Test_DatetimeLocal">
+        <div class="pagination">
+            <button class="btn" id="prevBtn" onclick="previousPage()">Previous</button>
+            <button class="btn" id="nextBtn" onclick="nextPage()">Next</button>
         </div>
-
-        <div class="form-control">
-          <label for="role" id="label-role">
-            Agama
-          </label>
-
-          <!-- Dropdown options -->
-          <select name="agama" id="agama">
-            <option value="islam">Islam</option>
-            <option value="kristen">Kristen</option>
-            <option value="katholik">Katholik</option>
-            <option value="konghucu">Konghucu</option>
-            <option value="budha">Budha</option>
-            <option value="hindu">Hindu</option>
-          </select>
-        </div>
-
-        <!-- Multi-line Text Input Control -->
-        <!-- <button type="submit" value="submit">
-          Submit
-        </button> -->
-        <!-- <div class="pagination_rounded">
-          <ul>
-            <li>
-              <a href="#" class="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> Prev </a>
-            </li>
-            <li><a href="#">1</a>
-            </li>
-            <li class="hidden-xs"><a href="#">2</a>
-            </li>
-            <li class="hidden-xs"><a href="#">3</a>
-            </li>
-            <li class="hidden-xs"><a href="#">4</a>
-            </li>
-            <li class="hidden-xs"><a href="#">5</a>
-            </li>
-            <li class="visible-xs"><a href="#">...</a>
-            </li>
-            <li><a href="#">6</a>
-            </li>
-            <li><a href="#" class="next"> Next <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            </li>
-          </ul>
-        </div> -->
-      </form>
     </div>
 
-    <div class="content" id="page2" style="display: none;">
-      <form id="form">
+    <script>
+        var currentPage = 1;
+        var maxPage = 3;
 
-        <!-- Details -->
-        <div class="form-control">
-          <label for="name" id="label-name">
-            NIK
-          </label>
+        function showPage(pageNumber) {
+            var pages = document.getElementsByClassName("content");
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = "none";
+            }
+            document.getElementById("page" + pageNumber).style.display = "block";
 
-          <!-- Input Type Text -->
-          <input type="text" id="name" placeholder="NIK" />
-        </div>
+            // Update button visibility
+            if (pageNumber === 1) {
+                document.getElementById("prevBtn").style.display = "none";
+            } else {
+                document.getElementById("prevBtn").style.display = "block";
+            }
+            if (pageNumber === maxPage) {
+                document.getElementById("nextBtn").style.display = "none";
+            } else {
+                document.getElementById("nextBtn").style.display = "block";
+            }
+        }
 
-        <div class="form-control">
-          <label for="nim" id="label-nim">
-            Nomor WA
-          </label>
+        function nextPage() {
+            if (currentPage < maxPage) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
 
-          <!-- Input Type Email-->
-          <input type="text" id="nim" placeholder="contoh 62xxxxxxx" />
-        </div>
+        function previousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
 
-        <div class="form-control">
-          <label for="tempat-lahir" id="label-tempatlahir">
-            Jenis Kelamin
-          </label>
-
-          <!-- Dropdown options -->
-          <select name="jenis kelamin" id="jenis kelamin">
-            <option value="Lakilaki">Laki-laki</option>
-            <option value="Perempuan">Peremppuan</option>
-          </select>
-        </div>
-
-        <div class="form-control">
-          <label for="age" id="label-age">
-            Alamat
-          </label>
-
-          <!-- Input Type Email-->
-          <input type="text" id="alamat" placeholder="Alamat" />
-        </div>
-
-        <div class="form-control">
-          <label for="role" id="label-role">
-            RT / RW
-          </label>
-
-          <!-- Input Type Email-->
-          <input type="text" id="rtrw" placeholder="RT / RW" />
-        </div>
-      </form>
-    </div>
-
-    
-
-    <!-- <ul class="pagination pagination-circular" role="navigation" aria-label="Pagination">
-      <li class="disabled">« <span class="show-for-sr">Previous page</span></li>
-      <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-      <li><a href="#" aria-label="Page 2">2</a></li>
-      <li><a href="#" aria-label="Page 3">3</a></li>
-      <li><a href="#" aria-label="Page 4">4</a></li>
-      <li><a href="#" aria-label="Page 5">5</a></li>
-      <li><a href="#" aria-label="Next page">» <span class="show-for-sr">Next page</span></a></li>
-    </ul> -->
-
-    <ul class="pagination">
-      <li class="disabled"><a href="#">«</a></li>
-      <li class="active"><a href="#">1 <span class="sr-only"></span></a></li>
-      <li><a href="#" id="button2" class="pagination-button" onclick="handlePageClick(2)">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">»</a></li>
-    </ul>
-  </div>
-
-  <!-- <footer class="footer">
-    <div class="footer-text">
-        &copy; Fakultas Teknologi Informasi Dan Sains Data UNS - 2023
-    </div>
-  </footer> -->
+        showPage(currentPage);
+    </script>
 </body>
-
 @include('alumni.includes.footer')
 
 </html>
-
-<!-- ... Bagian sebelumnya ... -->
-
-<script>
-  function handlePageClick(pageNumber) {
-    // Menghapus kelas 'active' dari semua tombol paginasi
-    var paginationButtons = document.getElementsByClassName("pagination-button");
-    for (var i = 0; i < paginationButtons.length; i++) {
-      paginationButtons[i].classList.remove("active");
-    }
-
-    // Menghapus kelas 'active' dari semua halaman konten
-    var contentPages = document.getElementsByClassName("content");
-    for (var j = 0; j < contentPages.length; j++) {
-      contentPages[j].style.display = "none";
-    }
-
-    // Menandai tombol dan halaman yang sesuai dengan kelas 'active'
-    var selectedButton = document.getElementById("button" + pageNumber);
-    var selectedPage = document.getElementById("page" + pageNumber);
-    selectedButton.classList.add("active");
-    selectedPage.style.display = "block";
-  }
-</script>
-
-<!-- ... Bagian setelahnya ... -->
