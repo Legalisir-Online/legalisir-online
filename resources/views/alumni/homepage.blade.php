@@ -34,13 +34,23 @@
 
       <br><br>
       <div class="button">
-      <button type="submit" class="btn btn" style="background-color: #5676E1; color:white; border-radius: 10px;"">Ajukan Legalisir</button>
+      <button type="submit" class="btn btn" id="openModal" style="background-color: #5676E1; color:white; border-radius: 10px;">Ajukan Legalisir</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><strong>Mohon maaf, Anda belum mengupload berkas legalisir.
+                        Silakukan upload berkas terlebih dahulu</strong></h2>
+            <div class="modal-btn">
+              <button type="button" id="upload" style="background-color: #5676E1; color:white; border-radius: 10px;">Upload Berkas</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Modal Upload Berkas -->
-  <div id="uploadBerkas" class="modal">
+  <!-- <div id="uploadBerkas" class="modal">
     <div class="modal-dialog">
       <div class="modal-content" style="border-radius: 10px; padding: 10px;">
         <div class="modal-header d-flex justify-content-between">
@@ -58,9 +68,31 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+             <!-- <button class="batal-btn" id="openModal">Ajukan legalisir <img src="{{ asset('images/icons/cancel.png') }}" alt="cancel" width="30px" height="30px" margin-right="5px";></button> -->
+                
 
 </body>
+
+<script>
+    document.getElementById("openModal").addEventListener("click", function() {
+        document.getElementById("myModal").style.display = "block";
+    });
+
+    document.getElementsByClassName("close")[0].addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+    });
+
+    document.getElementById("modalClose").addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+    });
+
+    document.getElementById("modalSave").addEventListener("click", function() {
+    // Logic to save changes
+    document.getElementById("myModal").style.display = "none";
+    });
+</script>
 
 </html>
 
