@@ -9,27 +9,27 @@ use Illuminate\Database\Eloquent\Model;
 
 class Alumni extends Model
 {
-    
-    protected $table = 'alumni';
+
+    protected $table = 'alumnis';
     protected $fillable = [
         'id',
-        'id_user', 
-        'nama', 
-        'nim', 
-        'nik', 
-        'tempat_lahir', 
-        'tgl_lahir', 
-        'nomor_wa', 
-        'agama', 
-        'jenis_kelamin', 
-        'alamat', 
+        'id_user',
+        'nama',
+        'nim',
+        'nik',
+        'tempat_lahir',
+        'tgl_lahir',
+        'nomor_wa',
+        'agama',
+        'jenis_kelamin',
+        'alamat',
         'kota', '
-        provinsi', 
-        'kode_pos', 
-        'rt', 
-        'rw', 
-        'kelurahan', 
-        'kecamatan', 
+        provinsi',
+        'kode_pos',
+        'rt',
+        'rw',
+        'kelurahan',
+        'kecamatan',
         'kode_prodi'
     ];
 
@@ -56,7 +56,7 @@ class Alumni extends Model
         return response()->json(['message' => 'Alumni deleted successfully'], 200);
     }
 
-    // public function __construct() 
+    // public function __construct()
     // {
     //     $this->token = config('values.accessToken');
     // }
