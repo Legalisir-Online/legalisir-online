@@ -10,14 +10,10 @@ class AlumniController extends Controller
 {
     public function getAlumniById($id)
     {
-        $data = Alumni::find($id);
+        $alumnis = Alumni::find($id);
 
-        if ($data) {
-            return response()->json([
-                'success' => true,
-                'message' => 'Detail Data Alumni',
-                'data' => $data
-            ], 200);
+        if ($alumnis) {
+            return view('alumni.profile', compact('alumnis'));
         } else {
             return response()->json([
                 'success' => false,
