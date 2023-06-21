@@ -20,7 +20,7 @@
 
       <!-- Body -->
       <div class="title">
-         <h5>Status pengajuan berkas ID : NBH-29298</h5>
+         <h5>Status pengajuan legalisir ID : NBH-29298</h5>
       </div>
 
       <div class="box-wrapper">
