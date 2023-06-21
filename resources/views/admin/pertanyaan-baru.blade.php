@@ -51,18 +51,9 @@
                                         </div>
 
                                         <div class="form-group" id="answerOptions">
-                                            <input type="radio" id="option1" name="pilihan" value="sangat_setuju">
-                                            <label for="option1"> Sangat Setuju</label><br>
-                                            <input type="radio" id="option2" name="pilihan" value="setuju">
-                                            <label for="option2"> Setuju</label><br>
-                                            <input type="radio" id="option3" name="pilihan" value="netral">
-                                            <label for="option3"> Netral</label><br>
-                                            <input type="radio" id="option4" name="pilihan" value="tidak_setuju">
-                                            <label for="option4"> Tidak Setuju</label><br>
-                                            <input type="radio" id="option5" name="pilihan"
-                                                value="sangat_tidak_setuju">
-                                            <label for="option5"> Sangat Tidak Setuju</label><br>
+                                            <button type="button" onclick="addOption()">Tambah Opsi</button>
                                         </div>
+                                        
 
                                         <div class="form-group" id="answerEssay" style="display: none;">
                                             &nbsp;&nbsp;&nbsp;&nbsp;Long Answer Text
@@ -102,6 +93,36 @@
 
 </html>
 
+<script>
+        var optionCounter = 0; // Counter untuk opsi berikutnya
+
+        function addOption() {
+            optionCounter++;
+            var optionId = "option" + optionCounter;
+
+            var input = document.createElement("input");
+            input.type = "radio";
+            input.id = optionId;
+            input.name = "pilihan";
+            input.value = optionId;
+
+            var label = document.createElement("label");
+            label.htmlFor = optionId;
+            label.textContent = "  ";
+
+            var optionInput = document.createElement("input");
+            optionInput.type = "text";
+            optionInput.id = "optionInput" + optionCounter;
+
+            var br = document.createElement("br");
+
+            var optionsDiv = document.getElementById("answerOptions");
+            optionsDiv.insertBefore(br, optionsDiv.firstChild);
+            optionsDiv.insertBefore(optionInput, optionsDiv.firstChild);
+            optionsDiv.insertBefore(label, optionsDiv.firstChild);
+            optionsDiv.insertBefore(input, optionsDiv.firstChild);
+        }
+    </script>
 <script>
       function showAnswerOptions() {
       var questionType = document.getElementById("questionType").value;

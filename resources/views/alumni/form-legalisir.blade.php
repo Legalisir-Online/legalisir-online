@@ -29,7 +29,6 @@
             <select id="pberkas" name="pilihberkas" >
                 <option value="ijazah">Ijazah</option>
                 <option value="transkrip nilai">Transkrip nilai</option>
-                <option value="ijazah & transkrip nilai">Ijazah & Transkrip nilai</option>
             </select>
 
             <label for="cberkas">Cetak berkas</label> <br>
@@ -41,9 +40,9 @@
             <label for="jumlah">Jumlah</label> <br>
                 <input type="number" min="1" max="5" name="jumlah" /><br> 
 
-            <label for="pengberkas">Pengambilan berkas :</label> <br> <br>
-                <input type="radio" name="pengambilan_berkas" value="kirim berkas" /> Kirim berkas</label> <br> <br>
-                <input type="radio" name="pengambilan_berkas" value="cetak berkas" /> Cetak berkas</label> <br> <br>
+                <label for="pengberkas">Pengambilan berkas :</label> <br> <br>
+                    <input type="radio" name="pengambilan_berkas" value="kirim_berkas" onclick="toggleEkspedisi(this)" /> Kirim berkas <br> <br>
+                    <input type="radio" name="pengambilan_berkas" value="cetak_berkas" onclick="toggleEkspedisi(this)" /> Cetak berkas <br> <br>
 
             <label for="pekspedisi">Pilih ekspedisi</label> <br>
             <select id="pekspedisi" name="pilihekspedisi" disabled>
@@ -59,4 +58,10 @@
 
     @include('alumni.includes.footer')
 </body>
+<script>
+        function toggleEkspedisi(radioButton) {
+            var ekspedisiSelect = document.getElementById("pekspedisi");
+            ekspedisiSelect.disabled = (radioButton.value === "cetak_berkas");
+        }
+    </script>
 </html>

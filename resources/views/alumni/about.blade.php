@@ -25,7 +25,7 @@
                 <a href="/flow" class="nav-link">Flow</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
+                <a href="/about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
                 <a href="/login" class="nav-link">Login</a>
@@ -39,7 +39,7 @@
 <div id="box2">
         <div class="icon" style= "top:20px">
                 <img src="{{ asset('images/lisir.png') }}" alt="legal" width="500px">
-        </div> 
+        </div>
     </div> <!-- End-box2-->
 
     <section class="about-section text-center" id="about">
@@ -48,20 +48,20 @@
                 <div class="col-lg-8" style="color:black">
                     <h2 class="text-white mb-4">Sistem Legalisir Online FATISDA UNS</h2>
                     <p class="text-white-30" >
-                    Sistem legalisir online merupakan sebuah platform digital yang dirancang untuk mempermudah dan 
-                    mempercepat proses legalisasi dokumen di lingkungan Fakultas Teknologi Informasi dan Sains Data UNS. 
-                    Sistem ini memberikan kemudahan bagi alumni FATISDA UNS dalam mengurus legalisasi dokumen seperti transkrip 
+                    Sistem legalisir online merupakan sebuah platform digital yang dirancang untuk mempermudah dan
+                    mempercepat proses legalisasi dokumen di lingkungan Fakultas Teknologi Informasi dan Sains Data UNS.
+                    Sistem ini memberikan kemudahan bagi alumni FATISDA UNS dalam mengurus legalisasi dokumen seperti transkrip
                     nilai dan ijazah yang diperlukan untuk keperluan administrasi, pekerjaan, atau pendidikan lanjutan.
-                    Dengan adanya sistem legalisir online, proses legalisasi dokumen menjadi lebih efisien dan praktis. 
-                    Mahasiswa atau alumni FATISDA UNS dapat mengajukan permohonan legalisasi dokumen mereka melalui platform 
-                    online yang tersedia, tanpa perlu datang secara langsung ke kantor administrasi fakultas. 
+                    Dengan adanya sistem legalisir online, proses legalisasi dokumen menjadi lebih efisien dan praktis.
+                    Mahasiswa atau alumni FATISDA UNS dapat mengajukan permohonan legalisasi dokumen mereka melalui platform
+                    online yang tersedia, tanpa perlu datang secara langsung ke kantor administrasi fakultas.
                     </p>
                 </div> <!-- End Col-->
             </div> <!-- End Row-->
         </div> <!-- End Container-->
     </section> <!-- End Section-->
 
-    
+
 </div> <!-- End Content-->
 
 
