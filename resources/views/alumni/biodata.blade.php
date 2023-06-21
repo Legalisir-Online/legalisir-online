@@ -83,14 +83,6 @@
                 </div>
 
                 <div class="form-control">
-                    <label for="nim" id="label-nim">
-                        NIM
-                    </label>
-                    <!-- Input Type Email-->
-                    <input type="text" id="nim" name="nim" placeholder="NIM Tanpa Spasi contoh M0520001" />
-                </div>
-
-                <div class="form-control">
                     <label for="nik" id="label-nik">
                         NIK
                     </label>
