@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Alumni;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -25,7 +26,8 @@ class AlumniController extends Controller
         }
     }
 
-    public function getAllAlumni(){
+    public function getAllAlumni()
+    {
         $data = Alumni::all();
         return response()->json([
             'success' => true,
