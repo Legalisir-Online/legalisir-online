@@ -79,7 +79,7 @@
                         Nama
                     </label>
                     <!-- Input Type Text -->
-                    <input type="text" id="name" placeholder="Nama lengkap" />
+                    <input type="text" id="nama" name="nama" placeholder="Nama lengkap" />
                 </div>
 
                 <div class="form-control">
@@ -87,7 +87,7 @@
                         NIM
                     </label>
                     <!-- Input Type Email-->
-                    <input type="text" id="nim" placeholder="NIM Tanpa Spasi contoh M0520001" />
+                    <input type="text" id="nim" name="nim" placeholder="NIM Tanpa Spasi contoh M0520001" />
                 </div>
 
                 <div class="form-control">
@@ -95,7 +95,7 @@
                         NIK
                     </label>
                     <!-- Input Type Email-->
-                    <input type="text" id="nik" placeholder="Nomor NIK" />
+                    <input type="text" id="nik" name="nik" placeholder="Nomor NIK" />
                 </div>
 
                 <div class="form-control">
@@ -103,7 +103,7 @@
                         Nomor Whatsapp
                     </label>
                     <!-- Input Type Email-->
-                    <input type="text" id="WA" placeholder="Nomor WA misal 082************" />
+                    <input type="text" id="nomor_wa" name="nomor_wa" placeholder="Nomor WA misal 082************" />
                 </div>
 
                 <div class="form-control">
@@ -111,14 +111,14 @@
                         Tempat Lahir
                     </label>
                     <!-- Input Type Text -->
-                    <input type="text" id="tempat-lahir" placeholder="Tempat Lahir" />
+                    <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" />
                 </div>
 
                 <div class="form-control">
                     <label for="age" id="label-age">
                         Tanggal Lahir
                     </label>
-                    <input type="date" id="age" name="Test_DatetimeLocal">
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" name="Test_DatetimeLocal">
                 </div>
             </form>
         </div>
@@ -131,7 +131,7 @@
                         Agama
                     </label>
                     <!-- Dropdown options -->
-                    <select name="agama" id="agama">
+                    <select name="agama" id="agama" name="agama">
                         <option value="islam">Islam</option>
                         <option value="kristen">Kristen</option>
                         <option value="katholik">Katholik</option>
@@ -146,7 +146,7 @@
                         Jenis Kelamin
                     </label>
                     <!-- Dropdown options -->
-                    <select name="jenis-kelamin" id="jenis-kelamin">
+                    <select name="jenis-kelamin" id="jenis_kelamin" name="jenis_kelamin">
                         <option value="L">Laki-laki</option>
                         <option value="P">Perempuan</option>
                     </select>
@@ -157,36 +157,45 @@
                         Kode Prodi
                     </label>
                     <!-- Input Type Text -->
-                    <input type="text" id="kode-prodi" placeholder="Kode Prodi" />
+                    <input type="text" id="kode_prodi" name="kode_prodi" placeholder="Kode Prodi" />
                 </div>
 
                 <div class="form-control">
                     <label for="rt-rw" id="label-rtrw">
-                        RT/RW
+                        RT
                     </label>
                     <!-- Input Type Text -->
-                    <input type="text" id="rt-rw" placeholder="RT/RW" />
+                    <input type="text" id="rt" name="rt" placeholder="RT" />
                 </div>
-
+                <div class="form-control">
+                    <label for="rw" id="label-rtrw">
+                        RW
+                    </label>
+                    <!-- Input Type Text -->
+                    <input type="text" id="rw" name="rw" placeholder="RW" />
+                </div>
                 <div class="form-control">
                     <label for="kelurahan" id="label-kelurahan">
                         Kelurahan
                     </label>
                     <!-- Input Type Text -->
-                    <input type="text" id="kelurahan" placeholder="Kelurahan" />
+                    <input type="text" id="kelurahan" name="kelurahan" placeholder="Kelurahan" />
                 </div>
+
+                
             </form>
         </div>
 
         <div class="content" id="page3" style="display: none;">
             <form id="form3">
                 <!-- Details -->
+                
                 <div class="form-control">
                     <label for="kecamatan" id="label-kecamatan">
                         Kecamatan
                     </label>
                     <!-- Input Type Text -->
-                    <input type="text" id="kecamatan" placeholder="Kecamatan" />
+                    <input type="text" id="kecamatan" name="kecamatan" placeholder="Kecamatan" />
                 </div>
 
                 <div class="form-control">
@@ -194,7 +203,7 @@
                         Kota
                     </label>
                     <!-- Input Type Text -->
-                    <input type="text" id="kota" placeholder="Kota" />
+                    <input type="text" id="kota" name="kota" placeholder="Kota" />
                 </div>
 
                 <div class="form-control">
@@ -202,7 +211,7 @@
                         Provinsi
                     </label>
                     <!-- Input Type Text -->
-                    <input type="text" id="provinsi" placeholder="Provinsi" />
+                    <input type="text" id="provinsi" name="provinsi" placeholder="Provinsi" />
                 </div>
 
                 <div class="form-control">
@@ -210,7 +219,7 @@
                         Kode Pos
                     </label>
                     <!-- Input Type Text -->
-                    <input type="text" id="kode-pos" placeholder="Kode Pos" />
+                    <input type="text" id="kode_pos" name="kode_pos" placeholder="Kode Pos" />
                 </div>
 
                 <div class="form-control">
@@ -218,7 +227,7 @@
                         Alamat
                     </label>
                     <!-- Input Type Textarea -->
-                    <input type="text" id="alamat" placeholder="Alamat" />
+                    <input type="text" id="alamat" name="alamat" placeholder="Alamat" />
                 </div>
                 <br>
                 <input type="submit" value="Simpan" class="submit-button">
