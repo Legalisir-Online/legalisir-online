@@ -29,7 +29,7 @@
     </div> <br><br>
 
     <div class="content">
-      <form id="form">
+      <form method="POST" action="/biodata" id="form">
 
         <!-- Details -->
         <div class="form-control">
@@ -38,7 +38,7 @@
           </label>
 
           <!-- Input Type Text -->
-          <input type="text" id="name" placeholder="Nama lengkap" />
+          <input type="text" id="nama" name="nama" placeholder="Nama lengkap" />
         </div>
 
         <div class="form-control">
@@ -47,7 +47,7 @@
           </label>
 
           <!-- Input Type Email-->
-          <input type="text" id="nim" placeholder="NIM Tanpa Spasi contoh M0520001" />
+          <input type="text" name="nim" id="nim" placeholder="NIM Tanpa Spasi contoh M0520001" />
         </div>
 
         <div class="form-control">
