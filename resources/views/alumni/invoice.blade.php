@@ -98,10 +98,40 @@
                 <span>Tagihan harap dibayar dalam 24 jam !</span>
                 <span>Tanggal kadaluarsa :[Tenggat Waktu]</span>
             </button>
-            <a href="#"><button class="batal-btn">Batalkan Legalisir <img src="{{ asset('images/icons/cancel.png') }}" alt="cancel" width="30px" height="30px" margin-right="5px";></button></a>
+            <button class="batal-btn" id="openModal">Batalkan Legalisir <img src="{{ asset('images/icons/cancel.png') }}" alt="cancel" width="30px" height="30px" margin-right="5px";></button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2><b>Apakah anda yakin ingin membatalkan ajuan legalisir?</b></h2>
+                        <div class="modal-btn">
+                            <button type="button" id="modalClose">Close</button>
+                            <button type="button" id="modalSave">Save changes</button>
+                        </div>
+                    </div>
+                </div>
             <a href="#"><button class="download-btn">Download Invoice &nbsp;<img src="{{ asset('images/icons/download.png') }}" alt="download" width="25px" height="25px" margin-right="5px";></button></a>
         </div>
     </div>
+
     @include('alumni.includes.footer')
 </body>
+
+<script>
+    document.getElementById("openModal").addEventListener("click", function() {
+        document.getElementById("myModal").style.display = "block";
+    });
+
+    document.getElementsByClassName("close")[0].addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+    });
+
+    document.getElementById("modalClose").addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+    });
+
+    document.getElementById("modalSave").addEventListener("click", function() {
+    // Logic to save changes
+    document.getElementById("myModal").style.display = "none";
+    });
+</script>
 </html>

@@ -34,7 +34,17 @@
 
       <br><br>
       <div class="button">
-      <button type="submit" id="ajukanButton" class="btn btn" style="background-color: #5676E1; color:white; border-radius: 10px;">Ajukan Legalisir</button>
+      <button type="submit" class="btn btn" id="openModal" style="background-color: #5676E1; color:white; border-radius: 10px;">Ajukan Legalisir</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><strong>Mohon maaf, Anda belum mengupload berkas legalisir.
+                        Silakukan upload berkas terlebih dahulu</strong></h2>
+            <div class="modal-btn">
+              <button type="button" id="upload" style="background-color: #5676E1; color:white; border-radius: 10px;">Upload Berkas</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -58,7 +68,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
 </body>
 <!-- <script>
@@ -67,7 +77,25 @@
     modal.style.display = "block";
   });
 
-</script> -->
+<script>
+    document.getElementById("openModal").addEventListener("click", function() {
+        document.getElementById("myModal").style.display = "block";
+    });
+
+    document.getElementsByClassName("close")[0].addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+    });
+
+    document.getElementById("modalClose").addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+    });
+
+    document.getElementById("modalSave").addEventListener("click", function() {
+    // Logic to save changes
+    document.getElementById("myModal").style.display = "none";
+    });
+</script>
+
 </html>
 
 @include('alumni.includes.footer')
