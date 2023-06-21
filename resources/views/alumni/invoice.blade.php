@@ -24,20 +24,22 @@
             <h1>Invoice</h1>
         </div> 
         <div class="info">
+            @foreach ($alumnis as $alumni)
             <table>
                 <tr>
                     <td>Nama </td>
-                    <td>: [Nama Alumni]</td>
+                    <td>: {{ $alumni->nama }}</td>
                 </tr>
-                <tr>
+                <tr> @foreach ($users as $user)
                     <td>NIM </td>
-                    <td>: [NIM]</td>
-                </tr>
+                    <td>: {{ $user->nim }}</td>
+                </tr>@endforeach
                 <tr>
                     <td>Alamat </td>
-                    <td>: [Alamat]</td>
+                    <td>: {{ $alumni->alamat }}</td>
                 </tr>
             </table>
+            @endforeach
         </div> <hr>
         <div class="table">
             <table>
@@ -47,14 +49,14 @@
                     <th>Harga</th>
                     <th>Tarif</th>
                 </tr>
-                <tr>
-                    <td>Bekas Ijazah</td>
-                    <td>1</td>
-                    <td>XXXX</td>
-                    <td>XX</td>
+                <tr>@foreach ($transaksis as $transaksi)
+                    <td>Berkas Ijazah</td>
+                    <td>{{ $transaksi->jumlah_berkas }}</td>
+                    <td>Rp {{ $transaksi->harga_satuan }}</td>
+                    <td>Rp {{ $transaksi->jumlah_berkas * $transaksi->harga_satuan }}</td>
                 </tr>
                 <tr>
-                    <td>Bekas Transkrip Nilai</td>
+                    <td>Berkas Transkrip Nilai</td>
                     <td>2</td>
                     <td>XXXX</td>
                     <td>XX</td>
@@ -66,9 +68,9 @@
                 <tr>
                     <td>Ongkos Kirim</td>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    <td>XX</td>
+                    <td>Rp {{ $transaksi->harga_ongkir }}</td>
                 </tr>
-            </table>
+            </table> @endforeach
         </div> <hr>
         <div class="table">
             <table>
@@ -86,11 +88,11 @@
             </div>
             <div class="payment-item">
                 <span>Nama Rekening:</span>
-                <span>[Nama Rekening]</span>
+                <span>FATISDA UNS</span>
             </div>
             <div class="payment-item">
                 <span>Nomor Rekening:</span>
-                <span>[Nomor Rekening]</span>
+                <span>015206598 (BNI)</span>
             </div>
         </div>
         <div class="buttons">

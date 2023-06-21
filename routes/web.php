@@ -25,7 +25,7 @@ Route::get('/biodata', function () {
     return view('alumni/biodata');
 })->middleware('role:alumni');
 
-Route::get('/profile', [ProfileController::class, 'alumni'] );
+Route::get('/profile', [ProfileController::class, 'data'] );
 
 Route::get('/upload-berkas', function () {
     return view('alumni/upload-berkas');
@@ -51,9 +51,10 @@ Route::get('/riwayat-ajuan', function () {
     return view('alumni/riwayat-ajuan');
 })->middleware('role:alumni');
 
-Route::get('/invoice', function () {
-    return view('alumni/invoice');
-})->middleware('role:alumni');
+// Route::get('/invoice', function () {
+//     return view('alumni/invoice');
+// })->middleware('role:alumni');
+Route::get('/invoice', [InvoiceController::class, 'invoice'] );
 
 Route::get('/status-ajuan2', function () {
     return view('alumni/status-ajuan2');
@@ -141,19 +142,19 @@ Route::get('/validasi-berkas', function () {
 
 Route::get('/administrator', function () {
     return view('administrator/administrator');
-})->middleware('role:admin_prodi');
+})->middleware('role:administrator');
 
 Route::get('/users', function () {
     return view('administrator/users');
-})->middleware('role:admin_prodi');
+})->middleware('role:administrator');
 
 Route::get('/user-admin', function () {
     return view('administrator/user-admin');
-})->middleware('role:admin_prodi');
+})->middleware('role:administrator');
 
 Route::get('/user-alumni', function () {
     return view('administrator/user-alumni');
-})->middleware('role:admin_prodi');
+})->middleware('role:administrator');
 
 Route::get('/daftar-berkas', function () {
     return view('admin/daftar-berkas');
