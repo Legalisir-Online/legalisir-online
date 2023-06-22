@@ -26,29 +26,32 @@
 
     <div class="container2">
         <div class="flex-row">
+        @foreach ($alumnis as $alumni)
             <div class="flex-column" style="width: 200px">
                 <span>Nama</span>
             </div>
             <div class="flex-column">
-                <span>:  Akajsdnkjnx Pxcjknb</span>
+                <span>:  {{ $alumni->nama }}</span>
             </div>
         </div>
 
         <div class="flex-row">
+        @foreach ($users as $user)
             <div class="flex-column" style="width: 200px">
                 <span>NIM</span>
             </div>
             <div class="flex-column">
-                <span>:  M0520000</span>
+                <span>:  {{ $user->nim }}</span>
             </div>
         </div>
+        @endforeach
 
         <div class="flex-row">
             <div class="flex-column" style="width: 200px">
                 <span>No. HP</span>
             </div>
             <div class="flex-column">
-                <span>:  1234567890</span>
+                <span>:  {{ $alumni->nomor_wa }}</span>
             </div>
         </div>
 
@@ -57,25 +60,28 @@
                 <span>Alamat</span>
             </div>
             <div class="flex-column">
-                <span>:  jalan jalan jalan no 7, dimana aja, 50502</span>
+                <span>:  {{ $alumni->alamat }}</span>
             </div>
         </div>
+        @endforeach
 
         <div class="flex-row">
+        @foreach ($transaksis as $transaksi)
             <div class="flex-column" style="width: 200px">
                 <span>Berkas yang dilegalisir</span>
             </div>
             <div class="flex-column">
-                <span>:  Ijazah & transkrip nilai</span>
+                <span>:  {{ $transaksi->id_dokumen }}</span>
             </div>
         </div>
+        
 
         <div class="flex-row">
             <div class="flex-column" style="width: 200px">
                 <span>Jumlah berkas dilegalisir</span>
             </div>
             <div class="flex-column">
-                <span>:  5</span>
+                <span>:  {{ $transaksi->jumlah_berkas }}</span>
             </div>
         </div>
 
@@ -84,7 +90,7 @@
                 <span>Pengambilan berkas</span>
             </div>
             <div class="flex-column">
-                <span>:  Dikirim</span>
+                <span>:  {{ $transaksi->pengambilan_berkas }}</span>
             </div>
         </div>
 
@@ -93,15 +99,16 @@
                 <span>Ekspedisi</span>
             </div>
             <div class="flex-column">
-                <span>:  JNE</span>
+                <span>:  {{ $transaksi->ekspedisi }}</span>
             </div>
         </div>
+        @endforeach
 
         <input type="submit" value="Ajukan Legalisir">
 
     </div>
 
-    @include('alumni.includes.footer')
+    
 </body>
-
+@include('alumni.includes.footer')
 </html>

@@ -24,20 +24,22 @@
             <h1>Invoice</h1>
         </div> 
         <div class="info">
+            @foreach ($alumnis as $alumni)
             <table>
                 <tr>
                     <td>Nama </td>
-                    <td>: [Nama Alumni]</td>
+                    <td>: {{ $alumni->nama }}</td>
                 </tr>
-                <tr>
+                <tr> @foreach ($users as $user)
                     <td>NIM </td>
-                    <td>: [NIM]</td>
-                </tr>
+                    <td>: {{ $user->nim }}</td>
+                </tr>@endforeach
                 <tr>
                     <td>Alamat </td>
-                    <td>: [Alamat]</td>
+                    <td>: {{ $alumni->alamat }}</td>
                 </tr>
             </table>
+            @endforeach
         </div> <hr>
         <div class="table">
             <table>
@@ -47,14 +49,14 @@
                     <th>Harga</th>
                     <th>Tarif</th>
                 </tr>
-                <tr>
-                    <td>Bekas Ijazah</td>
-                    <td>1</td>
-                    <td>XXXX</td>
-                    <td>XX</td>
+                <tr>@foreach ($transaksis as $transaksi)
+                    <td>Berkas Ijazah</td>
+                    <td>{{ $transaksi->jumlah_berkas }}</td>
+                    <td>Rp {{ $transaksi->harga_satuan }}</td>
+                    <td>Rp {{ $transaksi->jumlah_berkas * $transaksi->harga_satuan }}</td>
                 </tr>
                 <tr>
-                    <td>Bekas Transkrip Nilai</td>
+                    <td>Berkas Transkrip Nilai</td>
                     <td>2</td>
                     <td>XXXX</td>
                     <td>XX</td>
@@ -66,9 +68,9 @@
                 <tr>
                     <td>Ongkos Kirim</td>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                    <td>XX</td>
+                    <td>Rp {{ $transaksi->harga_ongkir }}</td>
                 </tr>
-            </table>
+            </table> @endforeach
         </div> <hr>
         <div class="table">
             <table>
@@ -86,11 +88,11 @@
             </div>
             <div class="payment-item">
                 <span>Nama Rekening:</span>
-                <span>[Nama Rekening]</span>
+                <span>FATISDA UNS</span>
             </div>
             <div class="payment-item">
                 <span>Nomor Rekening:</span>
-                <span>[Nomor Rekening]</span>
+                <span>015206598 (BNI)</span>
             </div>
         </div>
         <div class="buttons">
@@ -98,10 +100,40 @@
                 <span>Tagihan harap dibayar dalam 24 jam !</span>
                 <span>Tanggal kadaluarsa :[Tenggat Waktu]</span>
             </button>
-            <a href="#"><button class="batal-btn">Batalkan Legalisir <img src="{{ asset('images/icons/cancel.png') }}" alt="cancel" width="30px" height="30px" margin-right="5px";></button></a>
+            <button class="batal-btn" id="openModal">Batalkan Legalisir <img src="{{ asset('images/icons/cancel.png') }}" alt="cancel" width="30px" height="30px" margin-right="5px";></button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2><b>Apakah anda yakin ingin membatalkan ajuan legalisir?</b></h2>
+                        <div class="modal-btn">
+                            <button type="button" id="modalClose">Close</button>
+                            <button type="button" id="modalSave">Save changes</button>
+                        </div>
+                    </div>
+                </div>
             <a href="#"><button class="download-btn">Download Invoice &nbsp;<img src="{{ asset('images/icons/download.png') }}" alt="download" width="25px" height="25px" margin-right="5px";></button></a>
         </div>
     </div>
+
     @include('alumni.includes.footer')
 </body>
+
+<script>
+    document.getElementById("openModal").addEventListener("click", function() {
+        document.getElementById("myModal").style.display = "block";
+    });
+
+    document.getElementsByClassName("close")[0].addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+    });
+
+    document.getElementById("modalClose").addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+    });
+
+    document.getElementById("modalSave").addEventListener("click", function() {
+    // Logic to save changes
+    document.getElementById("myModal").style.display = "none";
+    });
+</script>
 </html>

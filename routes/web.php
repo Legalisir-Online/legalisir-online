@@ -3,6 +3,7 @@
 use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\PreviewPengajuanController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -25,7 +26,9 @@ Route::get('/biodata', function () {
     return view('alumni/biodata');
 })->middleware('role:alumni');
 
-Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById']);
+// Route::get('/profile', [ProfileController::class, 'data'] ); nggak dipakai ya, pakai yg alumnicontroller
+Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById'] );
+
 
 Route::get('/upload-berkas', function () {
     return view('alumni/upload-berkas');
@@ -49,9 +52,10 @@ Route::get('/status-ajuan1', function () {
 
 Route::get('/riwayat-ajuan', [DocumentController::class, 'getDataRiwayatAjuan'])->middleware('role:alumni');
 
-Route::get('/invoice', function () {
-    return view('alumni/invoice');
-})->middleware('role:alumni');
+// Route::get('/invoice', function () {
+//     return view('alumni/invoice');
+// })->middleware('role:alumni');
+Route::get('/invoice', [InvoiceController::class, 'invoice'] );
 
 Route::get('/status-ajuan2', function () {
     return view('alumni/status-ajuan2');
@@ -61,7 +65,7 @@ Route::get('/riwayat-invoice', function () {
     return view('alumni/riwayat-invoice');
 })->middleware('role:alumni');
 
-Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan']);
+Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan'] );
 
 Route::get('/status-ajuan3', function () {
     return view('alumni/status-ajuan3');
@@ -71,9 +75,9 @@ Route::get('/flow', function () {
     return view('flow');
 });
 
-Route::get('/preview-pengajuan', function () {
-    return view('alumni/preview-pengajuan-legalisir');
-})->middleware('role:alumni');
+// Route::get('/preview-pengajuan', function () {
+//     return view('alumni/preview-pengajuan-legalisir');
+// })->middleware('role:alumni');
 
 // Route::get('/admin', function () {
 //     // Aksi yang dilakukan hanya oleh pengguna dengan peran "admin"
@@ -137,19 +141,19 @@ Route::get('/validasi-berkas', function () {
 
 Route::get('/administrator', function () {
     return view('administrator/administrator');
-})->middleware('role:admin_prodi');
+})->middleware('role:administrator');
 
 Route::get('/users', function () {
     return view('administrator/users');
-})->middleware('role:admin_prodi');
+})->middleware('role:administrator');
 
 Route::get('/user-admin', function () {
     return view('administrator/user-admin');
-})->middleware('role:admin_prodi');
+})->middleware('role:administrator');
 
 Route::get('/user-alumni', function () {
     return view('administrator/user-alumni');
-})->middleware('role:admin_prodi');
+})->middleware('role:administrator');
 
 Route::get('/daftar-berkas', function () {
     return view('admin/daftar-berkas');
