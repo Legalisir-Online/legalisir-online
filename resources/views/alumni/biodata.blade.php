@@ -138,7 +138,7 @@
                         Jenis Kelamin
                     </label>
                     <!-- Dropdown options -->
-                    <select name="jenis_kelamin" id="jenis_kelamin">
+                    <select name="jenis-kelamin" id="jenis-kelamin">
                         <option value="L">Laki-laki</option>
                         <option value="P">Perempuan</option>
                     </select>
@@ -177,7 +177,7 @@
                     <!-- Input Type Text -->
                     <input type="text" id="rw" name="rw" placeholder="RW" />
                 </div>
-                
+
             </form>
         </div>
 
@@ -191,7 +191,7 @@
                     <!-- Input Type Text -->
                     <input type="text" id="kelurahan" name="kelurahan" placeholder="Kelurahan" />
                 </div>
-                
+
                 <div class="form-control">
                     <label for="kecamatan" id="label-kecamatan">
                         Kecamatan
@@ -224,7 +224,7 @@
                     <input type="text" id="kode_pos" name="kode_pos" placeholder="Kode Pos" />
                 </div>
 
-                
+
                 <br>
                 <input type="submit" value="Simpan" class="submit-button">
             </form>
