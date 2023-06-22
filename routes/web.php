@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\KuisionerAlumniController;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\DocumentController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -24,7 +25,7 @@ Route::get('/biodata', function () {
     return view('alumni/biodata');
 })->middleware('role:alumni');
 
-Route::get('/profile', [ProfileController::class, 'alumni'] );
+Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById']);
 
 Route::get('/upload-berkas', function () {
     return view('alumni/upload-berkas');
@@ -46,9 +47,7 @@ Route::get('/status-ajuan1', function () {
     return view('alumni/status-ajuan1');
 })->middleware('role:alumni');
 
-Route::get('/riwayat-ajuan', function () {
-    return view('alumni/riwayat-ajuan');
-})->middleware('role:alumni');
+Route::get('/riwayat-ajuan', [DocumentController::class, 'getDataRiwayatAjuan'])->middleware('role:alumni');
 
 Route::get('/invoice', function () {
     return view('alumni/invoice');
@@ -62,7 +61,7 @@ Route::get('/riwayat-invoice', function () {
     return view('alumni/riwayat-invoice');
 })->middleware('role:alumni');
 
-Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan'] );
+Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan']);
 
 Route::get('/status-ajuan3', function () {
     return view('alumni/status-ajuan3');

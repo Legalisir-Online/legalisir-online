@@ -10,7 +10,7 @@ class AlumniController extends Controller
 {
     public function getAlumniById($id)
     {
-        $alumnis = Alumni::find($id);
+        $alumnis = Alumni::where('id_user', $id)->get();
 
         if ($alumnis) {
             return view('alumni.profile', compact('alumnis'));

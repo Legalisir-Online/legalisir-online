@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Document;
 use Illuminate\Http\Request;
 
 class DocumentController extends Controller
@@ -9,9 +10,10 @@ class DocumentController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function getDataRiwayatAjuan()
     {
-        //
+        $ajuans = Document::where('id')->get();
+        return view('alumni.riwayat-ajuan', compact('ajuans'));
     }
 
     /**
