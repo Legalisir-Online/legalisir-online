@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\PreviewPengajuanController;
 use App\Http\Controllers\InvoiceController;
@@ -51,7 +52,7 @@ Route::get('/status-ajuan1', function () {
     return view('alumni/status-ajuan1');
 })->middleware('role:alumni');
 
-Route::get('/riwayat-ajuan', [DocumentController::class, 'getDataRiwayatAjuan'])->middleware('role:alumni');
+Route::get('/riwayat-ajuan/{id}', [DocumentController::class, 'getDataRiwayatAjuan'])->middleware('role:alumni');
 
 // Route::get('/invoice', function () {
 //     return view('alumni/invoice');
@@ -76,17 +77,13 @@ Route::get('/flow', function () {
     return view('flow');
 });
 
-// Route::get('/preview-pengajuan', function () {
-//     return view('alumni/preview-pengajuan-legalisir');
-// })->middleware('role:alumni');
+Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'] )->middleware('role:alumni');
 
 // Route::get('/admin', function () {
 //     // Aksi yang dilakukan hanya oleh pengguna dengan peran "admin"
 // })->middleware('role:admin');
 
-Route::get('/admin', function () {
-    return view('admin/admin');
-})->middleware('role:admin_prodi');
+Route::get('/admin', [DashboardAdminController::class, 'index'] )-> middleware('role:admin_prodi');
 
 Route::get('/daftar-ajuan-legalisir', function () {
     return view('admin/daftar-ajuan-legalisir');
