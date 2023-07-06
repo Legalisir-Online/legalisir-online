@@ -12,7 +12,7 @@ class DocumentController extends Controller
      */
     public function getDataRiwayatAjuan()
     {
-        $ajuans = Document::where('id')->get();
+        $ajuans = Document::where('id', 1)->get();
         return view('alumni.riwayat-ajuan', compact('ajuans'));
     }
 
