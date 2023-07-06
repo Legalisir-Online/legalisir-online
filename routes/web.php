@@ -3,6 +3,7 @@
 use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PreviewPengajuanController;
+use App\Http\Controllers\InvoiceController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 

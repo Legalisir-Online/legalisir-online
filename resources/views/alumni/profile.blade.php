@@ -134,7 +134,7 @@
 
                         <div class="form-control">
                             <label for="rw" id="rw">
-                                RT
+                                RW
                             </label>
 
                             <input type="text"
