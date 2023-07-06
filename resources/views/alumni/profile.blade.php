@@ -126,10 +126,10 @@
                         <input type="text" value="{{ $alumni->rt}}" readonly />
                     </div>
 
-                    <div class="form-control">
-                        <label for="rw" id="rw">
-                            RT
-                        </label>
+                        <div class="form-control">
+                            <label for="rw" id="rw">
+                                RW
+                            </label>
 
                         <input type="text" value="{{ $alumni->rw}}" readonly />
                     </div>
