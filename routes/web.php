@@ -76,9 +76,7 @@ Route::get('/flow', function () {
     return view('flow');
 });
 
-// Route::get('/preview-pengajuan', function () {
-//     return view('alumni/preview-pengajuan-legalisir');
-// })->middleware('role:alumni');
+Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'] )->middleware('role:alumni');
 
 // Route::get('/admin', function () {
 //     // Aksi yang dilakukan hanya oleh pengguna dengan peran "admin"
