@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\KuisionerAlumniController;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\PreviewPengajuanController;
 use App\Http\Controllers\InvoiceController;
 use Illuminate\Support\Facades\Route;
@@ -26,7 +27,9 @@ Route::get('/biodata', function () {
     return view('alumni/biodata');
 })->middleware('role:alumni');
 
-Route::get('/profile', [ProfileController::class, 'data'] );
+// Route::get('/profile', [ProfileController::class, 'data'] ); nggak dipakai ya, pakai yg alumnicontroller
+Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById'] );
+
 
 Route::get('/upload-berkas', function () {
     return view('alumni/upload-berkas');
@@ -48,9 +51,7 @@ Route::get('/status-ajuan1', function () {
     return view('alumni/status-ajuan1');
 })->middleware('role:alumni');
 
-Route::get('/riwayat-ajuan', function () {
-    return view('alumni/riwayat-ajuan');
-})->middleware('role:alumni');
+Route::get('/riwayat-ajuan', [DocumentController::class, 'getDataRiwayatAjuan'])->middleware('role:alumni');
 
 // Route::get('/invoice', function () {
 //     return view('alumni/invoice');
@@ -66,8 +67,6 @@ Route::get('/riwayat-invoice', function () {
 })->middleware('role:alumni');
 
 Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan'] );
-Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'] );
-
 
 Route::get('/status-ajuan3', function () {
     return view('alumni/status-ajuan3');

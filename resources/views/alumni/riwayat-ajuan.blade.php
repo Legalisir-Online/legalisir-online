@@ -32,10 +32,12 @@
       <th>Tanggal</th>
       <th>Status</th>
     </tr>
+
+    @foreach ($ajuans as $ajuan)
     <tr>
-      <td>1</td>
-      <td class="riwayat">Legalisir berkas ijazah dan transkrip nilai</td>
-      <td class="tanggal">12/03/2023</td>
+      <td {{ $no++ }}></td>
+      <td class="riwayat" value="{{ $ajuans->nama }}"></td>
+      <td class="tanggal" value="{{ $ajuans -> updated_at }}"></td>
       <td class="status">
         <div class="col1">
           <img src="{{ asset('images/icons/check.png') }}" alt="check" style="position: relative; top: 6px; left: 0%;">
@@ -47,6 +49,8 @@
         <a href="/riwayat-invoice"><img class="eye-icon" src="{{ asset('images/view.png') }}" alt="View"></a>
       </td>
     </tr>
+    @endforeach
+
     <tr>
       <td>2</td>
       <td class="riwayat">Legalisir berkas ijazah dan transkrip nilai</td>

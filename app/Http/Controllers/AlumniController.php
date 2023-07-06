@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Alumni;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -9,7 +10,7 @@ class AlumniController extends Controller
 {
     public function getAlumniById($id)
     {
-        $alumnis = Alumni::find($id);
+        $alumnis = Alumni::where('id_user', $id)->get();
 
         if ($alumnis) {
             return view('alumni.profile', compact('alumnis'));
@@ -21,7 +22,8 @@ class AlumniController extends Controller
         }
     }
 
-    public function getAllAlumni(){
+    public function getAllAlumni()
+    {
         $data = Alumni::all();
         return response()->json([
             'success' => true,
