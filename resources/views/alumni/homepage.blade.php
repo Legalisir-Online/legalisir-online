@@ -50,7 +50,7 @@
   </section>
 
   <!-- Modal Upload Berkas -->
-  <!-- <div id="uploadBerkas" class="modal">
+  <div id="uploadBerkas" class="modal">
     <div class="modal-dialog">
       <div class="modal-content" style="border-radius: 10px; padding: 10px;">
         <div class="modal-header d-flex justify-content-between">
@@ -71,11 +71,11 @@
   </div>
 
 </body>
-<!-- <script>
+ <!-- <script>
   document.getElementById("ajukanButton").addEventListener("click", function() {
     var modal = document.getElementById("uploadBerkas");
     modal.style.display = "block";
-  });
+  }); -->
 
 <script>
     document.getElementById("openModal").addEventListener("click", function() {
