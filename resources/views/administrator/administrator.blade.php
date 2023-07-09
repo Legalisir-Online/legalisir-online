@@ -28,7 +28,7 @@
               <!-- small box -->
               <div class="small-box" style="background-color: #8B7B95;">
                 <div class="inner" style="color: white;">
-                  <h3>3</h3>
+                  <h3>{{ $admin }}</h3>
                   <p>ADMIN</p>
                 </div>
                 <div class="icon">
@@ -41,7 +41,7 @@
               <!-- small box -->
               <div class="small-box" style="background-color: #8B7B95;">
                 <div class="inner" style="color: white;">
-                  <h3>100</h3>
+                  <h3>{{ $alumni }}</h3>
                   <p>ALUMNI</p>
                 </div>
                 <div class="icon">
