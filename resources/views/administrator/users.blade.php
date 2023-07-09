@@ -110,10 +110,6 @@
                             <input type="email" class="form-control" id="editEmail" required>
                         </div>
                         <div class="form-group">
-                            <label for="editPassword">Password</label>
-                            <input type="password" class="form-control" id="editPassword" required>
-                        </div>
-                        <div class="form-group">
                             <label for="editRole">Role</label>
                             <select class="form-control" id="editRole" required>
                                 <option value="user">Admin</option>

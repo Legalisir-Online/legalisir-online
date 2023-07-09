@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('status', 15)->nullable();
-            $table->string('jenis', 15)->nullable();
+            $table->set('jenis', ['admin_prodi', 'administrator', 'alumni'])->nullable();
         });
     }
 

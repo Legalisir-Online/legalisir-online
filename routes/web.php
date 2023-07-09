@@ -1,15 +1,25 @@
 <?php
 
-use App\Http\Controllers\KuisionerAlumniController;
+// use ProfileController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AlumniController;
-use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\AdministratorController;
+use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\PreviewPengajuanController;
 use App\Http\Controllers\ValidasiBerkasController;
 use App\Http\Controllers\AjuanLegalisirController;
 use App\Http\Controllers\InvoiceController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\InvoiceController as InvoiceControllerAlias;
+use Illuminate\Support\Facades\Route as RouteFacade;
+use Illuminate\Support\Facades\Auth as AuthFacade;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +31,11 @@ use Illuminate\Support\Facades\Auth;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// Auth::routes();
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::post('/login', [LoginController::class, 'store'])->name('login');
+Route::post('/register', [RegisterController::class, 'register'])->name('register');
 
 Route::get('/', function () {
     return view('landing-page');
@@ -29,6 +44,8 @@ Route::get('/', function () {
 Route::get('/biodata', function () {
     return view('alumni/biodata');
 })->middleware('role:alumni');
+
+Route::post('/biodata', [BiodataController::class, 'store'])->name('biodata.store');
 
 // Route::get('/profile', [ProfileController::class, 'data'] ); nggak dipakai ya, pakai yg alumnicontroller
 Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById']);
@@ -48,7 +65,7 @@ Route::get('/homepage', function () {
 
 Route::get('/form-legalisir', function () {
     return view('alumni/form-legalisir');
-})->middleware('role:alumni');
+})->middleware('role    :alumni');
 
 Route::get('/status-ajuan1', function () {
     return view('alumni/status-ajuan1');
@@ -59,7 +76,9 @@ Route::get('/riwayat-ajuan/{id}', [DocumentController::class, 'getDataRiwayatAju
 // Route::get('/invoice', function () {
 //     return view('alumni/invoice');
 // })->middleware('role:alumni');
-Route::get('/invoice', [InvoiceController::class, 'invoice']);
+
+Route::get('/invoice/{id}', [InvoiceController::class, 'getDataInvoiceById']);
+//Route::get('/invoice', [InvoiceController::class, 'invoice']);
 
 Route::get('/status-ajuan2', function () {
     return view('alumni/status-ajuan2');
@@ -86,6 +105,14 @@ Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'])->m
 // })->middleware('role:admin');
 
 Route::get('/admin', [DashboardAdminController::class, 'index'])->middleware('role:admin_prodi');
+
+Route::get('/administrator', [AdministratorController::class, 'index'] )-> middleware('role:administrator');
+
+Route::get('/user-admin', [AdministratorController::class, 'listAdmin'] )-> middleware('role:administrator');
+
+Route::get('/user-alumni', [AdministratorController::class, 'listAlumni'] )-> middleware('role:administrator');
+
+Route::delete('/user-admin/{id}', [AdministratorController::class, 'destroy']) -> name('user-admin.destroy');
 
 Route::get('/daftar-ajuan-legalisir', [AjuanLegalisirController::class, 'getAllAjuan'])->middleware('role:admin_prodi');
 
@@ -126,21 +153,17 @@ Route::get('/validasi-berkas', function () {
     return view('admin/validasi-berkas');
 })->middleware('role:admin_prodi');
 
-Route::get('/administrator', function () {
-    return view('administrator/administrator');
-})->middleware('role:administrator');
+// Route::get('/administrator', function () {
+//     return view('administrator/administrator');
+// })->middleware('role:administrator');
 
 Route::get('/users', function () {
     return view('administrator/users');
 })->middleware('role:administrator');
 
-Route::get('/user-admin', function () {
-    return view('administrator/user-admin');
-})->middleware('role:administrator');
-
-Route::get('/user-alumni', function () {
-    return view('administrator/user-alumni');
-})->middleware('role:administrator');
+// Route::get('/user-alumni', function () {
+//     return view('administrator/user-alumni');
+// })->middleware('role:administrator');
 
 Route::get('/daftar-berkas', [ValidasiBerkasController::class, 'getAllAjuan'])->middleware('role:admin_prodi');
 
@@ -168,4 +191,15 @@ Route::get('/profile-administrator', function () {
     return view('administrator/profile-administrator');
 })->middleware('role:administrator');
 
-Auth::routes();
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Route::get('/register', function () {
+    return view('auth.register');
+});
+Route::post('/register', [RegisterController::class, 'register'])->name('register');
+Route::post('/login', [LoginController::class, 'store'])->name('login');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+// Auth::routes();
