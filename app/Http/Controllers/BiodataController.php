@@ -2,38 +2,50 @@
 
 namespace App\Http\Controllers;
 
+// use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
-
 use App\Models\Alumni;
+use Illuminate\Support\Facades\Auth;
 
 class BiodataController extends Controller
 {
-    public function store(Request $request){
-        $request->validate([
+    public function store(Request $request)
+    {
+        $validatedData = $request->validate([
             'nama' => 'required|string|max:200',
-            'nim' => 'required|string|max:8',
             'tempat_lahir' => 'required|string|max:50',
             'tanggal_lahir' => 'required',
             'agama' => 'required|string|max:20',
-            'nik' => 'required|numeric|max:16',
+            'nik' => 'required|numeric|max:9999999999999999',
             'nomor_wa' => 'required|string|max:20',
             'jenis_kelamin' => 'required',
             'alamat' => 'required|string|max:200',
-            'rt' => 'required|numeric|max:3',
-            'rw' => 'required|numeric|max:3',
+            'rt' => 'required|numeric|max:100',
+            'rw' => 'required|numeric|max:100',
             'kelurahan' => 'required|string|max:20',
+            'kecamatan' => 'required|string|max:20',
+            'kecamatan' => 'required|string|max:20',
+            'kecamatan' => 'required|string|max:20',
+            'kecamatan' => 'required|string|max:20',
             'kecamatan' => 'required|string|max:20',
             'kode_prodi' => 'required|string|max:2',
             'kota' => 'required|string|max:20',
             'provinsi' => 'required|string|max:20',
             'kode_pos' => 'required|string|max:5'
         ]);
+        if (!$validatedData) {
+            return redirect()->back()->withErrors($validatedData);
+        }
+        // dd($validatedData);
+
+
         // buat aplot file
         // $path = Storage::disk('public')->putFile('dokumen', $request->file(''));
 
         $alumnis = new Alumni;
+        $alumnis->id_user = Auth::user()->id;
+        $alumnis->nim = Auth::user()->nim;
         $alumnis->nama = $request->nama;
-        $alumnis->nim = $request->nim;
         $alumnis->tempat_lahir = $request->tempat_lahir;
         $alumnis->tanggal_lahir = $request->tanggal_lahir;
         $alumnis->agama = $request->agama;
@@ -51,7 +63,10 @@ class BiodataController extends Controller
         $alumnis->kode_pos = $request->kode_pos;
         $alumnis->save();
 
-        return redirect()->route('/biodata')
-        ->with('success', 'Biodata telah terisi.');
+
+        // return Redirect::route('/')->with('success', 'Success message');
+
+        return redirect()->back()
+            ->with('success', 'Biodata telah terisi.');
     }
 }

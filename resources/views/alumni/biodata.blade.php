@@ -70,15 +70,21 @@
         <div class="container-head">
             Isi Biodata
         </div> <br><br>
-
-        <div class="content" id="page1">
-            <form id="form1">
-                <!-- Details -->
+        @if (session('success'))
+            <div class="modal">
+                <div class="modal-content">
+                    <p>{{ session('success') }}</p>
+                </div>
+            </div>
+        @endif
+        <form id="biodataForm" method="POST" action="{{ route('biodata.store') }}">
+            @csrf
+            <!-- Details -->
+            <div class="content" id="page1">
                 <div class="form-control">
                     <label for="name" id="label-name">
                         Nama
                     </label>
-                    <!-- Input Type Text -->
                     <input type="text" id="nama" name="nama" placeholder="Nama lengkap" />
                 </div>
 
@@ -86,7 +92,6 @@
                     <label for="nik" id="label-nik">
                         NIK
                     </label>
-                    <!-- Input Type Email-->
                     <input type="text" id="nik" name="nik" placeholder="Nomor NIK" />
                 </div>
 
@@ -94,15 +99,13 @@
                     <label for="WA" id="label-WA">
                         Nomor Whatsapp
                     </label>
-                    <!-- Input Type Email-->
-                    <input type="text" id="nomor_wa" name="nomor_wa" placeholder="Nomor WA misal 082************" />
+                    <input type="text"id="nomor_wa" name="nomor_wa" placeholder="Nomor WA misal 082************" />
                 </div>
 
                 <div class="form-control">
                     <label for="tempat-lahir" id="label-tempatlahir">
                         Tempat Lahir
                     </label>
-                    <!-- Input Type Text -->
                     <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" />
                 </div>
 
@@ -112,19 +115,15 @@
                     </label>
                     <input type="date" id="tanggal_lahir" name="tanggal_lahir" name="Test_DatetimeLocal">
                 </div>
-            </form>
-        </div>
+            </div>
 
-        <div class="content" id="page2" style="display: none;">
-            <form id="form2">
-                <!-- Details -->
+            <div class="content" id="page2" style="display: none;">
                 <div class="form-control">
                     <label for="role" id="label-role">
                         Agama
                     </label>
-                    <!-- Dropdown options -->
                     <select name="agama" id="agama">
-                        <option value="islam">Islam</option>
+                        <option value="islam" selected>Islam</option>
                         <option value="kristen">Kristen</option>
                         <option value="katholik">Katholik</option>
                         <option value="konghucu">Konghucu</option>
@@ -137,9 +136,8 @@
                     <label for="role" id="label-role">
                         Jenis Kelamin
                     </label>
-                    <!-- Dropdown options -->
-                    <select name="jenis-kelamin" id="jenis-kelamin">
-                        <option value="L">Laki-laki</option>
+                    <select name="jenis_kelamin" id="jenis-kelamin">
+                        <option value="L"selected>Laki-laki</option>
                         <option value="P">Perempuan</option>
                     </select>
                 </div>
@@ -148,9 +146,8 @@
                     <label for="kode-prodi" id="label-kodeprodi">
                         Prodi
                     </label>
-                    <!-- Dropdown options -->
-                    <select name="agama" id="agama">
-                        <option value="09">Informatika</option>
+                    <select name="kode_prodi" id="prodi">
+                        <option value="09" selected>Informatika</option>
                         <option value="10">Sains Data</option>
                     </select>
                 </div>
@@ -159,7 +156,6 @@
                     <label for="alamat" id="label-alamat">
                         Alamat
                     </label>
-                    <!-- Input Type Textarea -->
                     <input type="text" id="alamat" name="alamat" placeholder="Alamat" />
                 </div>
 
@@ -167,28 +163,21 @@
                     <label for="rt-rw" id="label-rtrw">
                         RT
                     </label>
-                    <!-- Input Type Text -->
                     <input type="text" id="rt" name="rt" placeholder="RT" />
                 </div>
                 <div class="form-control">
                     <label for="rw" id="label-rtrw">
                         RW
                     </label>
-                    <!-- Input Type Text -->
                     <input type="text" id="rw" name="rw" placeholder="RW" />
                 </div>
+            </div>
 
-            </form>
-        </div>
-
-        <div class="content" id="page3" style="display: none;">
-            <form id="form3">
-                <!-- Details -->
+            <div class="content" id="page3" style="display: none;">
                 <div class="form-control">
                     <label for="kelurahan" id="label-kelurahan">
                         Kelurahan
                     </label>
-                    <!-- Input Type Text -->
                     <input type="text" id="kelurahan" name="kelurahan" placeholder="Kelurahan" />
                 </div>
 
@@ -196,15 +185,13 @@
                     <label for="kecamatan" id="label-kecamatan">
                         Kecamatan
                     </label>
-                    <!-- Input Type Text -->
-                    <input type="text" id="kecamatan" name="kecamatan" placeholder="Kecamatan" />
+                    <input type="text" id="kecamatan" name="kecamatan"placeholder="Kecamatan" />
                 </div>
 
                 <div class="form-control">
                     <label for="kota" id="label-kota">
                         Kota
                     </label>
-                    <!-- Input Type Text -->
                     <input type="text" id="kota" name="kota" placeholder="Kota" />
                 </div>
 
@@ -212,7 +199,6 @@
                     <label for="provinsi" id="label-provinsi">
                         Provinsi
                     </label>
-                    <!-- Input Type Text -->
                     <input type="text" id="provinsi" name="provinsi" placeholder="Provinsi" />
                 </div>
 
@@ -220,15 +206,14 @@
                     <label for="kode-pos" id="label-kodepos">
                         Kode Pos
                     </label>
-                    <!-- Input Type Text -->
                     <input type="text" id="kode_pos" name="kode_pos" placeholder="Kode Pos" />
                 </div>
 
-
                 <br>
-                <input type="submit" value="Simpan" class="submit-button">
-            </form>
-        </div>
+                <button type="submit" class="submit-button">Simpan</button>
+            </div>
+        </form>
+
 
         <div class="pagination">
             <button class="btn" id="prevBtn" onclick="previousPage()">Previous</button>
@@ -251,12 +236,13 @@
             if (pageNumber === 1) {
                 document.getElementById("prevBtn").style.display = "none";
             } else {
-                document.getElementById("prevBtn").style.display = "block";
+                document.getElementById("prevBtn").style.display = "inline-block";
             }
+
             if (pageNumber === maxPage) {
                 document.getElementById("nextBtn").style.display = "none";
             } else {
-                document.getElementById("nextBtn").style.display = "block";
+                document.getElementById("nextBtn").style.display = "inline-block";
             }
         }
 
@@ -277,6 +263,7 @@
         showPage(currentPage);
     </script>
 </body>
+
 @include('alumni.includes.footer')
 
 </html>

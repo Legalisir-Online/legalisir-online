@@ -5,6 +5,7 @@ use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\PreviewPengajuanController;
 use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\BiodataController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -27,8 +28,10 @@ Route::get('/biodata', function () {
     return view('alumni/biodata');
 })->middleware('role:alumni');
 
+Route::post('/biodata', [BiodataController::class, 'store'])->name('biodata.store');
+
 // Route::get('/profile', [ProfileController::class, 'data'] ); nggak dipakai ya, pakai yg alumnicontroller
-Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById'] );
+Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById']);
 
 
 Route::get('/upload-berkas', function () {
@@ -56,7 +59,7 @@ Route::get('/riwayat-ajuan', [DocumentController::class, 'getDataRiwayatAjuan'])
 // Route::get('/invoice', function () {
 //     return view('alumni/invoice');
 // })->middleware('role:alumni');
-Route::get('/invoice', [InvoiceController::class, 'invoice'] );
+Route::get('/invoice', [InvoiceController::class, 'invoice']);
 
 Route::get('/status-ajuan2', function () {
     return view('alumni/status-ajuan2');
@@ -66,7 +69,7 @@ Route::get('/riwayat-invoice', function () {
     return view('alumni/riwayat-invoice');
 })->middleware('role:alumni');
 
-Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan'] );
+Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan']);
 
 Route::get('/status-ajuan3', function () {
     return view('alumni/status-ajuan3');
