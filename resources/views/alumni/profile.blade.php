@@ -99,7 +99,9 @@
                             Jenis Kelamin
                         </label>
 
-                        <input type="text" value="{{ $alumni->jenis_kelamin }}" readonly />
+                        <input type="text" value="@if ($alumni -> jenis_kelamin == 'P') Perempuan
+                        @else Laki-laki
+                        @endif" readonly />
                     </div>
 
                     <div class="form-control">
@@ -107,7 +109,9 @@
                             Prodi
                         </label>
 
-                        <input type="text" value="{{ $alumni->kode_prodi }}" readonly />
+                        <input type="text" value="@if ($alumni -> kode_prodi == '05') Informatika
+                        @else Bukan Informatika
+                        @endif" readonly />
                     </div>
 
                     <div class="form-control">
