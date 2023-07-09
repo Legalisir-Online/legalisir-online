@@ -47,9 +47,11 @@
                         <label for="nim" id="label-nim">
                             NIM
                         </label>
+                        @foreach ($users as $user)
 
                         <!-- Input Type Email-->
-                        <input type="text" id="nim" value="{{ $alumni->nim }}" readonly />
+                        <input type="text" id="nim" value="{{ $user->nim }}" readonly />
+                        @endforeach
                     </div>
 
                     <div class="form-control">

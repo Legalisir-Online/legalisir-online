@@ -10,10 +10,20 @@ use App\Models\Transaksi;
 
 class InvoiceController extends Controller
 {
-    public function invoice(){
-        $alumnis = Alumni::getAllAlumni();
-        $users = User::get();
-        $transaksis = Transaksi::get();
-        return view('alumni.invoice', compact('alumnis', 'users', 'transaksis'));
+    public function getDataInvoiceById($id){
+        // $alumnis = Alumni::getAllAlumni();
+        $alumnis = Alumni::where('id_user', $id)->get();
+        $users = User::where('id', $id)->get();
+        $transaksis = Transaksi::where('id_alumni', $id)->get();
+        
+        // return view('alumni.invoice', compact('alumnis', 'users', 'transaksis'));
+        if ($alumnis) {
+            return view('alumni.invoice', compact('alumnis', 'users', 'transaksis'));
+        } else {
+            return response()->json([
+                'success' => false,
+                'message' => 'Alumni with id ' . $id . ' not found'
+            ], 404);
+        }
     }
 }

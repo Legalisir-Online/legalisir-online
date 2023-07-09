@@ -57,7 +57,7 @@ Route::get('/riwayat-ajuan/{id}', [DocumentController::class, 'getDataRiwayatAju
 // Route::get('/invoice', function () {
 //     return view('alumni/invoice');
 // })->middleware('role:alumni');
-Route::get('/invoice', [InvoiceController::class, 'invoice'] );
+Route::get('/invoice/{id}', [InvoiceController::class, 'getDataInvoiceById']);
 
 Route::get('/status-ajuan2', function () {
     return view('alumni/status-ajuan2');
