@@ -49,35 +49,21 @@
                                     <th style="background-color: black; color: white;">NIM</th>
                                     <th style="background-color: black; color: white;">Status</th>
                                 </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">1</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-success">Valid</span></td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">2</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-success">Valid</span></td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">3</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-success">Valid</span></td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">4</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-success">Valid</span></td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">5</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-success">Valid</span></td>
+                                @foreach ($dokumens as $dokumen)
+                                    <tr>
+                                        <td style="padding-left: 25px;">{{ $loop->iteration }}</td>
+                                        @foreach ($alumnis as $alumni)
+                                            @if ($dokumen->alumni_id == $alumni->id)
+                                                <td>{{ $alumni->nama }}</td>
+                                            @endif
+                                        @endforeach
+                                        @foreach ($users as $user)
+                                            @if ($user->id == $alumni->id_user)
+                                                <td>{{ $user->nim }}</td>
+                                            @endif
+                                        @endforeach
+                                        <td><span class="label label-success">Valid</span></td>
+                                @endforeach
                                 </tr>
                             </table>
                         </div><!-- /.box-body -->

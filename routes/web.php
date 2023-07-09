@@ -12,6 +12,11 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\PreviewPengajuanController;
+use App\Http\Controllers\ValidasiBerkasController;
+use App\Http\Controllers\AjuanLegalisirController;
+use App\Http\Controllers\InvoiceController;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\InvoiceController as InvoiceControllerAlias;
 use Illuminate\Support\Facades\Route as RouteFacade;
 use Illuminate\Support\Facades\Auth as AuthFacade;
@@ -109,41 +114,28 @@ Route::get('/user-alumni', [AdministratorController::class, 'listAlumni'] )-> mi
 
 Route::delete('/user-admin/{id}', [AdministratorController::class, 'destroy']) -> name('user-admin.destroy');
 
-Route::get('/daftar-ajuan-legalisir', function () {
-    return view('admin/daftar-ajuan-legalisir');
-})->middleware('role:admin_prodi');
+Route::get('/daftar-ajuan-legalisir', [AjuanLegalisirController::class, 'getAllAjuan'])->middleware('role:admin_prodi');
 
 Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/legalisir-selesai', function () {
-    return view('admin/legalisir-selesai');
-})->middleware('role:admin_prodi');
+Route::get('/legalisir-selesai', [AjuanLegalisirController::class, 'getAjuanValid'])->middleware('role:admin_prodi');
 
-Route::get('/berkas-selesai', function () {
-    return view('admin/berkas-selesai');
-})->middleware('role:admin_prodi');
+Route::get('/berkas-selesai', [ValidasiBerkasController::class, 'getAjuanValid'])->middleware('role:admin_prodi');
 
-Route::get('/legalisir-pending', function () {
-    return view('admin/legalisir-pending');
-})->middleware('role:admin_prodi');
+Route::get('/legalisir-pending', [AjuanLegalisirController::class, 'getAjuanPending'])->middleware('role:admin_prodi');
 
-Route::get('/legalisir-gagal', function () {
-    return view('admin/legalisir-gagal');
-})->middleware('role:admin_prodi');
+Route::get('/legalisir-gagal', [AjuanLegalisirController::class, 'getAjuanTidakValid'])->middleware('role:admin_prodi');
 
-Route::get('/berkas-tidak-valid', function () {
-    return view('admin/berkas-tidak-valid');
-})->middleware('role:admin_prodi');
+Route::get('/berkas-tidak-valid', [ValidasiBerkasController::class, 'getAjuanTidakValid'])->middleware('role:admin_prodi');
+
 
 Route::get('/kuesioner-admin', function () {
     return view('admin/kuesioner');
 })->middleware('role:admin_prodi');
 
-Route::get('/berkas-pending', function () {
-    return view('admin/berkas-pending');
-})->middleware('role:admin_prodi');
+Route::get('/berkas-pending', [ValidasiBerkasController::class, 'getAjuanPending'])->middleware('role:admin_prodi');
 
 Route::get('/edit-ajuan', function () {
     return view('admin/edit-ajuan');
@@ -173,9 +165,7 @@ Route::get('/users', function () {
 //     return view('administrator/user-alumni');
 // })->middleware('role:administrator');
 
-Route::get('/daftar-berkas', function () {
-    return view('admin/daftar-berkas');
-})->middleware('role:admin_prodi');
+Route::get('/daftar-berkas', [ValidasiBerkasController::class, 'getAllAjuan'])->middleware('role:admin_prodi');
 
 Route::get('/pertanyaan', function () {
     return view('admin/pertanyaan');
