@@ -28,7 +28,7 @@ Route::get('/biodata', function () {
 })->middleware('role:alumni');
 
 // Route::get('/profile', [ProfileController::class, 'data'] ); nggak dipakai ya, pakai yg alumnicontroller
-Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById'] );
+Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById']);
 
 
 Route::get('/upload-berkas', function () {
