@@ -51,7 +51,7 @@
                   <li class="footer"><a href="#">View all</a></li>
                 </ul>
               </li>
-              
+
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -63,7 +63,7 @@
                   <li class="user-header">
                     <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
-                      Tetra 
+                      Tetra
                     </p>
                     <small style="color: white;">Admin Prodi Informatika</small>
                   </li>
@@ -73,7 +73,10 @@
                       <a href="/profile-admin" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="/login" class="btn btn-default btn-flat">Log out</a>
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-default btn-flat">Log out</button>
+                        </form>
                     </div>
                   </li>
                 </ul>

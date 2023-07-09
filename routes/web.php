@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\PreviewPengajuanController;
@@ -46,7 +48,7 @@ Route::get('/homepage', function () {
 
 Route::get('/form-legalisir', function () {
     return view('alumni/form-legalisir');
-})->middleware('role:alumni');
+})->middleware('role    :alumni');
 
 Route::get('/status-ajuan1', function () {
     return view('alumni/status-ajuan1');
@@ -139,7 +141,7 @@ Route::get('/validasi-berkas', function () {
 
 Route::get('/administrator', function () {
     return view('administrator/administrator');
-})->middleware('role:administrator');
+})->middleware('role:administrator')->name('administrator.index');
 
 Route::get('/users', function () {
     return view('administrator/users');
@@ -181,4 +183,15 @@ Route::get('/profile-administrator', function () {
     return view('administrator/profile-administrator');
 })->middleware('role:administrator');
 
-Auth::routes();
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Route::get('/register', function () {
+    return view('auth.register');
+});
+Route::post('/register', [RegisterController::class, 'register'])->name('register');
+Route::post('/login', [LoginController::class, 'store'])->name('login');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+// Auth::routes();
