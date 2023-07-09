@@ -30,7 +30,7 @@
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>53</h3>
+                  <h3>{{ $valid }}</h3>
                   <p>VALID</p>
                 </div>
                 <div class="icon">
@@ -43,7 +43,7 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3>44</h3>
+                  <h3>{{ $pending }}</h3>
                   <p>MENUNGGU DIVALIDASI</p>
                 </div>
                 <div class="icon">
@@ -56,7 +56,7 @@
               <!-- small box -->
               <div class="small-box bg-red">
                 <div class="inner">
-                  <h3>65</h3>
+                  <h3>{{ $nonvalid }}</h3>
                   <p>TIDAK VALID</p>
                 </div>
                 <div class="icon">
@@ -75,7 +75,7 @@
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>53</h3>
+                  <h3>{{ $t_valid }}</h3>
                   <p>SELESAI</p>
                 </div>
                 <div class="icon">
@@ -88,7 +88,7 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3>44</h3>
+                  <h3>{{ $t_pending }}</h3>
                   <p>TERTUNDA</p>
                 </div>
                 <div class="icon">
@@ -101,7 +101,7 @@
               <!-- small box -->
               <div class="small-box bg-red">
                 <div class="inner">
-                  <h3>65</h3>
+                  <h3>{{ $t_nonvalid }}</h3>
                   <p>GAGAL</p>
                 </div>
                 <div class="icon">
