@@ -2,15 +2,9 @@
 
 namespace Database\Seeders;
 
-<<<<<<< HEAD
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-=======
-use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
->>>>>>> 7b6796dd320be5adfb76ac373f2fdcab20a51e99
 
 class UserSeeder extends Seeder
 {
@@ -19,7 +13,6 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-<<<<<<< HEAD
         DB::table('users')->insert([
             'id' => 1,
             'nim' => NULL,
@@ -80,33 +73,5 @@ class UserSeeder extends Seeder
             'status' => 'aktif',
             'jenis' => 'alumni'
         ]);
-=======
-        DB::table('users')->insert(
-            [
-
-                [
-                    'nim' => '1234567890',
-                    'email' => 'admin@admin.com',
-                    'password' => bcrypt('password'),
-                    'status' => 'aktif',
-                    'jenis' => 'admin_prodi',
-                ],
-                [
-                    'nim' => '1234567891',
-                    'email' => 'admin_prodi@admin.com',
-                    'password' => bcrypt('password'),
-                    'status' => 'aktif',
-                    'jenis' => 'administrator',
-                ],
-                [
-                    'nim' => '1234567892',
-                    'email' => 'user@user.com',
-                    'password' => bcrypt('password'),
-                    'status' => 'aktif',
-                    'jenis' => 'alumni',
-                ]
-            ]
-        );
->>>>>>> 7b6796dd320be5adfb76ac373f2fdcab20a51e99
     }
 }
