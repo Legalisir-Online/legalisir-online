@@ -5,15 +5,17 @@ namespace App\Http\Controllers;
 use App\Models\Alumni;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use App\Models\User;
 
 class AlumniController extends Controller
 {
     public function getAlumniById($id)
     {
         $alumnis = Alumni::where('id_user', $id)->get();
+        $users = User::where('id', $id)->get();
 
         if ($alumnis) {
-            return view('alumni.profile', compact('alumnis'));
+            return view('alumni.profile', compact('alumnis', 'users'));
         } else {
             return response()->json([
                 'success' => false,

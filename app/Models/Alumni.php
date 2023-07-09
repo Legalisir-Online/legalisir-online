@@ -12,10 +12,8 @@ class Alumni extends Model
 
     protected $table = 'alumnis';
     protected $fillable = [
-        'id',
         'id_user',
         'nama',
-        'nim',
         'nik',
         'tempat_lahir',
         'tgl_lahir',
@@ -126,5 +124,4 @@ class Alumni extends Model
     //     $this->db->delete('user_sub_menu', ['id' => $id]);
     // }
     use HasFactory;
-
 }

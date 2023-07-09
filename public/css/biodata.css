@@ -109,7 +109,8 @@ select, textarea */
 .form-control > input[type="email"],
 .form-control > input[type="date"],
 .form-control > select[id="agama"],
-.form-control > select[id="jenis-kelamin"] {
+.form-control > select[id="jenis-kelamin"],
+.form-control > select[id="prodi"] {
     /* border: 2px solid red; */
     color: #bebebe;
     border-radius: 10px;
