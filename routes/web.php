@@ -11,9 +11,9 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\PreviewPengajuanController;
-use App\Http\Controllers\InvoiceController;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\InvoiceController as InvoiceControllerAlias;
+use Illuminate\Support\Facades\Route as RouteFacade;
+use Illuminate\Support\Facades\Auth as AuthFacade;
 
 /*
 |--------------------------------------------------------------------------
@@ -90,13 +90,13 @@ Route::get('/flow', function () {
     return view('flow');
 });
 
-Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'] )->middleware('role:alumni');
+Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'])->middleware('role:alumni');
 
 // Route::get('/admin', function () {
 //     // Aksi yang dilakukan hanya oleh pengguna dengan peran "admin"
 // })->middleware('role:admin');
 
-Route::get('/admin', [DashboardAdminController::class, 'index'] )-> middleware('role:admin_prodi');
+Route::get('/admin', [DashboardAdminController::class, 'index'])->middleware('role:admin_prodi');
 
 Route::get('/daftar-ajuan-legalisir', function () {
     return view('admin/daftar-ajuan-legalisir');
