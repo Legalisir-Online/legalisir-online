@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-// use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
 use App\Models\Alumni;
 use Illuminate\Support\Facades\Auth;
@@ -64,9 +63,14 @@ class BiodataController extends Controller
         $alumnis->save();
 
 
-        // return Redirect::route('/')->with('success', 'Success message');
+        // return Redirect::route('/homepage')->with('success', 'Biodata telah terisi.');
 
-        return redirect()->back()
-            ->with('success', 'Biodata telah terisi.');
+        return redirect('/homepage')->with('success', 'Biodata telah terisi.');
+
+        // Setelah berhasil, set pesan sukses ke dalam session
+        // $request->session()->flash('success', 'Data berhasil disimpan.');
+
+        // Redirect ke halaman yang diinginkan
+        // return redirect()->route('/homepage');
     }
 }

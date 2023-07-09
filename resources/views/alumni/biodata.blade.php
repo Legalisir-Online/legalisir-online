@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Add this line -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -70,13 +71,6 @@
         <div class="container-head">
             Isi Biodata
         </div> <br><br>
-        @if (session('success'))
-            <div class="modal">
-                <div class="modal-content">
-                    <p>{{ session('success') }}</p>
-                </div>
-            </div>
-        @endif
         <form id="biodataForm" method="POST" action="{{ route('biodata.store') }}">
             @csrf
             <!-- Details -->
