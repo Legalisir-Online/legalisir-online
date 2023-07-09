@@ -1,13 +1,19 @@
 <?php
 
-use App\Http\Controllers\KuisionerAlumniController;
-use App\Http\Controllers\AlumniController;
-use App\Http\Controllers\DashboardAdminController;
-use App\Http\Controllers\DocumentController;
-use App\Http\Controllers\PreviewPengajuanController;
-use App\Http\Controllers\InvoiceController;
-use Illuminate\Support\Facades\Route;
+// use ProfileController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\KuisionerAlumniController;
+use App\Http\Controllers\PreviewPengajuanController;
+use App\Http\Controllers\InvoiceController as InvoiceControllerAlias;
+use Illuminate\Support\Facades\Route as RouteFacade;
+use Illuminate\Support\Facades\Auth as AuthFacade;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +25,11 @@ use Illuminate\Support\Facades\Auth;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// Auth::routes();
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::post('/login', [LoginController::class, 'store'])->name('login');
+Route::post('/register', [RegisterController::class, 'register'])->name('register');
 
 Route::get('/', function () {
     return view('landing-page');
@@ -27,6 +38,8 @@ Route::get('/', function () {
 Route::get('/biodata', function () {
     return view('alumni/biodata');
 })->middleware('role:alumni');
+
+Route::post('/biodata', [BiodataController::class, 'store'])->name('biodata.store');
 
 // Route::get('/profile', [ProfileController::class, 'data'] ); nggak dipakai ya, pakai yg alumnicontroller
 Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById']);
@@ -46,7 +59,7 @@ Route::get('/homepage', function () {
 
 Route::get('/form-legalisir', function () {
     return view('alumni/form-legalisir');
-})->middleware('role:alumni');
+})->middleware('role    :alumni');
 
 Route::get('/status-ajuan1', function () {
     return view('alumni/status-ajuan1');
@@ -57,7 +70,11 @@ Route::get('/riwayat-ajuan/{id}', [DocumentController::class, 'getDataRiwayatAju
 // Route::get('/invoice', function () {
 //     return view('alumni/invoice');
 // })->middleware('role:alumni');
+<<<<<<< HEAD
 Route::get('/invoice/{id}', [InvoiceController::class, 'getDataInvoiceById']);
+=======
+Route::get('/invoice', [InvoiceController::class, 'invoice']);
+>>>>>>> 7b6796dd320be5adfb76ac373f2fdcab20a51e99
 
 Route::get('/status-ajuan2', function () {
     return view('alumni/status-ajuan2');
@@ -67,7 +84,7 @@ Route::get('/riwayat-invoice', function () {
     return view('alumni/riwayat-invoice');
 })->middleware('role:alumni');
 
-Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan'] );
+Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan']);
 
 Route::get('/status-ajuan3', function () {
     return view('alumni/status-ajuan3');
@@ -77,13 +94,13 @@ Route::get('/flow', function () {
     return view('flow');
 });
 
-Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'] )->middleware('role:alumni');
+Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'])->middleware('role:alumni');
 
 // Route::get('/admin', function () {
 //     // Aksi yang dilakukan hanya oleh pengguna dengan peran "admin"
 // })->middleware('role:admin');
 
-Route::get('/admin', [DashboardAdminController::class, 'index'] )-> middleware('role:admin_prodi');
+Route::get('/admin', [DashboardAdminController::class, 'index'])->middleware('role:admin_prodi');
 
 Route::get('/daftar-ajuan-legalisir', function () {
     return view('admin/daftar-ajuan-legalisir');
@@ -181,4 +198,15 @@ Route::get('/profile-administrator', function () {
     return view('administrator/profile-administrator');
 })->middleware('role:administrator');
 
-Auth::routes();
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Route::get('/register', function () {
+    return view('auth.register');
+});
+Route::post('/register', [RegisterController::class, 'register'])->name('register');
+Route::post('/login', [LoginController::class, 'store'])->name('login');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+// Auth::routes();
