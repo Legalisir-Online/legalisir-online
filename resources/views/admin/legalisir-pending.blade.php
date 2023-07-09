@@ -40,54 +40,39 @@
             <div class="row justify-content-center">
                 <div class="col-xs-12">
                     <div class="box">
-                    <div class="box-body table-responsive no-padding">
-                    <table class="table table-hover">
-                        <tr>
-                            <th style="background-color: black; color: white; width: 10px;">No</th>
-                            <th style="background-color: black; color: white;">Nama</th>
-                            <th style="background-color: black; color: white;">NIM</th>
-                            <th style="background-color: black; color: white;">Status</th>
-                            <th style="background-color: black; color: white;">Keterangan</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>John Doe</td>
-                            <td>M0520001</td>
-                            <td><span class="label label-warning">Pending</span></td>
-                            <td>
-                                <span><a href="/edit-ajuan"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>John Doe</td>
-                            <td>M0520001</td>
-                            <td><span class="label label-warning">Pending</span></td>
-                            <td>
-                                <span><a href="/edit-ajuan"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>John Doe</td>
-                            <td>M0520001</td>
-                            <td><span class="label label-warning">Pending</span></td>
-                            <td>
-                                <span><a href="/edit-ajuan"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>John Doe</td>
-                            <td>M0520001</td>
-                            <td><span class="label label-warning">Pending</span></td>
-                            <td>
-                                <span><a href="/edit-ajuan"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                            </td>
-                        </tr>
-                    </table>
-                    </div><!-- /.box-body -->
-                    <div class="text-center">
+                        <div class="box-body table-responsive no-padding">
+                            <table class="table table-hover">
+                                <tr>
+                                    <th style="background-color: black; color: white; width: 10px;">No</th>
+                                    <th style="background-color: black; color: white;">Nama</th>
+                                    <th style="background-color: black; color: white;">NIM</th>
+                                    <th style="background-color: black; color: white;">Status</th>
+                                    <th style="background-color: black; color: white;">Keterangan</th>
+                                </tr>
+                                <tr>
+                                    @foreach ($transaksis as $transaksi)
+                                <tr>
+                                    <td style="padding-left: 25px;">{{ $loop->iteration }}</td>
+                                    @foreach ($alumnis as $alumni)
+                                        @if ($transaksi->id_alumni == $alumni->id)
+                                            <td>{{ $alumni->nama }}</td>
+                                        @endif
+                                    @endforeach
+                                    @foreach ($users as $user)
+                                        @if ($user->id == $alumni->id_user)
+                                            <td>{{ $user->nim }}</td>
+                                        @endif
+                                    @endforeach
+                                    <td><span class="label label-warning">Pending</span></td>
+                                    <td>
+                                        <span><a href="/edit-ajuan"><button class="btn btn-success"><i
+                                                        class="fa fa-edit"> Edit</i></button></a></span>
+                                    </td>
+                                    @endforeach
+                                </tr>
+                            </table>
+                        </div><!-- /.box-body -->
+                        <div class="text-center">
                             <nav aria-label="Page navigation">
                                 <ul class="pagination justify-content-center">
                                     <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
@@ -98,10 +83,10 @@
                                 </ul>
                             </nav>
                         </div>
-                </div><!-- /.box -->
+                    </div><!-- /.box -->
                 </div>
             </div>
-        </section>
+    </section>
 </div>
 
 @include('admin.includes.footer')

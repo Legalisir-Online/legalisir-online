@@ -5,6 +5,8 @@ use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\PreviewPengajuanController;
+use App\Http\Controllers\ValidasiBerkasController;
+use App\Http\Controllers\AjuanLegalisirController;
 use App\Http\Controllers\InvoiceController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -29,7 +31,7 @@ Route::get('/biodata', function () {
 })->middleware('role:alumni');
 
 // Route::get('/profile', [ProfileController::class, 'data'] ); nggak dipakai ya, pakai yg alumnicontroller
-Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById'] );
+Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById']);
 
 
 Route::get('/upload-berkas', function () {
@@ -57,7 +59,7 @@ Route::get('/riwayat-ajuan/{id}', [DocumentController::class, 'getDataRiwayatAju
 // Route::get('/invoice', function () {
 //     return view('alumni/invoice');
 // })->middleware('role:alumni');
-Route::get('/invoice', [InvoiceController::class, 'invoice'] );
+Route::get('/invoice', [InvoiceController::class, 'invoice']);
 
 Route::get('/status-ajuan2', function () {
     return view('alumni/status-ajuan2');
@@ -67,7 +69,7 @@ Route::get('/riwayat-invoice', function () {
     return view('alumni/riwayat-invoice');
 })->middleware('role:alumni');
 
-Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan'] );
+Route::get('/kuesioner', [KuisionerAlumniController::class, 'pertanyaan']);
 
 Route::get('/status-ajuan3', function () {
     return view('alumni/status-ajuan3');
@@ -77,49 +79,36 @@ Route::get('/flow', function () {
     return view('flow');
 });
 
-Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'] )->middleware('role:alumni');
+Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'])->middleware('role:alumni');
 
 // Route::get('/admin', function () {
 //     // Aksi yang dilakukan hanya oleh pengguna dengan peran "admin"
 // })->middleware('role:admin');
 
-Route::get('/admin', [DashboardAdminController::class, 'index'] )-> middleware('role:admin_prodi');
+Route::get('/admin', [DashboardAdminController::class, 'index'])->middleware('role:admin_prodi');
 
-Route::get('/daftar-ajuan-legalisir', function () {
-    return view('admin/daftar-ajuan-legalisir');
-})->middleware('role:admin_prodi');
+Route::get('/daftar-ajuan-legalisir', [AjuanLegalisirController::class, 'getAllAjuan'])->middleware('role:admin_prodi');
 
 Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/legalisir-selesai', function () {
-    return view('admin/legalisir-selesai');
-})->middleware('role:admin_prodi');
+Route::get('/legalisir-selesai', [AjuanLegalisirController::class, 'getAjuanValid'])->middleware('role:admin_prodi');
 
-Route::get('/berkas-selesai', function () {
-    return view('admin/berkas-selesai');
-})->middleware('role:admin_prodi');
+Route::get('/berkas-selesai', [ValidasiBerkasController::class, 'getAjuanValid'])->middleware('role:admin_prodi');
 
-Route::get('/legalisir-pending', function () {
-    return view('admin/legalisir-pending');
-})->middleware('role:admin_prodi');
+Route::get('/legalisir-pending', [AjuanLegalisirController::class, 'getAjuanPending'])->middleware('role:admin_prodi');
 
-Route::get('/legalisir-gagal', function () {
-    return view('admin/legalisir-gagal');
-})->middleware('role:admin_prodi');
+Route::get('/legalisir-gagal', [AjuanLegalisirController::class, 'getAjuanTidakValid'])->middleware('role:admin_prodi');
 
-Route::get('/berkas-tidak-valid', function () {
-    return view('admin/berkas-tidak-valid');
-})->middleware('role:admin_prodi');
+Route::get('/berkas-tidak-valid', [ValidasiBerkasController::class, 'getAjuanTidakValid'])->middleware('role:admin_prodi');
+
 
 Route::get('/kuesioner-admin', function () {
     return view('admin/kuesioner');
 })->middleware('role:admin_prodi');
 
-Route::get('/berkas-pending', function () {
-    return view('admin/berkas-pending');
-})->middleware('role:admin_prodi');
+Route::get('/berkas-pending', [ValidasiBerkasController::class, 'getAjuanPending'])->middleware('role:admin_prodi');
 
 Route::get('/edit-ajuan', function () {
     return view('admin/edit-ajuan');
@@ -153,9 +142,7 @@ Route::get('/user-alumni', function () {
     return view('administrator/user-alumni');
 })->middleware('role:administrator');
 
-Route::get('/daftar-berkas', function () {
-    return view('admin/daftar-berkas');
-})->middleware('role:admin_prodi');
+Route::get('/daftar-berkas', [ValidasiBerkasController::class, 'getAllAjuan'])->middleware('role:admin_prodi');
 
 Route::get('/pertanyaan', function () {
     return view('admin/pertanyaan');
