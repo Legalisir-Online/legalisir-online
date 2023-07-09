@@ -1,15 +1,16 @@
 <?php
 
-use App\Http\Controllers\KuisionerAlumniController;
+// use ProfileController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardAdminController;
-use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\PreviewPengajuanController;
-use App\Http\Controllers\InvoiceController;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,11 @@ use Illuminate\Support\Facades\Auth;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// Auth::routes();
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::post('/login', [LoginController::class, 'store'])->name('login');
+Route::post('/register', [RegisterController::class, 'register'])->name('register');
 
 Route::get('/', function () {
     return view('landing-page');
@@ -141,7 +147,7 @@ Route::get('/validasi-berkas', function () {
 
 Route::get('/administrator', function () {
     return view('administrator/administrator');
-})->middleware('role:administrator')->name('administrator.index');
+})->middleware('role:administrator');
 
 Route::get('/users', function () {
     return view('administrator/users');
@@ -185,13 +191,8 @@ Route::get('/profile-administrator', function () {
 
 Route::get('/login', function () {
     return view('auth.login');
-});
+})->middleware('guest');
 
 Route::get('/register', function () {
     return view('auth.register');
 });
-Route::post('/register', [RegisterController::class, 'register'])->name('register');
-Route::post('/login', [LoginController::class, 'store'])->name('login');
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
-// Auth::routes();

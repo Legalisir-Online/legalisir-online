@@ -5,8 +5,6 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
-use App\Providers\RouteServiceProvider;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
@@ -21,7 +19,7 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers;
+    // use AuthenticatesUsers;
 
     /**
      * Where to redirect users after login.
@@ -31,20 +29,20 @@ class LoginController extends Controller
 
     public function store(Request $request)
     {
-        $validated = $request->validate([
+        $request->validate([
             'email' => 'required|email',
             'password' => 'required'
         ]);
 
         $credentials = $request->only('email', 'password');
-        $request->session()->regenerate();
+
         if (Auth::attempt($credentials)) {
             if (auth()->user()->jenis == 'alumni') {
                 return redirect('/homepage');
-            } else if (auth()->user()->jenis == 'admin_prodi') {
-                return redirect('/admin');
             } else if (auth()->user()->jenis == 'administrator') {
                 return redirect('/administrator');
+            } else if (auth()->user()->jenis == 'admin_prodi') {
+                return redirect('/admin');
             }
         }
 
@@ -61,7 +59,7 @@ class LoginController extends Controller
      */
     public function logout(Request $request)
     {
-        $this->guard()->logout();
+        Auth::logout();
 
         $request->session()->invalidate();
 
