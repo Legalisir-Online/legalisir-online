@@ -10,9 +10,17 @@ class DocumentController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function getDataRiwayatAjuan()
+    public function getDataRiwayatAjuan($id)
     {
-        $ajuans = Document::where('id')->get();
+        $ajuans = Document::where('alumni_id', $id)->get();
+        if ($ajuans) {
+            return view('alumni.riwayat-ajuan', compact('ajuans'));
+        } else {
+            return response()->json([
+                'success' => false,
+                'message' => 'Alumni with id ' . $id . ' not found'
+            ], 404);
+        }
         return view('alumni.riwayat-ajuan', compact('ajuans'));
     }
 

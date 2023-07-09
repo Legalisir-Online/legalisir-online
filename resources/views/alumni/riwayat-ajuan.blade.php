@@ -35,9 +35,9 @@
 
     @foreach ($ajuans as $ajuan)
     <tr>
-      <td {{ $no++ }}></td>
-      <td class="riwayat">{{ $ajuans->nama }}</td>
-      <td class="tanggal">{{ $ajuans -> updated_at }}</td>
+      <td >{{ $ajuan->id }}</td>
+      <td class="riwayat">{{ $ajuan->progress }}</td>
+      <td class="tanggal">{{ $ajuan->updated_at }}</td>
       <td class="status">
         <div class="col1">
           <img src="{{ asset('images/icons/check.png') }}" alt="check" style="position: relative; top: 6px; left: 0%;">
