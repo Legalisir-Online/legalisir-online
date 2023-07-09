@@ -3,6 +3,7 @@
 use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\AdministratorController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\PreviewPengajuanController;
 use App\Http\Controllers\InvoiceController;
@@ -85,6 +86,14 @@ Route::get('/preview-pengajuan', [PreviewPengajuanController::class, 'data'] )->
 
 Route::get('/admin', [DashboardAdminController::class, 'index'] )-> middleware('role:admin_prodi');
 
+Route::get('/administrator', [AdministratorController::class, 'index'] )-> middleware('role:administrator');
+
+Route::get('/user-admin', [AdministratorController::class, 'listAdmin'] )-> middleware('role:administrator');
+
+Route::get('/user-alumni', [AdministratorController::class, 'listAlumni'] )-> middleware('role:administrator');
+
+Route::delete('/user-admin/{id}', [AdministratorController::class, 'destroy']) -> name('user-admin.destroy');
+
 Route::get('/daftar-ajuan-legalisir', function () {
     return view('admin/daftar-ajuan-legalisir');
 })->middleware('role:admin_prodi');
@@ -137,21 +146,17 @@ Route::get('/validasi-berkas', function () {
     return view('admin/validasi-berkas');
 })->middleware('role:admin_prodi');
 
-Route::get('/administrator', function () {
-    return view('administrator/administrator');
-})->middleware('role:administrator');
+// Route::get('/administrator', function () {
+//     return view('administrator/administrator');
+// })->middleware('role:administrator');
 
 Route::get('/users', function () {
     return view('administrator/users');
 })->middleware('role:administrator');
 
-Route::get('/user-admin', function () {
-    return view('administrator/user-admin');
-})->middleware('role:administrator');
-
-Route::get('/user-alumni', function () {
-    return view('administrator/user-alumni');
-})->middleware('role:administrator');
+// Route::get('/user-alumni', function () {
+//     return view('administrator/user-alumni');
+// })->middleware('role:administrator');
 
 Route::get('/daftar-berkas', function () {
     return view('admin/daftar-berkas');
