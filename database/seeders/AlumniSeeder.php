@@ -110,7 +110,6 @@ class AlumniSeeder extends Seeder
             'id' => 5,
             'id_user' => 3,
             'nama' => 'Ayu Putri',
-            'nim' => 'M0520005',
             'nik' => '33102357000000',
             'tempat_lahir' => 'Solo',
             'tgl_lahir' => '2000-01-01',
