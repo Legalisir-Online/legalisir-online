@@ -50,46 +50,37 @@
                                     <th style="background-color: black; color: white; width: 15%;">NIM</th>
                                     <th style="background-color: black; color: white; width: 15%;">Status</th>
                                     <th style="background-color: black; color: white; width: 20%;">Keterangan</th>
+                                    <th style="background-color: black; color: white; width: 20%;">Aksi</th>
                                 </tr>
                                 <tr>
-                                    <td style="padding-left: 25px;">1</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-warning">Menunggu Divalidasi</span></td>
-                                    <td>
-                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                    </td>
-                                </tr>
+                                    @foreach ($dokumens as $dokumen)
                                 <tr>
-                                    <td style="padding-left: 25px;">1</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-success">Valid</span></td>
+                                    <td style="padding-left: 25px;">{{ $loop->iteration }}</td>
+                                    @foreach ($alumnis as $alumni)
+                                        @if ($dokumen->alumni_id == $alumni->id)
+                                            <td>{{ $alumni->nama }}</td>
+                                        @endif
+                                    @endforeach
+                                    @foreach ($users as $user)
+                                        @if ($user->id == $alumni->id_user)
+                                            <td>{{ $user->nim }}</td>
+                                        @endif
+                                    @endforeach
+                                    @if ($dokumen->status == 1)
+                                        <td><span class="label label-success">Valid</span></td>
+                                    @elseif ($dokumen->status == NULL)
+                                        <td><span class="label label-warning">Menunggu Divalidasi</span></td>
+                                    @else
+                                       <td><span class="label label-danger">Failed</span></td>
+                                    @endif
+                                    <td>{{ $dokumen->keterangan }}</td>
                                     <td>
-                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
+                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit">
+                                                        Detail</i></button></a></span>
+                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i
+                                                        class="fa fa-edit"> Edit</i></button></a></span>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">1</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-success">Valid</span></td>
-                                    <td>
-                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">1</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-success">Valid</span></td>
-                                    <td>
-                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit"> Detail</i></button></a></span>
-                                        <span><a href="#"><button class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                    </td>
+                                    @endforeach
                                 </tr>
                             </table>
                         </div><!-- /.box-body -->
