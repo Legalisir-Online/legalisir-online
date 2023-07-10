@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             'id' => 1,
-            'nim' => NULL,
+            'nim' => 'M0520001',
             'email' => 'coba1@gmail.com',
             'email_verified_at' => '2023-07-10 00:21:35',
             'password' => '12345678',
@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
         ]);
         DB::table('users')->insert([
             'id' => 2,
-            'nim' => NULL,
+            'nim' => 'M0520002',
             'email' => 'coba2@gmail.com',
             'email_verified_at' => '2023-07-10 00:21:35',
             'password' => '12345678',
@@ -39,7 +39,7 @@ class UserSeeder extends Seeder
         ]);
         DB::table('users')->insert([
             'id' => 3,
-            'nim' => 'M0520001',
+            'nim' => 'M0520003',
             'email' => 'coba3@gmail.com',
             'email_verified_at' => '2023-07-10 00:21:35',
             'password' => '12345678',
@@ -51,7 +51,7 @@ class UserSeeder extends Seeder
         ]);
         DB::table('users')->insert([
             'id' => 4,
-            'nim' => 'M0520002',
+            'nim' => 'M0520004',
             'email' => 'coba4@gmail.com',
             'email_verified_at' => '2023-07-10 00:21:35',
             'password' => '12345678',
@@ -63,7 +63,7 @@ class UserSeeder extends Seeder
         ]);
         DB::table('users')->insert([
             'id' => 5,
-            'nim' => 'M0520003',
+            'nim' => 'M0520005',
             'email' => 'coba5@gmail.com',
             'email_verified_at' => '2023-07-10 00:21:35',
             'password' => '12345678',
