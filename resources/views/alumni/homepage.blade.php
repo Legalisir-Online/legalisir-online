@@ -16,7 +16,6 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/dropdown.css') }}">
 </head>
 
-
 <body>
   @include('alumni.includes.navbar')
 
@@ -29,23 +28,33 @@
       <h1>SISTEM LEGALISIR ONLINE FATISDA UNIVERSITAS SEBELAS MARET</h1><br><br>
 
       <div class="feature2-content">
-        <p>Sistem legalisir online merupakan sistem yang dibuat dengan tujuan memberikan kemudahan bagi alumni Fakulltas Teknologi Informasi dan Sains Data UNS untuk melakukan legalisir secara online.</p>
+        <p>Sistem legalisir online merupakan sistem yang dibuat dengan tujuan memberikan kemudahan bagi alumni Fakulltas
+          Teknologi Informasi dan Sains Data UNS untuk melakukan legalisir secara online.</p>
       </div>
 
       <br><br>
-      <div class="button">
-      <button type="submit" class="btn btn" id="openModal" style="background-color: #5676E1; color:white; border-radius: 10px;">Ajukan Legalisir</button>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2><strong>Mohon maaf, Anda belum mengupload berkas legalisir.
-                        Silakukan upload berkas terlebih dahulu</strong></h2>
-            <div class="modal-btn">
-              <button type="button" id="upload" style="background-color: #5676E1; color:white; border-radius: 10px;">Upload Berkas</button>
+      @if ($dokumen < 1)
+        <div class="button">
+          <button type="submit" class="btn btn" id="openModal"
+            style="background-color: #5676E1; color:white; border-radius: 10px;">Ajukan Legalisir</button>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2><strong>Mohon maaf, Anda belum mengupload berkas legalisir.
+                  Silakukan upload berkas terlebih dahulu</strong></h2>
+              <div class="modal-btn">
+                <a href="/upload-berkas" class="btn btn"
+                  style="background-color: #5676E1; color:white; border-radius: 10px;">Upload Berkas</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      @else
+        <div class="button">
+          <a href="/form-legalisir" class="btn btn"
+            style="background-color: #5676E1; color:white; border-radius: 10px;">Ajukan Legalisir</a>
+        </div>
+      @endif
     </div>
   </section>
 
@@ -57,13 +66,14 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4>
             <strong>Mohon maaf, Anda belum mengupload berkas legalisir.
-            Silakukan upload berkas terlebih dahulu</strong>
+              Silakukan upload berkas terlebih dahulu</strong>
           </h4>
         </div>
 
         <div class="form-group row">
           <div class="col-sm-12">
-            <button type="submit" class="btn btn" style="background-color: #5676E1; color:white; border-radius: 10px;">Upload Berkas</button>
+            <a href="/upload-berkas" class="btn btn"
+              style="background-color: #5676E1; color:white; border-radius: 10px;">Upload Berkas</a>
           </div>
         </div>
       </div>
@@ -71,29 +81,29 @@
   </div>
 
 </body>
- <!-- <script>
+{{-- <script>
   document.getElementById("ajukanButton").addEventListener("click", function() {
     var modal = document.getElementById("uploadBerkas");
     modal.style.display = "block";
-  }); -->
+  }); --}}
 
 <script>
-    document.getElementById("openModal").addEventListener("click", function() {
-        document.getElementById("myModal").style.display = "block";
-    });
+  document.getElementById("openModal").addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "block";
+  });
 
-    document.getElementsByClassName("close")[0].addEventListener("click", function() {
+  document.getElementsByClassName("close")[0].addEventListener("click", function() {
     document.getElementById("myModal").style.display = "none";
-    });
+  });
 
-    document.getElementById("modalClose").addEventListener("click", function() {
+  document.getElementById("modalClose").addEventListener("click", function() {
     document.getElementById("myModal").style.display = "none";
-    });
+  });
 
-    document.getElementById("modalSave").addEventListener("click", function() {
+  document.getElementById("modalSave").addEventListener("click", function() {
     // Logic to save changes
     document.getElementById("myModal").style.display = "none";
-    });
+  });
 </script>
 
 </html>

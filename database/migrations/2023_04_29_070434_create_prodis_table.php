@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('prodis', function (Blueprint $table) {
             $table->string('kode', 2)->primary();
             $table->string('nama_prodi', 20);
+            $table->timestamps();
         });
     }
 

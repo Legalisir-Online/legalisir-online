@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Models\User;
+use App\Models\Alumni;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Hash;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Validator;
@@ -38,6 +40,27 @@ class RegisterController extends Controller
             'password' => Hash::make($validatedData['password']),
             'status' => 'aktif',
             'jenis' => 'alumni',
+        ]);
+
+        Alumni::create([
+            'id_user' => $user->id,
+            'nama' => '',
+            'nik' => '',
+            'tempat_lahir' => '',
+            'tgl_lahir' => Date::now(),
+            'nomor_wa' => '',
+            'agama' => '',
+            'jenis_kelamin' => '',
+            'alamat' => '',
+            'kota' => '',
+            'provinsi' => '',
+            'kode_pos' => '',
+            'rt' => '',
+            'rw' => '',
+            'kelurahan' => '',
+            'kecamatan' => '',
+            'kode_prodi' => '05',
+
         ]);
 
         return redirect('/login');

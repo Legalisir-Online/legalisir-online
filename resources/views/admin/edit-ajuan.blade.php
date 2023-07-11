@@ -36,15 +36,15 @@
                 <table>
                   <tr>
                     <td style="padding-right:40px;">Nama </td>
-                    <td>: Budi Santoso Sejati </td>
+                    <td>: {{ $alumni->nama }}</td>
                   </tr>
                   <tr>
-                    <td style="padding-right:40px;">NIM </td>
-                    <td>: M0520000090</td>
+                    <td style="padding-right:40px;">NIK </td>
+                    <td>: {{ $alumni->nik }}</td>
                   </tr>
                   <tr>
                     <td style="padding-right:40px;">Jenis berkas </td>
-                    <td>: Ijazah</td>
+                    <td>: {{ $dokumen->jenis }}</td>
                   </tr>
                 </table>
               </div><br>
@@ -116,7 +116,7 @@
                         <option value="red">Failed</option>
                       </select>
                     </div>
-                  </div> <br>   
+                  </div> <br>
               </div>
       </div>
       </div>

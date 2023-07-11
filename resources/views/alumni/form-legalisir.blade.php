@@ -23,22 +23,22 @@
 	</div>
 
     <div class="container" >
-        <form action="action_page.php">
-
+        <form action="{{ route('legalisir.ajuan') }}" method="POST">
+            @csrf
             <label for="pberkas">Pilih berkas yang di legalisir :</label> <br>
-            <select id="pberkas" name="pilihberkas" >
-                <option value="ijazah">Ijazah</option>
-                <option value="transkrip nilai">Transkrip nilai</option>
+            <select id="pberkas" name="jenis" >
+                <option value="Ijazah">Ijazah</option>
+                <option value="Transkrip">Transkrip nilai</option>
             </select>
 
             <label for="cberkas">Cetak berkas</label> <br>
             <select id="cberkas" name="cetakberkas">
                 <option value="cetak sendiri">Cetak sendiri</option>
                 <option value="dicetak oleh prodi">Dicetak oleh prodi</option>
-            </select> 
+            </select>
 
             <label for="jumlah">Jumlah</label> <br>
-                <input type="number" min="1" max="5" name="jumlah" /><br> 
+                <input type="number" min="1" max="5" name="jumlah" /><br>
 
                 <label for="pengberkas">Pengambilan berkas :</label> <br> <br>
                     <input type="radio" name="pengambilan_berkas" value="kirim_berkas" onclick="toggleEkspedisi(this)" /> Kirim berkas <br> <br>
@@ -49,11 +49,11 @@
                 <option value="jne">JNE</option>
                 <option value="pos indonesia">POS Indonesia</option>
                 <option value="tiki">TIKI</option>
-            </select> 
+            </select>
             <input type="submit" value="Ajukan Legalisir">
 
         </form>
-        
+
     </div>
 
     @include('alumni.includes.footer')
