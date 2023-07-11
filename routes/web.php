@@ -39,6 +39,11 @@ Route::get('/', function () {
     return view('landing-page');
 });
 
+// Route::get('/biodata', function () {
+//     return view('alumni/biodata');
+// });
+// ->middleware('role:alumni');
+
 Route::get('/biodata', [BiodataController::class, 'index'])->middleware('role:alumni');
 
 Route::post('/biodata', [BiodataController::class, 'store'])->name('biodata.store');
