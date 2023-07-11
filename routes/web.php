@@ -16,6 +16,7 @@ use App\Http\Controllers\PreviewPengajuanController;
 use App\Http\Controllers\ValidasiBerkasController;
 use App\Http\Controllers\AjuanLegalisirController;
 use App\Http\Controllers\InvoiceController as InvoiceControllerAlias;
+use App\Http\Controllers\KuesionerAdminController;
 use Illuminate\Support\Facades\Route as RouteFacade;
 use Illuminate\Support\Facades\Auth as AuthFacade;
 
@@ -149,10 +150,6 @@ Route::get('/legalisir-gagal', [AjuanLegalisirController::class, 'getAjuanTidakV
 Route::get('/berkas-tidak-valid', [ValidasiBerkasController::class, 'getAjuanTidakValid']);
 // ->middleware('role:admin_prodi');
 
-
-Route::get('/kuesioner-admin', function () {
-    return view('admin/kuesioner');
-});
 // ->middleware('role:admin_prodi');
 
 Route::get('/berkas-pending', [ValidasiBerkasController::class, 'getAjuanPending']);
@@ -163,9 +160,12 @@ Route::get('/edit-ajuan', function () {
 });
 // ->middleware('role:admin_prodi');
 
-Route::get('/tambah-kuesioner', function () {
-    return view('admin/tambah-kuesioner');
-});
+Route::get('/kuesioner-admin', [KuesionerAdminController::class, 'index'])->middleware('role:admin_prodi');
+
+Route::get('/tambah-kuesioner', [KuesionerAdminController::class, 'create'])->middleware('role:admin_prodi');
+
+Route::post('/tambah-kuesioner', [KuesionerAdminController::class, 'store'])->name('kuesioner.store')->middleware('role:admin_prodi');
+
 // ->middleware('role:admin_prodi');
 
 Route::get('/edit-kuesioner', function () {
@@ -228,6 +228,7 @@ Route::get('/profile-administrator', function () {
 Route::get('/login', function () {
     return view('auth.login');
 });
+
 
 Route::get('/register', function () {
     return view('auth.register');
