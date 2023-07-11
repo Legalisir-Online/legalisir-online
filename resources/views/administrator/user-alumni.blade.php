@@ -71,26 +71,6 @@
         </div>
     </div>
 
-    <!-- modal hapus user -->
-    <div class="modal fade" id="hapusUserModal" tabindex="-1" role="dialog" aria-labelledby="hapusModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="hapusModalLabel">Konfirmasi Hapus</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Apakah Anda yakin ingin menghapus item ini?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                    <button type="button" class="btn btn-danger" id="hapusItemButton">Hapus</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <section class="content">
         <div style="margin-top: 10px" class="container">
@@ -120,16 +100,40 @@
                                     @endif
                                     @endforeach
                                     <td>{{ $user->email }}</td>
-                                    <td>Admin</td>
+                                    <td>Alumni</td>
                                     <td>
-                                        <span><a href="#" data-toggle="modal"
+                                        <!-- <span><a href="#" data-toggle="modal"
                                                 data-target="#editUserModal"><button id="editUserButton"
                                                     class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
+                                                        Edit</i></button></a></span> -->
                                         <span><a href="#" data-toggle="modal"
                                                 data-target="#hapusUserModal"><button id="hapusUserButton"
                                                     class="btn btn-danger"><i class="fa fa-trash">
                                                         Hapus</i></button></a></span>
+    <div class="modal fade" id="hapusUserModal" tabindex="-1" role="dialog" aria-labelledby="hapusModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hapusModalLabel">Konfirmasi Hapus</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="POST" action="/user-admin/{{ $user->id }}">
+                    @csrf
+
+                    @method('DELETE')
+                <div class="modal-body">
+                    <p>Apakah Anda yakin ingin menghapus item ini?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-danger" id="hapusItemButton">Hapus</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
                                     </td>
                                 </tr>
                                 @endforeach

@@ -60,7 +60,7 @@ Route::get('/homepage', function () {
 
 Route::get('/form-legalisir', function () {
     return view('alumni/form-legalisir');
-})->middleware('role    :alumni');
+})->middleware('role:alumni');
 
 Route::get('/status-ajuan1', function () {
     return view('alumni/status-ajuan1');
