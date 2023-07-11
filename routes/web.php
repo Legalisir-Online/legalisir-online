@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\AdministratorController;
 use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\BiodataController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -38,9 +39,9 @@ Route::get('/', function () {
     return view('landing-page');
 });
 
-Route::get('/biodata', function () {
-    return view('alumni/biodata');
-});
+// Route::get('/biodata', function () {
+//     return view('alumni/biodata');
+// });
 // ->middleware('role:alumni');
 
 Route::post('/biodata', [BiodataController::class, 'store'])->name('biodata.store');

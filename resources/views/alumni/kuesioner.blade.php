@@ -52,15 +52,15 @@
                                 <ul>
                                     @foreach ($opsis as $opsi)
                                         @if ($pertanyaan->id == $opsi->id_pertanyaan)
-                                            <li><label for="radio-1">{{ $opsi->opsi }}</label> <input type="radio"
-                                                    name="opinions" id="radio-1" /> </li>
+                                            <li><label for="radio-1">{{ $opsi->opsi }}</label> <input type="radio" value="{{ $opsi->id }}"
+                                                    name="jawaban[{{ $pertanyaan->id }}]" id="radio-1" /> </li>
                                         @endif
                                     @endforeach
                                 </ul>
                             </div>
                         @else
                             <div>
-                                <input type="text" class="content-essay" placeholder="Jawaban">
+                                <input type="text" name="jawaban[{{ $pertanyaan->id }}]" class="content-essay" placeholder="Jawaban">
                             </div>
                         @endif
                     </div>
