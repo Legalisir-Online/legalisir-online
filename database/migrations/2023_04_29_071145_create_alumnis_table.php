@@ -31,7 +31,7 @@ return new class extends Migration
             $table->string('kelurahan', 20);
             $table->string('kecamatan', 20);
             $table->string('kode_prodi', 2);
-            $table->foreign('kode_prodi')->references('kode')->on('prodis');
+            $table->foreign('kode_prodi')->references('kode')->on('prodis')->nullable();
             $table->timestamps();
         });
     }
