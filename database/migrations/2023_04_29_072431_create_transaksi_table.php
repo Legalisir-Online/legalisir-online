@@ -24,6 +24,7 @@ return new class extends Migration
             $table->boolean('pengambilan_berkas');
             $table->string('progress', 100)->default('telah dilegalisir');
             $table->boolean('status')->nullable();
+            $table->boolean('pembayaran');
             $table->timestamps();
         });
     }

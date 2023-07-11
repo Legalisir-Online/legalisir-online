@@ -50,44 +50,26 @@
                                     <th style="background-color: black; color: white;">Keterangan</th>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-warning">Menunggu Divalidasi</span></td>
-                                    <td>
-                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
-                                    </td>
-                                </tr>
+                                    @foreach ($dokumens as $dokumen)
                                 <tr>
-                                    <td>2</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
+                                    <td style="padding-left: 25px;">{{ $loop->iteration }}</td>
+                                    @foreach ($alumnis as $alumni)
+                                        @if ($dokumen->alumni_id == $alumni->id)
+                                            <td>{{ $alumni->nama }}</td>
+                                        @endif
+                                    @endforeach
+                                    @foreach ($users as $user)
+                                        @if ($user->id == $alumni->id_user)
+                                            <td>{{ $user->nim }}</td>
+                                        @endif
+                                    @endforeach
                                     <td><span class="label label-warning">Menunggu Divalidasi</span></td>
                                     <td>
-                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i class="fa fa-edit">
+                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i
+                                                        class="fa fa-edit">
                                                         Edit</i></button></a></span>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-warning">Menunggu Divalidasi</span></td>
-                                    <td>
-                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>John Doe</td>
-                                    <td>M0520001</td>
-                                    <td><span class="label label-warning">Menunggu Divalidasi</span></td>
-                                    <td>
-                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
-                                    </td>
+                                    @endforeach
                                 </tr>
                             </table>
                         </div><!-- /.box-body -->

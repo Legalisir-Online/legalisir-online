@@ -36,7 +36,7 @@
     </div>
 
     <!-- modal edit user -->
-    <div id="editUserModal" class="modal">
+    <!-- <div id="editUserModal" class="modal">
         <div class="modal-dialog">
             <div class="modal-content" style="border-radius: 10px;"">
             <div class="modal-header d-flex justify-content-between">
@@ -54,10 +54,6 @@
                     <input type="email" class="form-control" id="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" required>
-                </div>
-                <div class="form-group">
                     <label for="role">Role</label>
                     <select class="form-control" id="role" required>
                     <option value="user">Admin</option>
@@ -73,7 +69,7 @@
             </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- modal hapus user -->
     <div class="modal fade" id="hapusUserModal" tabindex="-1" role="dialog" aria-labelledby="hapusModalLabel" aria-hidden="true">
@@ -112,46 +108,32 @@
                                     <th style="background-color: black; color: white; width: 15%;">Role</th>
                                     <th style="background-color: black; color: white; width: 20%;">Aksi</th>
                                 </tr>
+                                @if($count_user == 0)
+                                <br>
+                                @else
+                                @foreach($users as $user)
                                 <tr>
-                                    <td style="padding-left: 25px;">1</td>
-                                    <td>Budi Santoso Sejati</td>
-                                    <td>student@uns.ac.id</td>
-                                    <td>alumni</td>
+                                    <td style="padding-left: 25px;">{{ $loop->iteration }}</td>
+                                    @foreach($alumnis as $alumni)
+                                    @if($alumni->id_user == $user->id)
+                                    <td>{{ $alumni->nama }}</td>
+                                    @endif
+                                    @endforeach
+                                    <td>{{ $user->email }}</td>
+                                    <td>Alumni</td>
                                     <td>
-                                        <span><a href="#"><button id="editUserButton" class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                        <span><a href="#"><button id="hapusUserButton" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></button></a></span>
+                                        <!-- <span><a href="#" data-toggle="modal"
+                                                data-target="#editUserModal"><button id="editUserButton"
+                                                    class="btn btn-success"><i class="fa fa-edit">
+                                                        Edit</i></button></a></span> -->
+                                        <span><a href="#" data-toggle="modal"
+                                                data-target="#hapusUserModal"><button id="hapusUserButton"
+                                                    class="btn btn-danger"><i class="fa fa-trash">
+                                                        Hapus</i></button></a></span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">1</td>
-                                    <td>Budi Santoso Sejati</td>
-                                    <td>student@uns.ac.id</td>
-                                    <td>alumni</td>
-                                    <td>
-                                        <span><a href="#"><button id="editUserButton" class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                        <span><a href="#"><button id="hapusUserButton" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></button></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">1</td>
-                                    <td>Budi Santoso Sejati</td>
-                                    <td>student@uns.ac.id</td>
-                                    <td>alumni</td>
-                                    <td>
-                                        <span><a href="#"><button id="editUserButton" class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                        <span><a href="#"><button id="hapusUserButton" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></button></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-left: 25px;">1</td>
-                                    <td>Budi Santoso Sejati</td>
-                                    <td>student@uns.ac.id</td>
-                                    <td>alumni</td>
-                                    <td>
-                                        <span><a href="#"><button id="editUserButton" class="btn btn-success"><i class="fa fa-edit"> Edit</i></button></a></span>
-                                        <span><a href="#"><button id="hapusUserButton" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></button></a></span>
-                                    </td>
-                                </tr>
+                                @endforeach
+                                @endif
                             </table>
                         </div><!-- /.box-body -->
                         <div class="text-center">

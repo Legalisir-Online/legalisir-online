@@ -36,7 +36,7 @@
     @foreach ($ajuans as $ajuan)
     <tr>
       <td >{{ $ajuan->id }}</td>
-      <td class="riwayat">{{ $ajuan->progress }}</td>
+      <td class="riwayat">{{ $ajuan->nama }}</td>
       <td class="tanggal">{{ $ajuan->updated_at }}</td>
       <td class="status">
         <div class="col1">

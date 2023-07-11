@@ -92,7 +92,7 @@
     </div>
 
     <!-- modal edit user -->
-    <div id="editUserModal" class="modal">
+    <!-- <div id="editUserModal" class="modal">
         <div class="modal-dialog">
             <div class="modal-content" style="border-radius: 10px;">
                 <div class="modal-header d-flex justify-content-between">
@@ -108,10 +108,6 @@
                         <div class="form-group">
                             <label for="editEmail">Email</label>
                             <input type="email" class="form-control" id="editEmail" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="editPassword">Password</label>
-                            <input type="password" class="form-control" id="editPassword" required>
                         </div>
                         <div class="form-group">
                             <label for="editRole">Role</label>
@@ -130,7 +126,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- modal hapus user -->
@@ -178,10 +174,10 @@
                                     <td>admin1@uns.ac.id</td>
                                     <td>admin</td>
                                     <td>
-                                        <span><a href="#" data-toggle="modal"
+                                        <!-- <span><a href="#" data-toggle="modal"
                                                 data-target="#editUserModal"><button id="editUserButton"
                                                     class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
+                                                        Edit</i></button></a></span> -->
 
                                         <span><a href="#" data-toggle="modal"
                                                 data-target="#hapusUserModal"><button id="hapusUserButton"
