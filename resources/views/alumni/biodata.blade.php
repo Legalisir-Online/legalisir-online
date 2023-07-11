@@ -79,35 +79,40 @@
                     <label for="name" id="label-name">
                         Nama
                     </label>
-                    <input type="text" id="nama" name="nama" placeholder="Nama lengkap" />
+                    <input type="text" id="nama" name="nama" placeholder="Nama lengkap"
+                        value="{{ $alumnis->nama ?? '' }}" />
                 </div>
 
                 <div class="form-control">
                     <label for="nik" id="label-nik">
                         NIK
                     </label>
-                    <input type="text" id="nik" name="nik" placeholder="Nomor NIK" />
+                    <input type="text" id="nik" name="nik" placeholder="Nomor NIK"
+                        value="{{ $alumnis->nik ?? '' }}" />
                 </div>
 
                 <div class="form-control">
                     <label for="WA" id="label-WA">
                         Nomor Whatsapp
                     </label>
-                    <input type="text"id="nomor_wa" name="nomor_wa" placeholder="Nomor WA misal 082************" />
+                    <input type="text"id="nomor_wa" name="nomor_wa" placeholder="Nomor WA misal 082************"
+                        value="{{ $alumnis->nomor_wa ?? '' }}" />
                 </div>
 
                 <div class="form-control">
                     <label for="tempat-lahir" id="label-tempatlahir">
                         Tempat Lahir
                     </label>
-                    <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" />
+                    <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir"
+                        value="{{ $alumnis->tempat_lahir ?? '' }}" />
                 </div>
 
                 <div class="form-control">
                     <label for="age" id="label-age">
                         Tanggal Lahir
                     </label>
-                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" name="Test_DatetimeLocal">
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" name="Test_DatetimeLocal"
+                        value="{{ date('Y-m-d', $alumnis->tanggal_lahir) ?? '' }}">
                 </div>
             </div>
 
@@ -116,13 +121,15 @@
                     <label for="role" id="label-role">
                         Agama
                     </label>
-                    <select name="agama" id="agama">
-                        <option value="islam" selected>Islam</option>
-                        <option value="kristen">Kristen</option>
-                        <option value="katholik">Katholik</option>
-                        <option value="konghucu">Konghucu</option>
-                        <option value="budha">Budha</option>
-                        <option value="hindu">Hindu</option>
+                    <select name="agama" id="agama" value="{{ $alumnis->agama ?? '' }}">
+                        <option value="islam" {{ $alumnis->agama == 'islam' ? 'selected' : '' }}>Islam</option>
+                        <option value="kristen" {{ $alumnis->agama == 'kristen' ? 'selected' : '' }}>Kristen</option>
+                        <option value="katholik" {{ $alumnis->agama == 'katholik' ? 'selected' : '' }}>Katholik
+                        </option>
+                        <option value="konghucu" {{ $alumnis->agama == 'konghucu' ? 'selected' : '' }}>Konghucu
+                        </option>
+                        <option value="budha" {{ $alumnis->agama == 'budha' ? 'selected' : '' }}>Budha</option>
+                        <option value="hindu" {{ $alumnis->agama == 'hindu' ? 'selected' : '' }}>Hindu</option>
                     </select>
                 </div>
 
@@ -131,8 +138,10 @@
                         Jenis Kelamin
                     </label>
                     <select name="jenis_kelamin" id="jenis-kelamin">
-                        <option value="L"selected>Laki-laki</option>
-                        <option value="P">Perempuan</option>
+                        <option value="L" {{ $alumnis->jenis_kelamin == 'L' ? 'selected' : '' }}>Laki-laki
+                        </option>
+                        <option value="P" {{ $alumnis->jenis_kelamin == 'P' ? 'selected' : '' }}>Perempuan
+                        </option>
                     </select>
                 </div>
 
@@ -141,8 +150,10 @@
                         Prodi
                     </label>
                     <select name="kode_prodi" id="prodi">
-                        <option value="09" selected>Informatika</option>
-                        <option value="10">Sains Data</option>
+                        <option value="09" {{ $alumnis->kode_prodi == '09' ? 'selected' : '' }}>Informatika
+                        </option>
+                        <option value="10" {{ $alumnis->kode_prodi == '10' ? 'selected' : '' }}>Sains Data
+                        </option>
                     </select>
                 </div>
 
@@ -150,20 +161,23 @@
                     <label for="alamat" id="label-alamat">
                         Alamat
                     </label>
-                    <input type="text" id="alamat" name="alamat" placeholder="Alamat" />
+                    <input type="text" id="alamat" name="alamat" placeholder="Alamat"
+                        value="{{ $alumnis->alamat ?? '' }}" />
                 </div>
 
                 <div class="form-control">
                     <label for="rt-rw" id="label-rtrw">
                         RT
                     </label>
-                    <input type="text" id="rt" name="rt" placeholder="RT" />
+                    <input type="text" id="rt" name="rt" placeholder="RT"
+                        value="{{ $alumnis->rt ?? '' }}" />
                 </div>
                 <div class="form-control">
                     <label for="rw" id="label-rtrw">
                         RW
                     </label>
-                    <input type="text" id="rw" name="rw" placeholder="RW" />
+                    <input type="text" id="rw" name="rw" placeholder="RW"
+                        value="{{ $alumnis->rw ?? '' }}" />
                 </div>
             </div>
 
@@ -172,35 +186,40 @@
                     <label for="kelurahan" id="label-kelurahan">
                         Kelurahan
                     </label>
-                    <input type="text" id="kelurahan" name="kelurahan" placeholder="Kelurahan" />
+                    <input type="text" id="kelurahan" name="kelurahan" placeholder="Kelurahan"
+                        value="{{ $alumnis->kelurahan ?? '' }}" />
                 </div>
 
                 <div class="form-control">
                     <label for="kecamatan" id="label-kecamatan">
                         Kecamatan
                     </label>
-                    <input type="text" id="kecamatan" name="kecamatan"placeholder="Kecamatan" />
+                    <input type="text" id="kecamatan" name="kecamatan"placeholder="Kecamatan"
+                        value="{{ $alumnis->kecamatan ?? '' }}" />
                 </div>
 
                 <div class="form-control">
                     <label for="kota" id="label-kota">
-                        Kota
+                        Kota/Kabupaten
                     </label>
-                    <input type="text" id="kota" name="kota" placeholder="Kota" />
+                    <input type="text" id="kota" name="kota" placeholder="Kota"
+                        value="{{ $alumnis->kota ?? '' }}" />
                 </div>
 
                 <div class="form-control">
                     <label for="provinsi" id="label-provinsi">
                         Provinsi
                     </label>
-                    <input type="text" id="provinsi" name="provinsi" placeholder="Provinsi" />
+                    <input type="text" id="provinsi" name="provinsi" placeholder="Provinsi"
+                        value="{{ $alumnis->provinsi ?? '' }}" />
                 </div>
 
                 <div class="form-control">
                     <label for="kode-pos" id="label-kodepos">
                         Kode Pos
                     </label>
-                    <input type="text" id="kode_pos" name="kode_pos" placeholder="Kode Pos" />
+                    <input type="text" id="kode_pos" name="kode_pos" placeholder="Kode Pos"
+                        value="{{ $alumnis->kode_pos ?? '' }}" />
                 </div>
 
                 <br>

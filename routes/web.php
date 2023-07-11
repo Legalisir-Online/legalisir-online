@@ -8,6 +8,7 @@ use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\BiodataController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\KuisionerAlumniController;
 use App\Http\Controllers\PreviewPengajuanController;
@@ -35,14 +36,12 @@ Route::get('/', function () {
     return view('landing-page');
 });
 
-Route::get('/biodata', function () {
-    return view('alumni/biodata');
-})->middleware('role:alumni');
+Route::get('/biodata', [BiodataController::class, 'index'])->middleware('role:alumni');
 
 Route::post('/biodata', [BiodataController::class, 'store'])->name('biodata.store');
 
 // Route::get('/profile', [ProfileController::class, 'data'] ); nggak dipakai ya, pakai yg alumnicontroller
-Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById']);
+// Route::get('/profile/{id}', [AlumniController::class, 'getAlumniById']);
 
 
 Route::get('/upload-berkas', function () {
