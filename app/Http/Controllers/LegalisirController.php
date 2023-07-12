@@ -60,6 +60,11 @@ class LegalisirController extends Controller
         return redirect('/homepage')->with('success', 'Dokumen berhasil diajukan');
     }
 
+    public function alumni_form_legalisir()
+    {
+        return view('alumni.form-legalisir');
+    }
+
     public function admin_berkas_index()
     {
         $alumni = Alumni::whereHas('dokumen')->get();
@@ -103,8 +108,6 @@ class LegalisirController extends Controller
 
         return redirect()->route('admin.berkas.index');
     }
-
-
 
     public function admin_legalisir_index()
     {
