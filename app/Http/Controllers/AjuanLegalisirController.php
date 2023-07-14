@@ -14,14 +14,14 @@ class AjuanLegalisirController extends Controller
      */
     public function getAjuanValid()
     {
-        $transaksis = Transaksi::where('status_transaksis', 'success')->get();
+        $transaksis = Transaksi::where('status', 'success')->get();
         $alumnis = Alumni::get();
         $users = User::get();
         return view('admin.legalisir-selesai', compact('transaksis', 'alumnis', 'users'));
     }
     public function getAjuanPending()
     {
-        $transaksis = Transaksi::where('status_transaksis', 'pending')->get();
+        $transaksis = Transaksi::where('status', 'pending')->get();
         $alumnis = Alumni::get();
         $users = User::get();
         return view('admin.legalisir-pending', compact('transaksis', 'alumnis', 'users'));
@@ -29,7 +29,7 @@ class AjuanLegalisirController extends Controller
     
     public function getAjuanTidakValid()
     {
-        $transaksis = Transaksi::where('status_transaksis', 'tidak valid')->get();
+        $transaksis = Transaksi::where('status', 'tidak valid')->get();
         $alumnis = Alumni::get();
         $users = User::get();
         return view('admin.legalisir-gagal', compact('transaksis', 'alumnis', 'users'));

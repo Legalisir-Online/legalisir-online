@@ -59,7 +59,7 @@ class AlumniSeeder extends Seeder
             'updated_at' => '2023-07-10 00:21:35'
         ]);
         DB::table('alumnis')->insert([
-            'id' => 2,
+            'id' => 3,
             'id_user' => 3,
             'nama' => 'John Sohn',
             'nik' => '33102357000000',
