@@ -36,7 +36,7 @@
     </div>
 
     <!-- modal edit user -->
-    <div id="editUserModal" class="modal">
+    <!-- <div id="editUserModal" class="modal">
         <div class="modal-dialog">
             <div class="modal-content" style="border-radius: 10px;"">
             <div class="modal-header d-flex justify-content-between">
@@ -69,7 +69,7 @@
             </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- modal hapus user -->
     <div class="modal fade" id="hapusUserModal" tabindex="-1" role="dialog" aria-labelledby="hapusModalLabel" aria-hidden="true">
@@ -120,12 +120,12 @@
                                     @endif
                                     @endforeach
                                     <td>{{ $user->email }}</td>
-                                    <td>Admin</td>
+                                    <td>Alumni</td>
                                     <td>
-                                        <span><a href="#" data-toggle="modal"
+                                        <!-- <span><a href="#" data-toggle="modal"
                                                 data-target="#editUserModal"><button id="editUserButton"
                                                     class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
+                                                        Edit</i></button></a></span> -->
                                         <span><a href="#" data-toggle="modal"
                                                 data-target="#hapusUserModal"><button id="hapusUserButton"
                                                     class="btn btn-danger"><i class="fa fa-trash">

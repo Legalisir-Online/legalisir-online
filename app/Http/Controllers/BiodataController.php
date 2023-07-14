@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\Auth;
 
 class BiodataController extends Controller
 {
+    public function index()
+    {
+        $alumnis = Alumni::where('id_user', auth()->user()->id)->first();
+        // $alumnis->tgl_lahir = date('Y-m-d', strtotime($alumnis->tgl_lahir));
+        // dd($alumnis);
+        return view('alumni.biodata', compact('alumnis'));
+    }
     public function store(Request $request)
     {
         $validatedData = $request->validate([
@@ -40,13 +47,15 @@ class BiodataController extends Controller
 
         // buat aplot file
         // $path = Storage::disk('public')->putFile('dokumen', $request->file(''));
+        $alumnis = Alumni::where('id_user', auth()->user()->id)->first();
+        if (!$alumnis) {
+            $alumnis = new Alumni;
+            $alumnis->id_user = Auth::user()->id;
+        }
 
-        $alumnis = new Alumni;
-        $alumnis->id_user = Auth::user()->id;
-        $alumnis->nim = Auth::user()->nim;
         $alumnis->nama = $request->nama;
         $alumnis->tempat_lahir = $request->tempat_lahir;
-        $alumnis->tanggal_lahir = $request->tanggal_lahir;
+        $alumnis->tgl_lahir = $request->tanggal_lahir;
         $alumnis->agama = $request->agama;
         $alumnis->nik = $request->nik;
         $alumnis->nomor_wa = $request->nomor_wa;
