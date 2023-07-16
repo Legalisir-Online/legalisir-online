@@ -77,11 +77,13 @@ Route::middleware('role:admin_prodi')->group(function () {
     Route::put('/admin_prodi/edit/{id}/update', [LegalisirController::class, 'admin_update'])->name('admin.legalisir.update');
     Route::get('/daftar-ajuan-legalisir', [LegalisirController::class, 'admin_legalisir_index'])->name('admin.legalisir.index');
     Route::get('/edit-ajuan/{id}', [LegalisirController::class, 'admin_legalisir_edit'])->name('admin.legalisir.edit');
+    Route::post('/edit-ajuan/{id}/legalisir-berkas/update', [LegalisirController::class, 'admin_legalisir_berkas_update'])->name('admin.legalisir.berkas.update');
 
     Route::get('/daftar-berkas', [LegalisirController::class, 'admin_berkas_index'])->name('admin.berkas.index');
     Route::get('/validasi-berkas/{id}', [LegalisirController::class, 'admin_berkas_edit'])->name('admin.berkas.edit');
     Route::put('/validasi-berkas/{id}/valid', [LegalisirController::class, 'admin_berkas_update_valid'])->name('admin.berkas.update.valid');
     Route::put('/validasi-berkas/{id}/invalid', [LegalisirController::class, 'admin_berkas_update_invalid'])->name('admin.berkas.update.invalid');
+
 });
 
 Route::get('/form-legalisir', function () {
@@ -149,9 +151,9 @@ Route::get('/user-alumni', [AdministratorController::class, 'listAlumni']);
 Route::delete('/user-admin/{id}', [AdministratorController::class, 'destroy']);
 // ->name('user-admin.destroy');
 
-Route::get('/daftar-ajuan-legalisir', function () {
-    return view('admin/daftar-ajuan-legalisir');
-});
+// Route::get('/daftar-ajuan-legalisir', function () {
+//     return view('admin/daftar-ajuan-legalisir');
+// });
 // ->middleware('role:admin_prodi');
 
 Route::get('/index', function () {
@@ -231,9 +233,9 @@ Route::get('/users', function () {
 // ;})
 // ->middleware('role:administrator');
 
-Route::get('/daftar-berkas', function () {
-    return view('admin/daftar-berkas');
-});
+// Route::get('/daftar-berkas', function () {
+//     return view('admin/daftar-berkas');
+// });
 // ->middleware('role:admin_prodi');
 
 Route::get('/pertanyaan', function () {

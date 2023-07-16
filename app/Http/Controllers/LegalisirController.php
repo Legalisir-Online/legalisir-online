@@ -9,6 +9,31 @@ use App\Http\Controllers\Controller;
 
 class LegalisirController extends Controller
 {
+    protected function sendWA(string $phone, string $message): mixed
+    {
+        $token = 'danR2N2U3RmR2YnZ5TEdoY1FmMW5nYmN4aDJIVHZCbEU=';
+        $post = [
+            'phone' => $phone,
+            'message' => $message
+        ];
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://wamanager.uns.ac.id/api/v1/whatsapp/send-message');
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            "Authorization: Bearer " . $token
+        ]);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        $result = curl_exec($ch);
+        curl_close($ch);
+
+        return json_decode($result);
+    }
+
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -132,9 +157,15 @@ class LegalisirController extends Controller
         return view('admin.edit-ajuan', compact('dokumen', 'alumni'));
     }
 
-    public function admin_legalisir_update(String $id)
+    public function admin_legalisir_berkas_update(String $id, Request $request)
     {
+        $alumni = Alumni::whereHas('dokumen', function ($query) use ($id) {
+            $query->where('id', $id);
+        })->first();
 
+        // dd($alumni->nomor_wa);
+
+        return $this->sendWA($alumni->nomor_wa, 'test');
     }
 
     public function admin_edit(String $id)

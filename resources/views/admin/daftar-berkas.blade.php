@@ -19,73 +19,6 @@
       </div>
     </div>
   </section>
-
-<<<<<<< HEAD
-
-    <section class="content">
-        <div style="margin-top: 10px" class="container">
-            <div class="row justify-content-center">
-                <div class="col-xs-12">
-                    <div class="box">
-                        <div class="box-body table-responsive no-padding">
-                            <table class="table table-hover">
-                                <tr>
-                                    <th style="background-color: black; color: white; width: 10%; padding-left: 25px;">
-                                        No
-                                    </th>
-                                    <th style="background-color: black; color: white; width: 25%;">Nama</th>
-                                    <th style="background-color: black; color: white; width: 15%;">NIM</th>
-                                    <th style="background-color: black; color: white; width: 15%;">Status</th>
-                                    <th style="background-color: black; color: white; width: 20%;">Keterangan</th>
-                                    <th style="background-color: black; color: white; width: 20%;">Aksi</th>
-                                </tr>
-                                <tr>
-                                    @foreach ($dokumens as $dokumen)
-                                <tr>
-                                    <td style="padding-left: 25px;">{{ $loop->iteration }}</td>
-                                    @foreach ($alumnis as $alumni)
-                                        @if ($dokumen->alumni_id == $alumni->id)
-                                            <td>{{ $alumni->nama }}</td>
-                                        @endif
-                                    @endforeach
-                                    @foreach ($users as $user)
-                                        @if ($user->id == $alumni->id_user)
-                                            <td>{{ $user->nim }}</td>
-                                        @endif
-                                    @endforeach
-                                    @if ($dokumen->status == 1)
-                                        <td><span class="label label-success">Valid</span></td>
-                                    @elseif ($dokumen->status == NULL)
-                                        <td><span class="label label-warning">Menunggu Divalidasi</span></td>
-                                    @else
-                                       <td><span class="label label-danger">Failed</span></td>
-                                    @endif
-                                    <td>{{ $dokumen->keterangan }}</td>
-                                    <td>
-                                        <span><a href="#"><button class="btn btn-primary"><i class="fa fa-edit">
-                                                        Detail</i></button></a></span>
-                                        <span><a href="/validasi-berkas"><button class="btn btn-success"><i
-                                                        class="fa fa-edit"> Edit</i></button></a></span>
-                                    </td>
-                                    @endforeach
-                                </tr>
-                            </table>
-                        </div><!-- /.box-body -->
-                        <div class="text-center">
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div><!-- /.box -->
-                </div>
-            </div>
-=======
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-xs-12">
@@ -95,7 +28,6 @@
           <div class="input-group-btn">
             <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
           </div>
->>>>>>> b2cbbe3080393b0413083f29b2464604ecb27434
         </div>
       </div>
     </div>
