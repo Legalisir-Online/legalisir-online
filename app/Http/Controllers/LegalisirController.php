@@ -163,9 +163,9 @@ class LegalisirController extends Controller
             $query->where('id', $id);
         })->first();
 
-        // dd($alumni->nomor_wa);
+        $this->sendWA($alumni->nomor_wa, 'test');
 
-        return $this->sendWA($alumni->nomor_wa, 'test');
+        return redirect()->route('admin.legalisir.index');
     }
 
     public function admin_edit(String $id)
