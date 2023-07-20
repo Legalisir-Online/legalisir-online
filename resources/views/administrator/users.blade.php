@@ -191,10 +191,10 @@
                                     <td>student@uns.ac.id</td>
                                     <td>alumni</td>
                                     <td>
-                                        <span><a href="#" data-toggle="modal"
+                                        <!-- <span><a href="#" data-toggle="modal"
                                                 data-target="#editUserModal"><button id="editUserButton"
                                                     class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
+                                                        Edit</i></button></a></span> -->
 
                                         <span><a href="#" data-toggle="modal"
                                                 data-target="#hapusUserModal"><button id="hapusUserButton"
@@ -209,10 +209,10 @@
                                     <td>admin1@uns.ac.id</td>
                                     <td>admin</td>
                                     <td>
-                                        <span><a href="#" data-toggle="modal"
+                                        <!-- <span><a href="#" data-toggle="modal"
                                                 data-target="#editUserModal"><button id="editUserButton"
                                                     class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
+                                                        Edit</i></button></a></span> -->
 
                                         <span><a href="#" data-toggle="modal"
                                                 data-target="#hapusUserModal"><button id="hapusUserButton"
@@ -227,10 +227,10 @@
                                     <td>student@uns.ac.id</td>
                                     <td>alumni</td>
                                     <td>
-                                        <span><a href="#" data-toggle="modal"
+                                        <!-- <span><a href="#" data-toggle="modal"
                                                 data-target="#editUserModal"><button id="editUserButton"
                                                     class="btn btn-success"><i class="fa fa-edit">
-                                                        Edit</i></button></a></span>
+                                                        Edit</i></button></a></span> -->
 
                                         <span><a href="#" data-toggle="modal"
                                                 data-target="#hapusUserModal"><button id="hapusUserButton"

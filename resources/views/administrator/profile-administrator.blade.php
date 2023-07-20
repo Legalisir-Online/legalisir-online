@@ -1,6 +1,6 @@
-@include('admin.includes.header')
-@include('admin.includes.topbar')
-@include('admin.includes.sidebar')
+@include('administrator.includes.header')
+@include('administrator.includes.topbar')
+@include('administrator.includes.sidebar')
 
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
