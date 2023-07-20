@@ -1,6 +1,6 @@
 <header class="main-header">
         <!-- Logo -->
-        <div class="logo" style="background-color: #343b43;"><img src="images/logo.png" alt="Logo" height="40px" style="margin-top: 4px; margin-bottom: 10px"></div>
+        <div class="logo" style="background-color: #343b43;"><img src="{{ asset('images/logo.png') }}" alt="Logo" height="40px" style="margin-top: 4px; margin-bottom: 10px"></div>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
@@ -55,13 +55,13 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+                  <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="user-image" alt="User Image"/>
                   <span class="hidden-xs">Tetra</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                    <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image" />
                     <p>
                       Tetra
                     </p>
