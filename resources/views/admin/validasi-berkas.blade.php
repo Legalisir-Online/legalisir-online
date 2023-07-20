@@ -2,9 +2,53 @@
 @include('admin.includes.topbar')
 @include('admin.includes.sidebar')
 
-<!-- <head>
+<head>
+  {{-- <link rel="stylesheet" href="{{ asset('plugins\jQuery\jQuery-2.1.3.min.js')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\jQueryUI\jquery-ui-1.10.3.min.js')}}"> --}}
+  
+  <link rel="stylesheet" href="{{ asset('bootstrap\css\bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('bootstrap\js\bootstrap.min.js')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.min.css')}}">
+  
+  <link rel="stylesheet" href="{{ asset('plugins\datepicker\bootstrap-datepicker.js')}}">
+  <link rel="stylesheet" href="{{ asset('dist\css\AdminLTE.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\iCheck\flat\blue.css')}}">
+
+  <link rel="stylesheet" href="{{ asset('dist\css\skins\_all-skins.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\morris\morris.css')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\jvectormap\jquery-jvectormap-1.2.2.css')}}">
+  
+  <link rel="stylesheet" href="{{ asset('plugins\datepicker\datepicker3.css')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\daterangepicker\daterangepicker-bs3.css')}}">
+  <link rel="stylesheet" href="{{ asset('images\logo.png ')}}">
+
+  <link rel="stylesheet" href="{{ asset('plugins\jQuery\jQuery-2.1.3.min.js')}}">
+  <link rel="stylesheet" href="{{ asset('bootstrap\js\bootstrap.min.js')}}">
+  <link rel="stylesheet" href="{{ asset('dist\img\user2-160x160.jpg')}}">
+
+  <link rel="stylesheet" href="{{ asset('plugins\morris\morris.min.js')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\sparkline\jquery.sparkline.min.js')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\jvectormap\jquery-jvectormap-1.2.2.min.js')}}">
+  
+  <link rel="stylesheet" href="{{ asset('plugins\jvectormap\jquery-jvectormap-world-mill-en.js')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\knob\jquery.knob.js')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\daterangepicker\daterangepicker.js')}}">
+  
+  <link rel="stylesheet" href="{{ asset('plugins\datepicker\bootstrap-datepicker.js')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.min.js')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\iCheck\icheck.min.js')}}">
+  
+  <link rel="stylesheet" href="{{ asset('plugins\slimScroll\jquery.slimscroll.min.js')}}">
+  <link rel="stylesheet" href="{{ asset('plugins\fastclick\fastclick.min.js')}}">
+  <link rel="stylesheet" href="{{ asset('dist\js\app.min.js')}}">
+  
+  <link rel="stylesheet" href="{{ asset('dist\js\pages\dashboard.js')}}">
+  <link rel="stylesheet" href="{{ asset('dist\js\demo.js')}}">
+  {{-- <link rel="stylesheet" href="{{ asset('dist/js/app.min.js')}}"> --}}
+</head>
+{{-- <head>
 <link rel="stylesheet" type="text/css" href="{{ asset('css/edit-ajuan.css') }}">
-</head> -->
+</head> --}}
 
 <body>
   <div class="content-wrapper">
